@@ -42,8 +42,9 @@ An object can also set `"scale":0.75` to shrink the drawing within its icon area
 
 ## Local editor
 
-Run `bun run editor` and open <http://127.0.0.1:3000>. The editor searches installed
-status icon themes and their inherited icons, plus Lucide names and tags. Select a
+Run `bun run editor` and open <http://127.0.0.1:3000>. The editor searches all icon
+categories in installed themes and their inherited icons; use **Category** to narrow
+the list. It also searches Lucide names and tags. Select a
 KDE name or enter one manually, choose a Lucide candidate, then click **Assign**.
 Assignments save to `mappings.json` immediately; previews do not change Plasma.
 For RTL names, **Mirror** flips the candidate horizontally before assigning it.

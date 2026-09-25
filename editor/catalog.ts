@@ -5,9 +5,10 @@ import { validKdeName } from "../src/mappings";
 
 type Section = Record<string, string>;
 type Ini = Record<string, Section>;
-export type Asset = { path: string; type: "svg" | "svgz" | "png"; size: number; scale: number; source: string };
-export type IconEntry = { name: string; source: string; assets: Asset[] };
-export type Theme = { id: string; label: string; root: string; inherits: string[]; sections: Ini; directories: string[] };
+export type Asset = { path: string; type: "svg" | "svgz" | "png"; size: number; scale: number; source: string; category: string };
+export type IconEntry = { name: string; source: string; categories: string[]; assets: Asset[] };
+type ThemeLocation = { root: string; sections: Ini; directories: string[] };
+export type Theme = { id: string; label: string; inherits: string[]; locations: ThemeLocation[] };
 
 function parseIni(source: string): Ini {
   const result: Ini = {};
@@ -36,21 +37,20 @@ export async function discoverThemes(): Promise<Map<string, Theme>> {
     for (const entry of entries) {
       if (!entry.isDirectory() && !entry.isSymbolicLink()) continue;
       const id = entry.name;
-      if (themes.has(id)) continue;
       const root = join(base, id);
       let sections: Ini;
       try { sections = parseIni(await readFile(join(root, "index.theme"), "utf8")); } catch { continue; }
       const head = sections["Icon Theme"];
       if (!head) continue;
-      const directories = (head.Directories || "").split(",").filter((dir) => {
-        const section = sections[dir];
-        return section && (section.Context === "Status" || /(^|\/)status(\/|$)/.test(dir));
-      });
-      themes.set(id, {
-        id, label: head.Name || id, root,
-        inherits: (head.Inherits || "").split(",").filter(Boolean),
-        sections, directories,
-      });
+      const directories = (head.Directories || "").split(",").map((dir) => dir.trim()).filter((dir) => sections[dir]);
+      const inherited = (head.Inherits || "").split(",").map((name) => name.trim()).filter(Boolean);
+      const theme = themes.get(id);
+      if (theme) {
+        theme.locations.push({ root, sections, directories });
+        for (const parent of inherited) if (!theme.inherits.includes(parent)) theme.inherits.push(parent);
+      } else {
+        themes.set(id, { id, label: head.Name || id, inherits: inherited, locations: [{ root, sections, directories }] });
+      }
     }
   }
   return themes;
@@ -58,25 +58,30 @@ export async function discoverThemes(): Promise<Map<string, Theme>> {
 
 async function localIcons(theme: Theme): Promise<Map<string, Asset[]>> {
   const icons = new Map<string, Asset[]>();
-  const root = await realpath(theme.root);
-  for (const dir of theme.directories) {
-    const section = theme.sections[dir];
-    const size = Number(section.Size) || Number(dir.match(/\d+/)?.[0]) || 22;
-    const scale = Number(section.Scale) || Number(dir.match(/@([23])x?\//)?.[1]) || 1;
-    let files;
-    try { files = await readdir(join(theme.root, dir)); } catch { continue; }
-    for (const filename of files) {
-      const match = filename.match(/^(.+)\.(svg|svgz|png)$/i);
-      if (!match || !validKdeName.test(match[1])) continue;
-      const path = join(theme.root, dir, filename);
-      let actual: string;
-      try { actual = await realpath(path); if (!(await stat(actual)).isFile()) continue; } catch { continue; }
-      if (!actual.startsWith(root + sep)) continue;
-      const name = match[1];
-      const assets = icons.get(name) || [];
-      assets.push({ path: actual, type: match[2].toLowerCase() as Asset["type"], size, scale, source: theme.id });
-      icons.set(name, assets);
+  for (const location of theme.locations) {
+    const local = new Map<string, Asset[]>();
+    const root = await realpath(location.root);
+    for (const dir of location.directories) {
+      const section = location.sections[dir];
+      const category = (dir.split("/").find((part) => /^(actions|animations|apps|applets|categories|devices|emblems|emotes|mimetypes|places|preferences|status)$/i.test(part)) || section.Context || "other").toLowerCase();
+      const size = Number(section.Size) || Number(dir.match(/\d+/)?.[0]) || 22;
+      const scale = Number(section.Scale) || Number(dir.match(/@([23])x?\//)?.[1]) || 1;
+      let files;
+      try { files = await readdir(join(location.root, dir)); } catch { continue; }
+      for (const filename of files) {
+        const match = filename.match(/^(.+)\.(svg|svgz|png)$/i);
+        if (!match || !validKdeName.test(match[1])) continue;
+        const path = join(location.root, dir, filename);
+        let actual: string;
+        try { actual = await realpath(path); if (!(await stat(actual)).isFile()) continue; } catch { continue; }
+        if (!actual.startsWith(root + sep)) continue;
+        const name = match[1];
+        const assets = local.get(name) || [];
+        assets.push({ path: actual, type: match[2].toLowerCase() as Asset["type"], size, scale, source: theme.id, category });
+        local.set(name, assets);
+      }
     }
+    for (const [name, assets] of local) if (!icons.has(name)) icons.set(name, assets);
   }
   return icons;
 }
@@ -91,7 +96,7 @@ export async function effectiveIcons(id: string, themes: Map<string, Theme>): Pr
     const theme = themes.get(name);
     if (!theme) return;
     for (const [iconName, assets] of await localIcons(theme)) {
-      if (!result.has(iconName)) result.set(iconName, { name: iconName, source: name, assets });
+      if (!result.has(iconName)) result.set(iconName, { name: iconName, source: name, categories: [...new Set(assets.map((asset) => asset.category))], assets });
     }
     for (const parent of theme.inherits) await visit(parent);
   }
@@ -107,8 +112,8 @@ export function bestAsset(entry: IconEntry, size: number): Asset {
   })[0];
 }
 
-export function sortedEntries(icons: Map<string, IconEntry>): Array<{ name: string; source: string }> {
+export function sortedEntries(icons: Map<string, IconEntry>): Array<{ name: string; source: string; categories: string[] }> {
   const base = (name: string) => name.replace(/-(symbolic|rtl)$/, "");
   return [...icons.values()].sort((a, b) => base(a.name).localeCompare(base(b.name)) || a.name.localeCompare(b.name))
-    .map(({ name, source }) => ({ name, source }));
+    .map(({ name, source, categories }) => ({ name, source, categories }));
 }

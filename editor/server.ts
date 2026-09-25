@@ -113,7 +113,7 @@ const server = Bun.serve({
         return new Response(Bun.file(join(editorDir, path)), { headers: { "Content-Type": `${type}; charset=utf-8`, "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'", "Cache-Control": "no-store" } });
       }
       if (request.method === "GET" && url.pathname === "/api/state") {
-        const choices = [...themes.values()].filter((theme) => theme.directories.length).map(({ id, label }) => ({ id, label })).sort((a, b) => a.label.localeCompare(b.label));
+        const choices = [...themes.values()].filter((theme) => theme.locations.some((location) => location.directories.length)).map(({ id, label }) => ({ id, label })).sort((a, b) => a.label.localeCompare(b.label));
         return json({ themes: choices, defaultTheme: themes.has("breeze") ? "breeze" : choices[0]?.id, mappings: await readMappings(), palette: await activePalette(), needsBuild: await buildStatus(), archivePath });
       }
       if (request.method === "GET" && url.pathname === "/api/lucide") return json(lucideIcons);

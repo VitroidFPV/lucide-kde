@@ -22,10 +22,11 @@
     <main class="workspace">
       <section class="pane names-pane" aria-labelledby="names-heading">
         <div class="pane-head"><h2 id="names-heading">KDE icons</h2><span id="icon-count" class="muted"></span></div>
-        <div class="toolbar"><label class="field"><span>Source theme</span><select id="theme"></select></label></div>
-        <div class="toolbar"><label class="field grow"><span>Find KDE name</span><input id="kde-search" type="search" placeholder="Search status icons" autocomplete="off"></label><label class="field filter-field"><span>Show</span><select id="kde-filter"><option value="all">All</option><option value="assigned">Assigned</option><option value="unassigned">Unassigned</option></select></label></div>
+        <div class="toolbar"><label class="field grow"><span>Source theme</span><select id="theme"></select></label><label class="field category-field"><span>Category</span><select id="kde-category"><option value="all">All categories</option></select></label></div>
+        <div class="toolbar"><label class="field grow"><span>Find KDE name</span><input id="kde-search" type="search" placeholder="Search icon names" autocomplete="off"></label><label class="field filter-field"><span>Show</span><select id="kde-filter"><option value="all">All</option><option value="assigned">Assigned</option><option value="unassigned">Unassigned</option></select></label></div>
         <form id="manual-form" class="manual-row"><label class="field grow"><span>Manual name</span><input id="manual-name" type="text" placeholder="audio-volume-high" pattern="[A-Za-z0-9][A-Za-z0-9._-]*" autocomplete="off"></label><button type="submit">Open</button></form>
         <div id="kde-list" class="kde-list" role="listbox" aria-label="KDE icon names"></div>
+        <button id="kde-more" class="kde-more" type="button" hidden>Show more</button>
       </section>
       <section class="pane detail-pane" aria-labelledby="detail-heading">
         <div class="pane-head detail-head"><div><h2 id="detail-heading">Select a KDE icon</h2><span id="source-label" class="muted"></span></div><span id="mapping-label" class="mapping-label"></span></div>

@@ -4,6 +4,7 @@ const $ = (id) => document.getElementById(id);
 const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, scale: 1, previewPalette: "current", size: 22, needsBuild: true, busy: false };
 const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 let noticeTimeout;
+let visibleKdeCount = 200;
 const mappingIcon = (mapping) => typeof mapping === "string" ? mapping : mapping?.icon || "";
 const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mirror === true;
 const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
@@ -26,7 +27,7 @@ function notice(message, error = false, duration = 0) {
 }
 function setBusy(value) {
   state.busy = value;
-  for (const id of ["build", "apply", "theme", "manual-name", "kde-search", "kde-filter", "lucide-search", "remove"]) $(id).disabled = value;
+  for (const id of ["build", "apply", "theme", "manual-name", "kde-search", "kde-category", "kde-filter", "lucide-search", "remove"]) $(id).disabled = value;
   renderSelection();
 }
 function applyColors(colors) {
@@ -46,8 +47,8 @@ function previewColors() {
   surface.style.setProperty("--preview-view", p.view);
   surface.style.setProperty("--preview-text", p.text);
 }
-function sourceUrl(name) {
-  return `/api/source?theme=${encodeURIComponent(state.theme)}&name=${encodeURIComponent(name)}&size=${state.size}&palette=${state.previewPalette}`;
+function sourceUrl(name, size = state.size, palette = state.previewPalette) {
+  return `/api/source?theme=${encodeURIComponent(state.theme)}&name=${encodeURIComponent(name)}&size=${size}&palette=${palette}`;
 }
 function candidateUrl(name, palette = state.previewPalette, mirror = false, scale = 1) {
   return `/api/candidate?name=${encodeURIComponent(name)}&palette=${palette}${mirror ? "&mirror=1" : ""}${scale !== 1 ? `&scale=${scale}` : ""}`;
@@ -62,29 +63,50 @@ function renderKde() {
   const filter = $("kde-filter").value;
   const assigned = new Set(Object.keys(state.mappings));
   const entries = [...state.icons];
-  for (const name of assigned) if (!entries.some((entry) => entry.name === name)) entries.push({ name, source: "Manual" });
-  if (state.kde && !entries.some((entry) => entry.name === state.kde)) entries.push({ name: state.kde, source: "Manual" });
+  for (const name of assigned) if (!entries.some((entry) => entry.name === name)) entries.push({ name, source: "Manual", categories: ["manual"] });
+  if (state.kde && !entries.some((entry) => entry.name === state.kde)) entries.push({ name: state.kde, source: "Manual", categories: ["manual"] });
+  const categorySelect = $("kde-category");
+  const selectedCategory = categorySelect.value;
+  const categories = [...new Set(entries.flatMap((entry) => entry.categories))].sort();
+  categorySelect.replaceChildren(new Option("All categories", "all"));
+  for (const category of categories) {
+    const label = category === "mimetypes" ? "MIME types" : category[0].toUpperCase() + category.slice(1);
+    categorySelect.add(new Option(label, category));
+  }
+  categorySelect.value = categories.includes(selectedCategory) ? selectedCategory : "all";
   const base = (name) => name.replace(/-(symbolic|rtl)$/, "");
   entries.sort((a, b) => base(a.name).localeCompare(base(b.name)) || a.name.localeCompare(b.name));
   const filtered = searchKdeNames(entries.filter((entry) => (
-    filter === "all" || assigned.has(entry.name) === (filter === "assigned")
+    (categorySelect.value === "all" || entry.categories.includes(categorySelect.value))
+    && (filter === "all" || assigned.has(entry.name) === (filter === "assigned"))
   )), query, state.mappings);
   $("icon-count").textContent = `${filtered.length} names`;
   const list = $("kde-list");
   list.replaceChildren();
-  for (const entry of filtered) {
+  for (const entry of filtered.slice(0, visibleKdeCount)) {
     const row = document.createElement("button");
     row.type = "button";
     row.className = `kde-row${state.kde === entry.name ? " selected" : ""}`;
     row.setAttribute("role", "option");
     row.setAttribute("aria-selected", String(state.kde === entry.name));
+    const thumbnail = document.createElement("span"); thumbnail.className = "kde-thumbnail";
+    if (!entry.categories.includes("manual")) {
+      const image = document.createElement("img");
+      image.src = sourceUrl(entry.name, 22, "current");
+      image.alt = "";
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.addEventListener("error", () => { image.hidden = true; });
+      thumbnail.append(image);
+    }
     const name = document.createElement("span"); name.className = "name"; name.textContent = entry.name;
     const source = document.createElement("span"); source.className = "source"; source.textContent = entry.source;
-    row.append(name, source);
+    row.append(thumbnail, name, source);
     if (assigned.has(entry.name)) { const dot = document.createElement("span"); dot.className = "mapped-dot"; dot.title = "Assigned"; row.append(dot); }
     row.addEventListener("click", () => selectKde(entry.name));
     list.append(row);
   }
+  $("kde-more").hidden = filtered.length <= visibleKdeCount;
 }
 function renderLucide() {
   const terms = $("lucide-search").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -150,6 +172,7 @@ function selectKde(name) {
 }
 async function loadTheme(id) {
   notice("");
+  visibleKdeCount = 200;
   state.theme = id;
   $("theme").value = id;
   $("kde-list").textContent = "Loading…";
@@ -189,15 +212,15 @@ async function execute(action) {
   finally { setBusy(false); }
 }
 
-$("kde-search").addEventListener("input", renderKde);
-$("kde-filter").addEventListener("change", renderKde);
+for (const id of ["kde-search", "kde-category", "kde-filter"]) $(id).addEventListener(id === "kde-search" ? "input" : "change", () => { visibleKdeCount = 200; renderKde(); });
+$("kde-more").addEventListener("click", () => { visibleKdeCount += 200; renderKde(); });
 $("lucide-search").addEventListener("input", renderLucide);
 $("theme").addEventListener("change", (event) => loadTheme(event.target.value));
 $("manual-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const name = $("manual-name").value.trim();
   if (!validKdeName.test(name)) { notice("Use letters, numbers, dots, underscores, and hyphens", true); return; }
-  $("kde-search").value = ""; $("kde-filter").value = "all"; selectKde(name); notice("");
+  $("kde-search").value = name; $("kde-category").value = "all"; $("kde-filter").value = "all"; visibleKdeCount = 200; selectKde(name); notice("");
 });
 $("assign").addEventListener("click", () => saveMapping(state.candidate));
 $("mirror").addEventListener("click", () => { state.mirror = !state.mirror; renderSelection(); });

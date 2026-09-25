@@ -206,6 +206,9 @@ input::placeholder {
 .filter-field select {
   width: 120px;
 }
+.category-field select {
+  width: 145px;
+}
 .manual-row button {
   height: 36px;
 }
@@ -213,6 +216,9 @@ input::placeholder {
   overflow: auto;
   flex: 1;
   padding: 7px 10px 16px;
+}
+.kde-more {
+  margin: 0 22px 12px;
 }
 .kde-row {
   width: 100%;
@@ -233,6 +239,18 @@ input::placeholder {
 }
 .kde-row.selected {
   background: color-mix(in srgb,var(--selection) 22%,transparent);
+}
+.kde-thumbnail {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+.kde-thumbnail img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 .kde-row .name {
   flex: 1;
