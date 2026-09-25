@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bun run src/generate.ts"
+    "build": "bun run src/generate.ts",
+    "pack": "bun run src/package.ts"
   },
   "devDependencies": {
     "lucide-static": "1.48.0"

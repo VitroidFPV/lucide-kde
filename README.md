@@ -6,13 +6,19 @@ The first version replaces `audio-volume-high` only.
 
 ## Install the theme
 
-Copy `theme/Lucide-KDE` to `~/.local/share/icons/`, then choose **Lucide KDE** in
-System Settings → Colors & Themes → Icons. The installed theme does not need Bun.
+Download `Lucide-KDE.tar.gz` from a release, or build the archive from source:
 
 ```sh
-mkdir -p ~/.local/share/icons
-cp -a theme/Lucide-KDE ~/.local/share/icons/
+bun install --frozen-lockfile
+bun run pack
 ```
+
+The build creates `dist/Lucide-KDE.tar.gz`. In **System Settings → Colors & Themes →
+Icons**, click **Install from File…**, select that archive, then select **Lucide
+KDE** and click **Apply**. Installing the archive does not require Bun.
+
+The archive contains one top-level `Lucide-KDE` directory with `index.theme`, the
+generated SVGs, and both license notices.
 
 The installable theme includes the full [Lucide license](theme/Lucide-KDE/LICENSE-LUCIDE)
 and this project's [GPLv3 license](theme/Lucide-KDE/LICENSE-GPL-3.0).
