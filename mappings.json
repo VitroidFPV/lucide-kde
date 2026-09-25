@@ -1,3 +1,68 @@
 {
-  "audio-volume-high": "volume-2"
+  "audio-volume-high": "volume-2",
+  "audio-volume-high-danger": "volume-2",
+  "audio-volume-high-danger-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-high-danger-symbolic": "volume-2",
+  "audio-volume-high-danger-symbolic-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-high-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-high-symbolic": "volume-2",
+  "audio-volume-high-symbolic-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-high-warning": "volume-2",
+  "audio-volume-high-warning-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-high-warning-symbolic": "volume-2",
+  "audio-volume-high-warning-symbolic-rtl": {
+    "icon": "volume-2",
+    "mirror": true
+  },
+  "audio-volume-low": "volume",
+  "audio-volume-low-rtl": {
+    "icon": "volume",
+    "mirror": true
+  },
+  "audio-volume-low-symbolic": "volume",
+  "audio-volume-low-symbolic-rtl": {
+    "icon": "volume",
+    "mirror": true
+  },
+  "audio-volume-medium": "volume-1",
+  "audio-volume-medium-rtl": {
+    "icon": "volume-1",
+    "mirror": true
+  },
+  "audio-volume-medium-symbolic": "volume-1",
+  "audio-volume-medium-symbolic-rtl": {
+    "icon": "volume-1",
+    "mirror": true
+  },
+  "audio-volume-muted": "volume-off",
+  "audio-volume-muted-rtl": {
+    "icon": "volume-off",
+    "mirror": true
+  },
+  "audio-volume-muted-symbolic": "volume-off",
+  "audio-volume-muted-symbolic-rtl": {
+    "icon": "volume-off",
+    "mirror": true
+  },
+  "microphone": "mic",
+  "microphone-sensitivity-muted": "mic-off",
+  "microphone-sensitivity-muted-rtl": {
+    "icon": "mic-off",
+    "mirror": true
+  }
 }
