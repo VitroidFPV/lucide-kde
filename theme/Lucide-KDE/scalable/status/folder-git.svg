@@ -1,6 +1,6 @@
 <!-- @license lucide-static v1.48.0 - ISC -->
 <svg
-  class="lucide lucide-monitor"
+  class="lucide lucide-git-pull-request-arrow"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -14,9 +14,11 @@
   <style id="current-color-scheme" type="text/css">
     .ColorScheme-Text { color: #232629; }
   </style>
-  <g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3) scale(0.75)">
-  <rect width="20" height="14" x="2" y="3" rx="2" />
-  <line x1="8" x2="16" y1="21" y2="21" />
-  <line x1="12" x2="12" y1="17" y2="21" />
+  <g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="5" cy="6" r="3" />
+  <path d="M5 9v12" />
+  <circle cx="19" cy="18" r="3" />
+  <path d="m15 9-3-3 3-3" />
+  <path d="M12 6h5a2 2 0 0 1 2 2v7" />
   </g>
 </svg>
