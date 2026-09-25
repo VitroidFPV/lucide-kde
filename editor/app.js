@@ -10,6 +10,13 @@ const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mir
 const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
 const isRtlName = (name) => /-rtl(?:-symbolic)?$/.test(name);
 const categoryLabel = (category) => category === "mimetypes" ? "MIME types" : category[0].toUpperCase() + category.slice(1);
+const canAssign = (name) => {
+  const mapping = state.mappings[state.kde];
+  return !!state.kde && !!name && (mappingIcon(mapping) !== name || mappingMirrored(mapping) !== state.mirror);
+};
+function updateQuickAssignButtons() {
+  for (const button of document.querySelectorAll(".lucide-assign")) button.disabled = state.busy || !canAssign(button.dataset.icon);
+}
 
 async function api(path, options) {
   const response = await fetch(path, options);
@@ -29,6 +36,7 @@ function notice(message, error = false, duration = 0) {
 function setBusy(value) {
   state.busy = value;
   for (const id of ["build", "apply", "theme", "manual-name", "kde-search", "kde-category", "kde-filter", "lucide-search", "remove"]) $(id).disabled = value;
+  updateQuickAssignButtons();
   renderSelection();
 }
 function applyColors(colors) {
@@ -115,17 +123,38 @@ function renderLucide() {
   const list = $("lucide-list");
   list.replaceChildren();
   for (const icon of filtered.slice(0, 120)) {
+    const cell = document.createElement("div");
+    cell.className = "lucide-cell";
+    cell.setAttribute("role", "listitem");
     const button = document.createElement("button");
     button.type = "button";
     button.className = `lucide-item${state.candidate === icon.name ? " selected" : ""}`;
-    button.setAttribute("role", "option");
-    button.setAttribute("aria-selected", String(state.candidate === icon.name));
+    button.dataset.icon = icon.name;
+    button.setAttribute("aria-pressed", String(state.candidate === icon.name));
     button.title = `${icon.name}\n${icon.tags.join(", ")}`;
     const image = document.createElement("img"); image.src = candidateUrl(icon.name, "current"); image.alt = ""; image.loading = "lazy";
     const label = document.createElement("span"); label.textContent = icon.name;
     button.append(image, label);
-    button.addEventListener("click", () => { state.candidate = icon.name; renderSelection(); renderLucide(); });
-    list.append(button);
+    button.addEventListener("click", () => previewCandidate(icon.name));
+    const assign = document.createElement("button");
+    assign.type = "button";
+    assign.className = "lucide-assign";
+    assign.dataset.icon = icon.name;
+    assign.textContent = "Assign";
+    assign.setAttribute("aria-label", `Assign ${icon.name} to ${state.kde || "selected KDE icon"}`);
+    assign.disabled = state.busy || !canAssign(icon.name);
+    assign.addEventListener("click", () => { previewCandidate(icon.name); saveMapping(icon.name); });
+    cell.append(button, assign);
+    list.append(cell);
+  }
+}
+function previewCandidate(name) {
+  state.candidate = name;
+  renderSelection();
+  for (const button of document.querySelectorAll(".lucide-item")) {
+    const selected = button.dataset.icon === name;
+    button.classList.toggle("selected", selected);
+    button.setAttribute("aria-pressed", String(selected));
   }
 }
 function renderSelection() {
@@ -144,7 +173,7 @@ function renderSelection() {
   mirrorButton.setAttribute("aria-pressed", String(state.mirror));
   $("remove").hidden = !assigned;
   $("remove").disabled = state.busy;
-  $("assign").disabled = state.busy || !state.kde || !state.candidate || (assigned === state.candidate && assignedMirror === state.mirror);
+  $("assign").disabled = state.busy || !canAssign(state.candidate);
   const original = $("original-icon");
   original.hidden = !entry;
   $("original-empty").hidden = !!entry;
@@ -223,7 +252,7 @@ $("manual-form").addEventListener("submit", (event) => {
   $("kde-search").value = name; $("kde-category").value = "all"; $("kde-filter").value = "all"; visibleKdeCount = 200; selectKde(name); notice("");
 });
 $("assign").addEventListener("click", () => saveMapping(state.candidate));
-$("mirror").addEventListener("click", () => { state.mirror = !state.mirror; renderSelection(); });
+$("mirror").addEventListener("click", () => { state.mirror = !state.mirror; renderSelection(); updateQuickAssignButtons(); });
 $("remove").addEventListener("click", () => saveMapping(null));
 $("build").addEventListener("click", () => execute("build"));
 $("apply").addEventListener("click", () => execute("apply"));
