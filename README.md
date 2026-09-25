@@ -36,7 +36,8 @@ bun run typecheck
 `mappings.json` maps KDE icon names to Lucide icon names. The build uses the pinned
 `lucide-static` version and replaces `theme/Lucide-KDE` with generated output. For
 now, every mapped icon is emitted into `scalable/status` for small system and tray
-icons.
+icons. Mirrored RTL assignments use an object such as
+`{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
 
 ## Local editor
 
@@ -44,6 +45,7 @@ Run `bun run editor` and open <http://127.0.0.1:3000>. The editor searches insta
 status icon themes and their inherited icons, plus Lucide names and tags. Select a
 KDE name or enter one manually, choose a Lucide candidate, then click **Assign**.
 Assignments save to `mappings.json` immediately; previews do not change Plasma.
+For RTL names, **Mirror** flips the candidate horizontally before assigning it.
 
 **Build Archive** creates a downloadable `dist/Lucide-KDE.tar.gz`. **Apply to
 Plasma** regenerates the theme in the current user's icon directory and requests

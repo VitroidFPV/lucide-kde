@@ -1,7 +1,7 @@
 import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { lucideDir, readLucide, themedSvg } from "./lucide";
-import { projectDir, readMappings } from "./mappings";
+import { mappingIcon, mappingMirrored, projectDir, readMappings } from "./mappings";
 
 const themeDir = join(projectDir, "theme", "Lucide-KDE");
 const iconDir = join(themeDir, "scalable", "status");
@@ -9,7 +9,7 @@ const mappings = Object.entries(await readMappings()).sort(([a], [b]) => a.local
 
 // Validate and render everything before replacing the generated theme.
 const icons = await Promise.all(
-  mappings.map(async ([kdeName, lucideName]) => [kdeName, themedSvg(await readLucide(lucideName))] as const),
+  mappings.map(async ([kdeName, mapping]) => [kdeName, themedSvg(await readLucide(mappingIcon(mapping)), mappingMirrored(mapping))] as const),
 );
 
 const indexTheme = `[Icon Theme]

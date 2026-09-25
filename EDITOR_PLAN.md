@@ -26,7 +26,8 @@ truth. The app is an authoring tool.
    base names. Search names and allow manual KDE names.
 2. Search Lucide icons by name and descriptive tags. Selecting a candidate only
    previews it. **Assign** writes the exact KDE name to `mappings.json`; an
-   existing assignment can be changed or removed.
+   existing assignment can be changed or removed. RTL names can save a mirrored
+   candidate through an explicit **Mirror** toggle.
 3. **Build Archive** runs the existing theme generator and packer. Show a
    download action and the local archive path. Indicate when saved mappings have
    not yet been built.

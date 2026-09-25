@@ -5,18 +5,36 @@ export const projectDir = resolve(import.meta.dir, "..");
 export const mappingPath = join(projectDir, "mappings.json");
 export const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 export const validLucideName = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-export type Mappings = Record<string, string>;
+export type Mapping = string | { icon: string; mirror: true };
+export type Mappings = Record<string, Mapping>;
+
+export function mappingIcon(mapping: Mapping): string {
+  return typeof mapping === "string" ? mapping : mapping.icon;
+}
+
+export function mappingMirrored(mapping: Mapping): boolean {
+  return typeof mapping !== "string" && mapping.mirror;
+}
+
+function validMapping(value: unknown): value is Mapping {
+  if (typeof value === "string") return validLucideName.test(value);
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const fields = Object.keys(value);
+  return fields.length === 2 && fields.includes("icon") && fields.includes("mirror")
+    && "icon" in value && typeof value.icon === "string" && validLucideName.test(value.icon)
+    && "mirror" in value && value.mirror === true;
+}
 
 export function validateMappings(value: unknown): Mappings {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     throw new Error("mappings.json must contain an object of KDE names to Lucide names");
   }
   const mappings: Mappings = {};
-  for (const [kdeName, lucideName] of Object.entries(value)) {
-    if (!validKdeName.test(kdeName) || typeof lucideName !== "string" || !validLucideName.test(lucideName)) {
-      throw new Error(`Invalid mapping: ${JSON.stringify(kdeName)} → ${JSON.stringify(lucideName)}`);
+  for (const [kdeName, mapping] of Object.entries(value)) {
+    if (!validKdeName.test(kdeName) || !validMapping(mapping)) {
+      throw new Error(`Invalid mapping: ${JSON.stringify(kdeName)} → ${JSON.stringify(mapping)}`);
     }
-    mappings[kdeName] = lucideName;
+    mappings[kdeName] = mapping;
   }
   return mappings;
 }

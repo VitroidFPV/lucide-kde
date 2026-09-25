@@ -134,7 +134,8 @@ const server = Bun.serve({
       if (request.method === "GET" && url.pathname === "/api/candidate") {
         const name = safeName(url.searchParams.get("name"), "lucide");
         const color = paletteColor(url.searchParams.get("palette") || "current", await activePalette());
-        return new Response(recolorSvg(themedSvg(await readLucide(name)), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
+        const mirror = url.searchParams.get("mirror") === "1";
+        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
       }
       if (request.method === "GET" && url.pathname === "/download") {
         if (await buildStatus()) return errorResponse(new Error("Build the archive first"), 409);
@@ -144,14 +145,16 @@ const server = Bun.serve({
         if (busy) return errorResponse(new Error("Another operation is running"), 409);
         const body: unknown = await request.json();
         if (!body || typeof body !== "object") throw new Error("Invalid mapping request");
-        const { kdeName, lucideName } = body as Record<string, unknown>;
+        const { kdeName, lucideName, mirror } = body as Record<string, unknown>;
         if (typeof kdeName !== "string" || !validKdeName.test(kdeName)) throw new Error("Invalid KDE icon name");
         if (lucideName !== null && (typeof lucideName !== "string" || !validLucideName.test(lucideName))) throw new Error("Invalid Lucide icon name");
+        if (mirror !== undefined && typeof mirror !== "boolean") throw new Error("Invalid mirror option");
         if (lucideName !== null) await readLucide(lucideName as string);
         busy = true;
         try {
           const mappings = await readMappings();
-          if (lucideName === null) delete mappings[kdeName]; else mappings[kdeName] = lucideName as string;
+          if (lucideName === null) delete mappings[kdeName];
+          else mappings[kdeName] = mirror ? { icon: lucideName as string, mirror: true } : lucideName as string;
           await saveMappings(mappings);
           return json({ mappings, needsBuild: true });
         } finally { busy = false; }

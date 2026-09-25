@@ -135,7 +135,14 @@ input::placeholder {
   white-space: nowrap;
 }
 .message {
-  padding: 8px 22px;
+  position: fixed;
+  right: 22px;
+  bottom: 44px;
+  z-index: 10;
+  max-width: min(400px,calc(100vw - 32px));
+  padding: 10px 14px;
+  border-radius: 7px;
+  box-shadow: 0 8px 24px color-mix(in srgb,var(--window) 60%,transparent);
   background: var(--selection);
   color: var(--selection-text);
   font-size: 13px;
@@ -399,6 +406,7 @@ input::placeholder {
   justify-content: space-between;
   align-items: end;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .assignment .eyebrow {
   display: block;
@@ -413,6 +421,13 @@ input::placeholder {
 .assignment-actions {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.assignment-actions button[aria-pressed="true"] {
+  border-color: var(--selection);
+  background: color-mix(in srgb,var(--selection) 24%,var(--button));
 }
 .lucide-head {
   padding: 18px 22px 10px;
