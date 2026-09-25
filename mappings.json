@@ -62,6 +62,9 @@
     "mirror": true
   },
   "brightness-high-symbolic": "sun-medium",
+  "input-keyboard-virtual-off": "keyboard",
+  "input-keyboard-virtual-off-symbolic": "keyboard",
+  "keyboard-layout": "keyboard",
   "klipper-symbolic": "clipboard-list",
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
