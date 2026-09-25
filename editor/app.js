@@ -9,6 +9,7 @@ const mappingIcon = (mapping) => typeof mapping === "string" ? mapping : mapping
 const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mirror === true;
 const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
 const isRtlName = (name) => /-rtl(?:-symbolic)?$/.test(name);
+const categoryLabel = (category) => category === "mimetypes" ? "MIME types" : category[0].toUpperCase() + category.slice(1);
 
 async function api(path, options) {
   const response = await fetch(path, options);
@@ -70,8 +71,7 @@ function renderKde() {
   const categories = [...new Set(entries.flatMap((entry) => entry.categories))].sort();
   categorySelect.replaceChildren(new Option("All categories", "all"));
   for (const category of categories) {
-    const label = category === "mimetypes" ? "MIME types" : category[0].toUpperCase() + category.slice(1);
-    categorySelect.add(new Option(label, category));
+    categorySelect.add(new Option(categoryLabel(category), category));
   }
   categorySelect.value = categories.includes(selectedCategory) ? selectedCategory : "all";
   const base = (name) => name.replace(/-(symbolic|rtl)$/, "");
@@ -135,7 +135,7 @@ function renderSelection() {
   const assignedMirror = mappingMirrored(mapping);
   const assignedScale = mappingScale(mapping);
   $("detail-heading").textContent = state.kde || "Select a KDE icon";
-  $("source-label").textContent = entry ? `From ${entry.source}` : state.kde ? "Manual name" : "";
+  $("source-label").textContent = entry ? `From ${entry.source} · ${entry.categories.map(categoryLabel).join(", ")}` : state.kde ? "Manual name" : "";
   $("mapping-label").textContent = assigned ? "Assigned" : "";
   $("assignment-name").textContent = assigned || "—";
   const mirrorButton = $("mirror");
