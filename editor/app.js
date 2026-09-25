@@ -5,6 +5,7 @@ const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, 
 const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 let noticeTimeout;
 let visibleKdeCount = 200;
+let filteredKdeNames = [];
 const mappingIcon = (mapping) => typeof mapping === "string" ? mapping : mapping?.icon || "";
 const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mirror === true;
 const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
@@ -88,6 +89,7 @@ function renderKde() {
     (categorySelect.value === "all" || entry.categories.includes(categorySelect.value))
     && (filter === "all" || assigned.has(entry.name) === (filter === "assigned"))
   )), query, state.mappings);
+  filteredKdeNames = filtered.map((entry) => entry.name);
   $("icon-count").textContent = `${filtered.length} names`;
   const list = $("kde-list");
   list.replaceChildren();
@@ -111,7 +113,7 @@ function renderKde() {
     const source = document.createElement("span"); source.className = "source"; source.textContent = entry.source;
     row.append(thumbnail, name, source);
     if (assigned.has(entry.name)) { const dot = document.createElement("span"); dot.className = "mapped-dot"; dot.title = "Assigned"; row.append(dot); }
-    row.addEventListener("click", () => selectKde(entry.name));
+    row.addEventListener("click", () => selectKde(entry.name, true));
     list.append(row);
   }
   $("kde-more").hidden = filtered.length <= visibleKdeCount;
@@ -191,13 +193,15 @@ function renderSelection() {
     if (state.candidate) { image.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); image.width = state.size; image.height = state.size; }
   }
 }
-function selectKde(name) {
+function selectKde(name, focus = false) {
   state.kde = name;
   state.candidate = mappingIcon(state.mappings[name]);
   state.mirror = mappingMirrored(state.mappings[name]);
   state.scale = mappingScale(state.mappings[name]);
   renderKde(); renderSelection(); renderLucide();
-  $("kde-list").querySelector(".selected")?.scrollIntoView({ block: "center" });
+  const selected = $("kde-list").querySelector(".selected");
+  selected?.scrollIntoView({ block: "center" });
+  if (focus) selected?.focus({ preventScroll: true });
 }
 async function loadTheme(id) {
   notice("");
@@ -243,6 +247,18 @@ async function execute(action) {
 
 for (const id of ["kde-search", "kde-category", "kde-filter"]) $(id).addEventListener(id === "kde-search" ? "input" : "change", () => { visibleKdeCount = 200; renderKde(); });
 $("kde-more").addEventListener("click", () => { visibleKdeCount += 200; renderKde(); });
+document.addEventListener("keydown", (event) => {
+  if (!event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || !["ArrowUp", "ArrowDown"].includes(event.key)) return;
+  if (event.target instanceof HTMLSelectElement || !filteredKdeNames.length) return;
+  event.preventDefault();
+  const direction = event.key === "ArrowDown" ? 1 : -1;
+  const index = filteredKdeNames.indexOf(state.kde);
+  const next = index < 0 ? (direction === 1 ? 0 : filteredKdeNames.length - 1) : index + direction;
+  if (next < 0 || next >= filteredKdeNames.length) return;
+  if (next >= visibleKdeCount) visibleKdeCount = Math.ceil((next + 1) / 200) * 200;
+  const focusList = $("kde-list").contains(event.target) || $("lucide-list").contains(event.target);
+  selectKde(filteredKdeNames[next], focusList);
+});
 $("lucide-search").addEventListener("input", renderLucide);
 $("theme").addEventListener("change", (event) => loadTheme(event.target.value));
 $("manual-form").addEventListener("submit", (event) => {
