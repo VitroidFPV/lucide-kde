@@ -1,0 +1,13 @@
+[Icon Theme]
+Name=Lucide KDE
+Comment=Selected Lucide icons for KDE Plasma
+Inherits=breeze
+FollowsColorScheme=true
+Directories=scalable/status
+
+[scalable/status]
+Size=22
+Type=Scalable
+MinSize=16
+MaxSize=64
+Context=Status

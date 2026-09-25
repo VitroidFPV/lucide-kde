@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "lucide-kde",
+      "devDependencies": {
+        "lucide-static": "1.48.0",
+      },
+    },
+  },
+  "packages": {
+    "lucide-static": ["lucide-static@1.48.0", "", {}, "sha512-ZUGgZ4rzlLfVbhN2Zi37TMrTaSpXAbWx6Y/xZxKSDLPiqxtTK7Mw2M+oBJa0gjV8p3+CWBHh48u+IC9+jKlUjA=="],
+  }
+}
