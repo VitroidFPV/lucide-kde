@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucide KDE Editor</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><h1>Lucide KDE</h1><span class="brand-sub">Editor</span></div>
+      <div class="top-actions">
+        <span id="build-state" class="build-state" aria-live="polite"></span>
+        <button id="build" type="button">Build Archive</button>
+        <a id="download" class="button" href="/download" hidden>Download</a>
+        <button id="apply" class="primary" type="button">Apply to Plasma</button>
+      </div>
+    </header>
+    <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+    <main class="workspace">
+      <section class="pane names-pane" aria-labelledby="names-heading">
+        <div class="pane-head"><h2 id="names-heading">KDE icons</h2><span id="icon-count" class="muted"></span></div>
+        <div class="toolbar"><label class="field"><span>Source theme</span><select id="theme"></select></label></div>
+        <div class="toolbar"><label class="field grow"><span>Find KDE name</span><input id="kde-search" type="search" placeholder="Search status icons" autocomplete="off"></label></div>
+        <form id="manual-form" class="manual-row"><label class="field grow"><span>Manual name</span><input id="manual-name" type="text" placeholder="audio-volume-high" pattern="[A-Za-z0-9][A-Za-z0-9._-]*" autocomplete="off"></label><button type="submit">Open</button></form>
+        <div id="kde-list" class="kde-list" role="listbox" aria-label="KDE icon names"></div>
+      </section>
+      <section class="pane detail-pane" aria-labelledby="detail-heading">
+        <div class="pane-head detail-head"><div><h2 id="detail-heading">Select a KDE icon</h2><span id="source-label" class="muted"></span></div><span id="mapping-label" class="mapping-label"></span></div>
+        <div class="preview-toolbar"><div class="segmented" role="group" aria-label="Preview palette"><button data-palette="current" class="selected" type="button">Current</button><button data-palette="light" type="button">Light</button><button data-palette="dark" type="button">Dark</button></div><label class="size-control">Size <select id="size"><option value="16">16 px</option><option value="22" selected>22 px</option><option value="24">24 px</option></select></label></div>
+        <div id="preview-surface" class="preview-surface">
+          <div class="comparison"><div class="preview-block"><span class="eyebrow">Original</span><div class="icon-stage"><img id="original-icon" alt="" hidden><span id="original-empty" class="muted">—</span></div></div><div class="preview-arrow" aria-hidden="true">→</div><div class="preview-block"><span class="eyebrow">Lucide</span><div class="icon-stage"><img id="candidate-icon" alt="" hidden><span id="candidate-empty" class="muted">—</span></div></div></div>
+          <div class="context-previews"><div class="context-block"><span class="eyebrow">Tray</span><div class="tray"><span class="tray-dots" aria-hidden="true">⌃</span><img class="context-icon" alt=""><span class="tray-clock">12:34</span></div></div><div class="context-block"><span class="eyebrow">Notification</span><div class="notification"><img class="context-icon" alt=""><div><strong>Notification</strong><span>Preview</span></div><span class="notification-time">now</span></div></div></div>
+        </div>
+        <div class="assignment"><div><span class="eyebrow">Assignment</span><strong id="assignment-name">—</strong></div><div class="assignment-actions"><button id="remove" type="button" hidden>Remove</button><button id="assign" type="button" class="primary" disabled>Assign</button></div></div>
+        <div class="lucide-head"><h3>Lucide icons</h3><span id="lucide-count" class="muted"></span></div>
+        <label class="field lucide-search"><span class="sr-only">Find Lucide icon</span><input id="lucide-search" type="search" placeholder="Search names and tags" autocomplete="off"></label>
+        <div id="lucide-list" class="lucide-list" role="listbox" aria-label="Lucide icons"></div>
+      </section>
+    </main>
+    <footer><span id="archive-path"></span></footer>
+  </div>
+</body>
+</html>

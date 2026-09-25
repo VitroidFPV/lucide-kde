@@ -36,7 +36,22 @@ bun run typecheck
 `mappings.json` maps KDE icon names to Lucide icon names. The build uses the pinned
 `lucide-static` version and replaces `theme/Lucide-KDE` with generated output. For
 now, every mapped icon is emitted into `scalable/status` for small system and tray
-icons. More icon contexts and the local picker are planned after this first slice.
+icons.
+
+## Local editor
+
+Run `bun run editor` and open <http://127.0.0.1:3000>. The editor searches installed
+status icon themes and their inherited icons, plus Lucide names and tags. Select a
+KDE name or enter one manually, choose a Lucide candidate, then click **Assign**.
+Assignments save to `mappings.json` immediately; previews do not change Plasma.
+
+**Build Archive** creates a downloadable `dist/Lucide-KDE.tar.gz`. **Apply to
+Plasma** regenerates the theme in the current user's icon directory and requests
+an icon refresh. It keeps the previous installed copy at
+`~/.local/share/icons/.Lucide-KDE-previous`. Some running tray applications may
+hold old pixmaps until their state changes or the theme is selected again in
+System Settings. The editor binds only to localhost. See [the editor plan](EDITOR_PLAN.md)
+for the current scope.
 
 Some tray applications provide their own pixmaps instead of icon theme names;
 those icons cannot be changed by this theme. Plasma may also request a

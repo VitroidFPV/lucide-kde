@@ -5,7 +5,8 @@
   "scripts": {
     "build": "bun run src/generate.ts",
     "pack": "bun run src/package.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "editor": "bun run editor/server.ts"
   },
   "devDependencies": {
     "@types/bun": "1.4.2",
