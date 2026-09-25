@@ -1,4 +1,6 @@
 {
+  "arrow-down-symbolic": "chevron-down",
+  "arrow-up-symbolic": "chevron-up",
   "audio-volume-high": "volume-2",
   "audio-volume-high-danger": "volume-2",
   "audio-volume-high-danger-rtl": {
@@ -59,6 +61,8 @@
     "icon": "volume-off",
     "mirror": true
   },
+  "brightness-high-symbolic": "sun-medium",
+  "klipper-symbolic": "clipboard-list",
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
   "media-playback-playing": "circle-play",
@@ -85,5 +89,8 @@
   "microphone-sensitivity-muted-symbolic-rtl": {
     "icon": "mic-off",
     "mirror": true
-  }
+  },
+  "network-wired-activated": "ethernet-port",
+  "system-software-update": "circle-fading-arrow-up",
+  "user-desktop-symbolic": "panel-bottom"
 }
