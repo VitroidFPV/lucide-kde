@@ -107,7 +107,7 @@ const server = Bun.serve({
     const origin = request.headers.get("origin");
     if (origin && origin !== `http://127.0.0.1:${port}` && origin !== `http://localhost:${port}`) return new Response("Forbidden", { status: 403 });
     try {
-      if (request.method === "GET" && ["/", "/app.js", "/style.css"].includes(url.pathname)) {
+      if (request.method === "GET" && ["/", "/app.js", "/search.js", "/style.css"].includes(url.pathname)) {
         const path = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
         const type = path.endsWith(".css") ? "text/css" : path.endsWith(".js") ? "text/javascript" : "text/html";
         return new Response(Bun.file(join(editorDir, path)), { headers: { "Content-Type": `${type}; charset=utf-8`, "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'", "Cache-Control": "no-store" } });

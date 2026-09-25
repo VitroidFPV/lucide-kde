@@ -1,3 +1,5 @@
+import { searchKdeNames } from "./search.js";
+
 const $ = (id) => document.getElementById(id);
 const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, scale: 1, previewPalette: "current", size: 22, needsBuild: true, busy: false };
 const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
@@ -64,9 +66,9 @@ function renderKde() {
   if (state.kde && !entries.some((entry) => entry.name === state.kde)) entries.push({ name: state.kde, source: "Manual" });
   const base = (name) => name.replace(/-(symbolic|rtl)$/, "");
   entries.sort((a, b) => base(a.name).localeCompare(base(b.name)) || a.name.localeCompare(b.name));
-  const filtered = entries.filter((entry) => entry.name.toLowerCase().includes(query) && (
+  const filtered = searchKdeNames(entries.filter((entry) => (
     filter === "all" || assigned.has(entry.name) === (filter === "assigned")
-  ));
+  )), query, state.mappings);
   $("icon-count").textContent = `${filtered.length} names`;
   const list = $("kde-list");
   list.replaceChildren();
