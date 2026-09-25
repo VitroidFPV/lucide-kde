@@ -30,6 +30,7 @@ Install [Bun](https://bun.sh/), then run:
 ```sh
 bun install --frozen-lockfile
 bun run build
+bun run typecheck
 ```
 
 `mappings.json` maps KDE icon names to Lucide icon names. The build uses the pinned
