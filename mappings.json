@@ -300,6 +300,95 @@
   "folder-windows-symbolic": "grid-2x2",
   "gnumeric-object-arrow": "move-up-left",
   "gnumeric-object-arrow-symbolic": "move-up-left",
+  "go-bottom": "arrow-down-to-line",
+  "go-bottom-symbolic": "arrow-down-to-line",
+  "go-down": "chevron-down",
+  "go-down-search": "chevron-down",
+  "go-down-search-symbolic": "chevron-down",
+  "go-down-skip": "chevrons-down",
+  "go-down-skip-symbolic": "chevrons-down",
+  "go-down-symbolic": "chevron-down",
+  "go-first": "arrow-left-to-line",
+  "go-first-rtl-symbolic": {
+    "icon": "arrow-left-to-line",
+    "mirror": true
+  },
+  "go-first-symbolic": "arrow-left-to-line",
+  "go-first-symbolic-rtl": {
+    "icon": "arrow-left-to-line",
+    "mirror": true
+  },
+  "go-first-view": "arrow-left-to-line",
+  "go-first-view-page": "arrow-left-to-line",
+  "go-first-view-page-symbolic": "arrow-left-to-line",
+  "go-first-view-symbolic": "arrow-left-to-line",
+  "go-home": "home",
+  "go-home-large": "home",
+  "go-home-large-symbolic": "home",
+  "go-home-symbolic": "home",
+  "go-jump": "arrow-right",
+  "go-jump-locationbar": "arrow-right",
+  "go-jump-locationbar-symbolic": "arrow-right",
+  "go-jump-rtl-symbolic": "arrow-right",
+  "go-jump-symbolic": "arrow-right",
+  "go-jump-today": "calendar",
+  "go-jump-today-symbolic": "calendar",
+  "go-last": "arrow-right-to-line",
+  "go-last-rtl-symbolic": {
+    "icon": "arrow-right-to-line",
+    "mirror": true
+  },
+  "go-last-symbolic": "arrow-right-to-line",
+  "go-last-symbolic-rtl": {
+    "icon": "arrow-right-to-line",
+    "mirror": true
+  },
+  "go-last-view": "arrow-right-to-line",
+  "go-last-view-page": "arrow-right-to-line",
+  "go-last-view-page-symbolic": "arrow-right-to-line",
+  "go-last-view-symbolic": "arrow-right-to-line",
+  "go-next": "chevron-right",
+  "go-next-rtl-symbolic": {
+    "icon": "chevron-right",
+    "mirror": true
+  },
+  "go-next-skip": "chevrons-right",
+  "go-next-skip-symbolic": "chevrons-right",
+  "go-next-symbolic": "chevron-right",
+  "go-next-symbolic-rtl": {
+    "icon": "chevron-right",
+    "mirror": true
+  },
+  "go-next-view": "chevron-right",
+  "go-next-view-page": "chevron-right",
+  "go-next-view-page-symbolic": "chevron-right",
+  "go-next-view-symbolic": "chevron-right",
+  "go-parent-folder": "folder-up",
+  "go-parent-folder-symbolic": "folder-up",
+  "go-previous": "chevron-left",
+  "go-previous-rtl-symbolic": {
+    "icon": "chevron-left",
+    "mirror": true
+  },
+  "go-previous-skip": "chevrons-left",
+  "go-previous-skip-symbolic": "chevrons-left",
+  "go-previous-symbolic": "chevron-left",
+  "go-previous-symbolic-rtl": {
+    "icon": "chevron-left",
+    "mirror": true
+  },
+  "go-previous-view": "chevron-left",
+  "go-previous-view-page": "chevron-left",
+  "go-previous-view-page-symbolic": "chevron-left",
+  "go-previous-view-symbolic": "chevron-left",
+  "go-top": "arrow-up-to-line",
+  "go-top-symbolic": "arrow-up-to-line",
+  "go-up": "chevron-up",
+  "go-up-search": "chevron-up",
+  "go-up-search-symbolic": "chevron-up",
+  "go-up-skip": "chevrons-up",
+  "go-up-skip-symbolic": "chevrons-up",
+  "go-up-symbolic": "chevron-up",
   "input-keyboard-virtual-off": "keyboard",
   "input-keyboard-virtual-off-symbolic": "keyboard",
   "input-touchpad-off": "touchpad-off",
@@ -398,6 +487,16 @@
   "showinfo": "info",
   "stock_folder": "folder",
   "stock_folder-symbolic": "folder",
+  "system-log-out": "chevron-left-circle",
+  "system-log-out-rtl": {
+    "icon": "chevron-left-circle",
+    "mirror": true
+  },
+  "system-log-out-rtl-symbolic": {
+    "icon": "chevron-left-circle",
+    "mirror": true
+  },
+  "system-log-out-symbolic": "chevron-left-circle",
   "system-software-update": "circle-fading-arrow-up",
   "system-software-update-symbolic": "circle-fading-arrow-up",
   "task-complete": "list-check",
