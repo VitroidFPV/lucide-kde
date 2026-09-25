@@ -196,6 +196,9 @@ input::placeholder {
 .grow {
   flex: 1;
 }
+.filter-field select {
+  width: 120px;
+}
 .manual-row button {
   height: 36px;
 }
@@ -389,9 +392,9 @@ input::placeholder {
   align-self: flex-start;
 }
 .assignment {
-  margin: 18px 22px 0;
-  padding: 0 0 18px;
-  border-bottom: 1px solid var(--border);
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid color-mix(in srgb,var(--preview-text) 18%,transparent);
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -400,6 +403,7 @@ input::placeholder {
 .assignment .eyebrow {
   display: block;
   margin-bottom: 6px;
+  color: color-mix(in srgb,var(--preview-text) 64%,transparent);
 }
 .assignment strong {
   font-size: 13px;
@@ -515,9 +519,15 @@ footer span:first-child {
   .preview-surface {
     margin: 0 16px;
   }
-  .assignment {
-    margin-left: 16px;
-    margin-right: 16px;
+  .comparison {
+    gap: 5px;
+  }
+  .preview-block {
+    min-width: 0;
+    flex: 1;
+  }
+  .preview-arrow {
+    font-size: 14px;
   }
   .lucide-search {
     margin-left: 16px;
