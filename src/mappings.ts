@@ -5,7 +5,7 @@ export const projectDir = resolve(import.meta.dir, "..");
 export const mappingPath = join(projectDir, "mappings.json");
 export const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 export const validLucideName = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-export type Mapping = string | { icon: string; mirror: true };
+export type Mapping = string | { icon: string; mirror?: true; scale?: number };
 export type Mappings = Record<string, Mapping>;
 
 export function mappingIcon(mapping: Mapping): string {
@@ -13,16 +13,21 @@ export function mappingIcon(mapping: Mapping): string {
 }
 
 export function mappingMirrored(mapping: Mapping): boolean {
-  return typeof mapping !== "string" && mapping.mirror;
+  return typeof mapping !== "string" && mapping.mirror === true;
+}
+
+export function mappingScale(mapping: Mapping): number {
+  return typeof mapping === "string" ? 1 : mapping.scale ?? 1;
 }
 
 function validMapping(value: unknown): value is Mapping {
   if (typeof value === "string") return validLucideName.test(value);
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const fields = Object.keys(value);
-  return fields.length === 2 && fields.includes("icon") && fields.includes("mirror")
+  return fields.every((field) => ["icon", "mirror", "scale"].includes(field))
     && "icon" in value && typeof value.icon === "string" && validLucideName.test(value.icon)
-    && "mirror" in value && value.mirror === true;
+    && (!("mirror" in value) || value.mirror === true)
+    && (!("scale" in value) || (typeof value.scale === "number" && Number.isFinite(value.scale) && value.scale > 0 && value.scale <= 1));
 }
 
 export function validateMappings(value: unknown): Mappings {

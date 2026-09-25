@@ -6,7 +6,7 @@ import { join, resolve } from "node:path";
 import { bestAsset, discoverThemes, effectiveIcons, sortedEntries, type IconEntry } from "./catalog";
 import { activePalette, samples } from "./palette";
 import { lucideDir, readLucide, themedSvg } from "../src/lucide";
-import { mappingPath, projectDir, readMappings, saveMappings, validKdeName, validLucideName } from "../src/mappings";
+import { mappingPath, mappingScale, projectDir, readMappings, saveMappings, validKdeName, validLucideName } from "../src/mappings";
 
 const editorDir = import.meta.dir;
 const archivePath = join(projectDir, "dist", "Lucide-KDE.tar.gz");
@@ -135,7 +135,8 @@ const server = Bun.serve({
         const name = safeName(url.searchParams.get("name"), "lucide");
         const color = paletteColor(url.searchParams.get("palette") || "current", await activePalette());
         const mirror = url.searchParams.get("mirror") === "1";
-        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
+        const scale = Number(url.searchParams.get("scale") || 1);
+        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror, scale), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
       }
       if (request.method === "GET" && url.pathname === "/download") {
         if (await buildStatus()) return errorResponse(new Error("Build the archive first"), 409);
@@ -154,7 +155,12 @@ const server = Bun.serve({
         try {
           const mappings = await readMappings();
           if (lucideName === null) delete mappings[kdeName];
-          else mappings[kdeName] = mirror ? { icon: lucideName as string, mirror: true } : lucideName as string;
+          else {
+            const scale = mappings[kdeName] ? mappingScale(mappings[kdeName]) : 1;
+            mappings[kdeName] = mirror || scale !== 1
+              ? { icon: lucideName as string, ...(mirror ? { mirror: true as const } : {}), ...(scale !== 1 ? { scale } : {}) }
+              : lucideName as string;
+          }
           await saveMappings(mappings);
           return json({ mappings, needsBuild: true });
         } finally { busy = false; }

@@ -38,6 +38,7 @@ bun run typecheck
 now, every mapped icon is emitted into `scalable/status` for small system and tray
 icons. Mirrored RTL assignments use an object such as
 `{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
+An object can also set `"scale":0.75` to shrink the drawing within its icon area.
 
 ## Local editor
 

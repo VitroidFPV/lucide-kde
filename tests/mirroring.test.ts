@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 import { readLucide, themedSvg } from "../src/lucide";
-import { mappingIcon, mappingMirrored, validateMappings } from "../src/mappings";
+import { mappingIcon, mappingMirrored, mappingScale, validateMappings } from "../src/mappings";
 
 test("mirrored mappings coexist with existing string mappings", () => {
   const mappings = validateMappings({
@@ -19,4 +19,11 @@ test("mirrored SVG reflects the icon across its viewBox", async () => {
   const source = await readLucide("arrow-right");
   expect(themedSvg(source)).not.toContain('transform="translate(24 0) scale(-1 1)"');
   expect(themedSvg(source, true)).toContain('transform="translate(24 0) scale(-1 1)"');
+});
+
+test("scaled mapping keeps artwork centered in the original viewBox", async () => {
+  const mapping = validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0.75 } })["user-desktop-symbolic"];
+  expect(mappingScale(mapping)).toBe(0.75);
+  expect(themedSvg(await readLucide(mappingIcon(mapping)), false, mappingScale(mapping))).toContain('transform="translate(3 3) scale(0.75)"');
+  expect(() => validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0 } })).toThrow();
 });

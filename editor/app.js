@@ -1,9 +1,10 @@
 const $ = (id) => document.getElementById(id);
-const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, previewPalette: "current", size: 22, needsBuild: true, busy: false };
+const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, scale: 1, previewPalette: "current", size: 22, needsBuild: true, busy: false };
 const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 let noticeTimeout;
 const mappingIcon = (mapping) => typeof mapping === "string" ? mapping : mapping?.icon || "";
 const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mirror === true;
+const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
 const isRtlName = (name) => /-rtl(?:-symbolic)?$/.test(name);
 
 async function api(path, options) {
@@ -46,8 +47,8 @@ function previewColors() {
 function sourceUrl(name) {
   return `/api/source?theme=${encodeURIComponent(state.theme)}&name=${encodeURIComponent(name)}&size=${state.size}&palette=${state.previewPalette}`;
 }
-function candidateUrl(name, palette = state.previewPalette, mirror = false) {
-  return `/api/candidate?name=${encodeURIComponent(name)}&palette=${palette}${mirror ? "&mirror=1" : ""}`;
+function candidateUrl(name, palette = state.previewPalette, mirror = false, scale = 1) {
+  return `/api/candidate?name=${encodeURIComponent(name)}&palette=${palette}${mirror ? "&mirror=1" : ""}${scale !== 1 ? `&scale=${scale}` : ""}`;
 }
 function renderStatus() {
   $("build-state").textContent = state.needsBuild ? "Unbuilt changes" : "Archive ready";
@@ -108,6 +109,7 @@ function renderSelection() {
   const mapping = state.kde ? state.mappings[state.kde] : null;
   const assigned = mappingIcon(mapping);
   const assignedMirror = mappingMirrored(mapping);
+  const assignedScale = mappingScale(mapping);
   $("detail-heading").textContent = state.kde || "Select a KDE icon";
   $("source-label").textContent = entry ? `From ${entry.source}` : state.kde ? "Manual name" : "";
   $("mapping-label").textContent = assigned ? "Assigned" : "";
@@ -126,20 +128,21 @@ function renderSelection() {
   const assignedIcon = $("assigned-icon");
   assignedIcon.hidden = !assigned;
   $("assigned-empty").hidden = !!assigned;
-  if (assigned) { assignedIcon.src = candidateUrl(assigned, state.previewPalette, assignedMirror); assignedIcon.width = state.size; assignedIcon.height = state.size; }
+  if (assigned) { assignedIcon.src = candidateUrl(assigned, state.previewPalette, assignedMirror, assignedScale); assignedIcon.width = state.size; assignedIcon.height = state.size; }
   const candidate = $("candidate-icon");
   candidate.hidden = !state.candidate;
   $("candidate-empty").hidden = !!state.candidate;
-  if (state.candidate) { candidate.src = candidateUrl(state.candidate, state.previewPalette, state.mirror); candidate.width = state.size; candidate.height = state.size; }
+  if (state.candidate) { candidate.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); candidate.width = state.size; candidate.height = state.size; }
   for (const image of document.querySelectorAll(".context-icon")) {
     image.hidden = !state.candidate;
-    if (state.candidate) { image.src = candidateUrl(state.candidate, state.previewPalette, state.mirror); image.width = state.size; image.height = state.size; }
+    if (state.candidate) { image.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); image.width = state.size; image.height = state.size; }
   }
 }
 function selectKde(name) {
   state.kde = name;
   state.candidate = mappingIcon(state.mappings[name]);
   state.mirror = mappingMirrored(state.mappings[name]);
+  state.scale = mappingScale(state.mappings[name]);
   renderKde(); renderSelection(); renderLucide();
   $("kde-list").querySelector(".selected")?.scrollIntoView({ block: "center" });
 }
@@ -158,7 +161,7 @@ async function saveMapping(lucideName) {
   try {
     const result = await api("/api/mapping", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kdeName: state.kde, lucideName, mirror: state.mirror }) });
     state.mappings = result.mappings; state.needsBuild = true;
-    if (lucideName === null) { state.candidate = ""; state.mirror = false; }
+    if (lucideName === null) { state.candidate = ""; state.mirror = false; state.scale = 1; }
     renderStatus(); renderKde(); renderSelection(); renderLucide();
     notice(lucideName ? "Assignment saved" : "Assignment removed", false, 4000);
   } catch (error) { notice(error.message, true); }

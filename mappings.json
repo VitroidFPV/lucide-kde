@@ -92,5 +92,8 @@
   },
   "network-wired-activated": "ethernet-port",
   "system-software-update": "circle-fading-arrow-up",
-  "user-desktop-symbolic": "panel-bottom"
+  "user-desktop-symbolic": {
+    "icon": "panel-bottom",
+    "scale": 0.75
+  }
 }
