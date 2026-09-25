@@ -73,9 +73,16 @@
   "media-playlist-repeat-symbolic-rtl": "repeat",
   "media-playlist-shuffle-symbolic": "shuffle",
   "media-playlist-shuffle-symbolic-rtl": "shuffle",
+  "mic-off": "mic-off",
+  "mic-off-symbolic": "mic-off",
   "microphone": "mic",
   "microphone-sensitivity-muted": "mic-off",
   "microphone-sensitivity-muted-rtl": {
+    "icon": "mic-off",
+    "mirror": true
+  },
+  "microphone-sensitivity-muted-symbolic": "mic-off",
+  "microphone-sensitivity-muted-symbolic-rtl": {
     "icon": "mic-off",
     "mirror": true
   }
