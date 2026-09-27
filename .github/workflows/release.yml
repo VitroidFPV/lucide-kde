@@ -27,6 +27,6 @@ jobs:
           git status --short -- theme/Lucide-KDE
           test -z "$(git status --porcelain -- theme/Lucide-KDE)"
       - name: Create draft release
-        run: gh release create "$GITHUB_REF_NAME" dist/Lucide-KDE.tar.gz --draft --generate-notes --verify-tag
+        run: gh release create "$GITHUB_REF_NAME" dist/Lucide-KDE.tar.gz inherit.sh --draft --generate-notes --verify-tag
         env:
           GH_TOKEN: ${{ github.token }}

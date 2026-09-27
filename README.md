@@ -3,7 +3,7 @@
 ![Lucide KDE icon](editor/favicon.svg)
 
 A KDE icon theme made from selected [Lucide](https://lucide.dev/) SVGs. The theme
-inherits Breeze, so names without a Lucide replacement keep their Breeze icons.
+inherits Breeze by default, so names without a Lucide replacement keep their Breeze icons.
 
 ## Install the theme
 
@@ -25,6 +25,26 @@ categories are included in each corresponding directory.
 The installable theme includes the full [Lucide license](theme/Lucide-KDE/LICENSE-LUCIDE)
 and this project's [GPLv3 license](theme/Lucide-KDE/LICENSE-GPL-3.0).
 
+## Choose another icon theme for missing icons
+
+Install Lucide KDE and the icon theme you want to inherit, then download
+`inherit.sh` from the same release. Run it to choose from installed
+themes:
+
+```sh
+sh inherit.sh
+```
+
+You can also pass the other theme's directory name directly, for example
+`sh inherit.sh Papirus-Dark`. Lucide KDE's own icons take priority;
+the selected theme supplies missing icons, with Breeze as a final fallback. Run
+`sh inherit.sh breeze` to restore the default. The script edits a
+user-installed Lucide KDE theme in `~/.local/share/icons` or `~/.icons` and asks
+KDE to refresh its icons. Some running applications may keep cached icons; reselect
+Lucide KDE in System Settings if they do not refresh. Reinstalling the archive or
+using **Apply to Plasma** in the editor resets the inheritance to Breeze, so run the
+script again afterward.
+
 ## Releases
 
 Pull requests and pushes to `main` run the tests, typecheck, and archive build in
@@ -44,8 +64,8 @@ git push origin main v0.2.0
 ```
 
 The tag rebuilds and checks the archive, then creates a draft GitHub Release with
-generated notes and `Lucide-KDE.tar.gz` attached. Review and publish the draft
-in GitHub.
+generated notes, `Lucide-KDE.tar.gz`, and `inherit.sh` attached.
+Review and publish the draft in GitHub.
 
 ## Build from source
 
