@@ -1,6 +1,6 @@
 <!-- @license lucide-static v1.48.0 - ISC -->
 <svg
-  class="lucide lucide-bookmark-plus"
+  class="lucide lucide-file-image"
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -15,8 +15,9 @@
     .ColorScheme-Text { color: #232629; }
   </style>
   <g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 7v6" />
-  <path d="M15 10H9" />
-  <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z" />
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <circle cx="10" cy="12" r="2" />
+  <path d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22" />
   </g>
 </svg>

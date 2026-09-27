@@ -42,6 +42,60 @@
       "categories"
     ]
   },
+  "applications-development-symbolic": {
+    "icon": "hammer",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-education-symbolic": {
+    "icon": "graduation-cap",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-games-symbolic": {
+    "icon": "gamepad-2",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-graphics-symbolic": {
+    "icon": "file-image",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-internet-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-multimedia-symbolic": {
+    "icon": "monitor-play",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-office-symbolic": {
+    "icon": "files",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-other-symbolic": {
+    "icon": "circle-ellipsis",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-utilities-symbolic": {
+    "icon": "toolbox",
+    "categories": [
+      "categories"
+    ]
+  },
   "appointment-missed-symbolic": "alarm-clock",
   "appointment-recurring": "refresh-cw",
   "appointment-recurring-symbolic": "refresh-cw",
@@ -253,6 +307,120 @@
   "battery-profile-performance-symbolic": "rocket",
   "battery-profile-powersave": "leaf",
   "battery-profile-powersave-symbolic": "leaf",
+  "bookmark-add-folder": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-add-folder-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-add-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-edit": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-edit-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-list": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-list-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-remove": {
+    "icon": "bookmark-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-remove-symbolic": {
+    "icon": "bookmark-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-toolbar": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-toolbar-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-bookmarked": {
+    "icon": "bookmark-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-bookmarked-symbolic": {
+    "icon": "bookmark-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-organize": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-organize-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
   "brightness-high-symbolic": {
     "icon": "sun-medium",
     "categories": [
@@ -857,13 +1025,13 @@
     ]
   },
   "folder-bookmark": {
-    "icon": "bookmark",
+    "icon": "bookmark-plus",
     "categories": [
       "places"
     ]
   },
   "folder-bookmark-symbolic": {
-    "icon": "bookmark",
+    "icon": "bookmark-plus",
     "categories": [
       "places"
     ]
