@@ -581,6 +581,18 @@
       "actions"
     ]
   },
+  "cloud-download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cloud-download-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "cloudstatus": "cloud",
   "cloudstatus-symbolic": "cloud",
   "compass": {
@@ -919,6 +931,30 @@
       "actions"
     ]
   },
+  "download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-amarok": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-amarok-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "draw-arrow": {
     "icon": "move-up-right",
     "categories": [
@@ -1098,6 +1134,18 @@
   },
   "edit-cut-symbolic": {
     "icon": "scissors",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-download-symbolic": {
+    "icon": "download",
     "categories": [
       "actions"
     ]
@@ -2132,6 +2180,18 @@
       "places"
     ]
   },
+  "get-hot-new-stuff": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "get-hot-new-stuff-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-autofilter": {
     "icon": "filter",
     "categories": [
@@ -2859,6 +2919,18 @@
       "actions"
     ]
   },
+  "kt-set-max-download-speed": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-set-max-download-speed-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "labplot-cursor-arrow": {
     "icon": "mouse-pointer-2",
     "categories": [
@@ -2936,6 +3008,18 @@
     "categories": [
       "actions",
       "status"
+    ]
+  },
+  "mail-download-now": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "mail-download-now-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
     ]
   },
   "mail-folder-inbox": {
