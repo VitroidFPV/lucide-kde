@@ -845,6 +845,174 @@
       "actions"
     ]
   },
+  "document-cleanup": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-cleanup-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-close": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-close-symbolic": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-decrypt": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-decrypt-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-duplicate": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-duplicate-symbolic": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-sign": {
+    "icon": "file-pen-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-sign-symbolic": {
+    "icon": "file-pen-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-verify": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-verify-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypt": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypt-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypted": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypted-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-ocal": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-ocal-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-table": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-table-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-ocal": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-ocal-symbolic": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-symbolic": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-multiple": {
     "icon": "files",
     "categories": [
@@ -859,6 +1027,60 @@
       "places"
     ]
   },
+  "document-new": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-from-template": {
+    "icon": "file-box",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-from-template-symbolic": {
+    "icon": "file-box",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-symbolic": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open": {
+    "icon": "file",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-data": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-data-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-folder": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-folder-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-open-recent": {
     "icon": "file-clock",
     "categories": [
@@ -867,6 +1089,30 @@
   },
   "document-open-recent-symbolic": {
     "icon": "file-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-remote": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-remote-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-symbolic": {
+    "icon": "file",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-page-setup-symbolic": {
+    "icon": "file-sliders",
     "categories": [
       "actions"
     ]
@@ -895,6 +1141,36 @@
       "actions"
     ]
   },
+  "document-print": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-direct": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-direct-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-frame": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-frame-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-print-preview": {
     "icon": "file-search-2",
     "categories": [
@@ -907,6 +1183,12 @@
       "actions"
     ]
   },
+  "document-print-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-properties": {
     "icon": "table-properties",
     "categories": [
@@ -915,6 +1197,183 @@
   },
   "document-properties-symbolic": {
     "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-replace": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-replace-symbolic": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert-symbolic-rtl": {
+    "icon": "file-output",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-all": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-all-symbolic": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as": {
+    "icon": "save-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-symbolic": {
+    "icon": "save-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-template": {
+    "icon": "save-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-template-symbolic": {
+    "icon": "save-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-symbolic": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-scan": {
+    "icon": "file-scan",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-scan-symbolic": {
+    "icon": "file-scan",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send": {
+    "icon": "send",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-rtl": {
+    "icon": "send",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-symbolic": {
+    "icon": "send",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-symbolic-rtl": {
+    "icon": "send",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-share": {
+    "icon": "share-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-share-symbolic": {
+    "icon": "share-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-sign": {
+    "icon": "pencil-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-sign-symbolic": {
+    "icon": "pencil-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-single": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-single-symbolic": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-swap": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-swap-symbolic": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentation": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentation-symbolic": {
+    "icon": "notebook",
     "categories": [
       "actions"
     ]
@@ -1331,6 +1790,12 @@
     "icon": "pencil",
     "categories": [
       "actions"
+    ]
+  },
+  "emblem-documents-symbolic": {
+    "icon": "files",
+    "categories": [
+      "emblems"
     ]
   },
   "exifinfo": {
@@ -2178,6 +2643,18 @@
     "icon": "grid-2x2",
     "categories": [
       "places"
+    ]
+  },
+  "geany-save-all": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "geany-save-all-symbolic": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
     ]
   },
   "get-hot-new-stuff": {
@@ -3733,6 +4210,18 @@
   },
   "system-run-symbolic": {
     "icon": "play-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-save-session": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-save-session-symbolic": {
+    "icon": "save",
     "categories": [
       "actions"
     ]
