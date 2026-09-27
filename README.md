@@ -1,4 +1,4 @@
-<img src="editor/favicon.svg" alt="Lucide KDE icon" width="72" align="right">
+![Lucide KDE Banner](images/lucide-kde-banner.png)
 
 # Lucide KDE
 
