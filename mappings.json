@@ -36,6 +36,66 @@
       "actions"
     ]
   },
+  "applications-all-symbolic": {
+    "icon": "layout-grid",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-development-symbolic": {
+    "icon": "hammer",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-education-symbolic": {
+    "icon": "graduation-cap",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-games-symbolic": {
+    "icon": "gamepad-2",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-graphics-symbolic": {
+    "icon": "file-image",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-internet-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-multimedia-symbolic": {
+    "icon": "monitor-play",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-office-symbolic": {
+    "icon": "files",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-other-symbolic": {
+    "icon": "circle-ellipsis",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-utilities-symbolic": {
+    "icon": "toolbox",
+    "categories": [
+      "categories"
+    ]
+  },
   "appointment-missed-symbolic": "alarm-clock",
   "appointment-recurring": "refresh-cw",
   "appointment-recurring-symbolic": "refresh-cw",
@@ -247,6 +307,120 @@
   "battery-profile-performance-symbolic": "rocket",
   "battery-profile-powersave": "leaf",
   "battery-profile-powersave-symbolic": "leaf",
+  "bookmark-add-folder": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-add-folder-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-add-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-edit": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-edit-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-list": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-list-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-new-symbolic": {
+    "icon": "bookmark-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-remove": {
+    "icon": "bookmark-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-remove-symbolic": {
+    "icon": "bookmark-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-toolbar": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmark-toolbar-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-bookmarked": {
+    "icon": "bookmark-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-bookmarked-symbolic": {
+    "icon": "bookmark-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-organize": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-organize-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bookmarks-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "actions"
+    ]
+  },
   "brightness-high-symbolic": {
     "icon": "sun-medium",
     "categories": [
@@ -301,6 +475,18 @@
   },
   "cloudstatus": "cloud",
   "cloudstatus-symbolic": "cloud",
+  "compass": {
+    "icon": "compass",
+    "categories": [
+      "actions"
+    ]
+  },
+  "compass-symbolic": {
+    "icon": "compass",
+    "categories": [
+      "actions"
+    ]
+  },
   "composite-track-preview": {
     "icon": "layout-grid",
     "categories": [
@@ -839,13 +1025,13 @@
     ]
   },
   "folder-bookmark": {
-    "icon": "bookmark",
+    "icon": "bookmark-plus",
     "categories": [
       "places"
     ]
   },
   "folder-bookmark-symbolic": {
-    "icon": "bookmark",
+    "icon": "bookmark-plus",
     "categories": [
       "places"
     ]
@@ -2254,6 +2440,18 @@
       "places"
     ]
   },
+  "lock": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lock-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
   "mail-attachment-symbolic": {
     "icon": "paperclip",
     "categories": [
@@ -2467,6 +2665,30 @@
     "icon": "server",
     "categories": [
       "places"
+    ]
+  },
+  "object-locked": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "object-locked-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "object-unlocked": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "object-unlocked-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
     ]
   },
   "open-menu-symbolic": {
@@ -2725,6 +2947,32 @@
       "places"
     ]
   },
+  "system-hibernate": {
+    "icon": "snowflake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-hibernate-symbolic": {
+    "icon": "snowflake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-lock-screen": {
+    "icon": "lock",
+    "categories": [
+      "actions",
+      "preferences"
+    ]
+  },
+  "system-lock-screen-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
   "system-log-out": {
     "icon": "chevron-left-circle",
     "categories": [
@@ -2751,6 +2999,30 @@
       "actions"
     ]
   },
+  "system-reboot": {
+    "icon": "rotate-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-reboot-symbolic": {
+    "icon": "rotate-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-reboot-update": {
+    "icon": "rotate-cw-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-reboot-update-symbolic": {
+    "icon": "rotate-cw-clock",
+    "categories": [
+      "actions"
+    ]
+  },
   "system-search": {
     "icon": "search",
     "categories": [
@@ -2763,6 +3035,32 @@
       "actions"
     ]
   },
+  "system-shutdown": {
+    "icon": "power",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-shutdown-symbolic": {
+    "icon": "power",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-shutdown-update": {
+    "icon": "arrow-down-right-from-circle",
+    "rotate": 225,
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-shutdown-update-symbolic": {
+    "icon": "arrow-down-right-from-circle",
+    "rotate": 225,
+    "categories": [
+      "actions"
+    ]
+  },
   "system-software-update": {
     "icon": "circle-fading-arrow-up",
     "categories": [
@@ -2771,6 +3069,42 @@
     ]
   },
   "system-software-update-symbolic": "circle-fading-arrow-up",
+  "system-suspend": {
+    "icon": "moon",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-suspend-hibernate": {
+    "icon": "snowflake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-suspend-hibernate-symbolic": {
+    "icon": "snowflake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-suspend-symbolic": {
+    "icon": "moon",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-switch-user": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-switch-user-symbolic": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
   "tab-new": {
     "icon": "folder-plus",
     "categories": [
@@ -2867,6 +3201,18 @@
   },
   "trash-empty-symbolic": {
     "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "unlock": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "unlock-symbolic": {
+    "icon": "unlock",
     "categories": [
       "actions"
     ]
