@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 import { readLucide, themedSvg } from "../src/lucide";
-import { mappingIcon, mappingMirrored, mappingScale, validateMappings } from "../src/mappings";
+import { mappingCategories, mappingIcon, mappingMirrored, mappingScale, validateMappings } from "../src/mappings";
 
 test("mirrored mappings coexist with existing string mappings", () => {
   const mappings = validateMappings({
@@ -13,6 +13,14 @@ test("mirrored mappings coexist with existing string mappings", () => {
   expect(mappingMirrored(mappings["audio-volume-high-rtl"])).toBe(true);
   expect(() => validateMappings({ "audio-volume-high-rtl": { icon: "volume-2", mirror: "true" } })).toThrow();
   expect(() => validateMappings({ "audio-volume-high-rtl": { icon: "volume-2", mirror: false } })).toThrow();
+});
+
+test("mappings keep every source category", () => {
+  const mapping = validateMappings({ "mail-unread": { icon: "mail", categories: ["actions", "status"] } })["mail-unread"];
+  expect(mappingCategories(mapping)).toEqual(["actions", "status"]);
+  expect(mappingCategories("mail")).toEqual(["status"]);
+  expect(() => validateMappings({ "mail-unread": { icon: "mail", categories: ["actions", "actions"] } })).toThrow();
+  expect(() => validateMappings({ "mail-unread": { icon: "mail", categories: ["unknown"] } })).toThrow();
 });
 
 test("mirrored SVG reflects the icon across its viewBox", async () => {

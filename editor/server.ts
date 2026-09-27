@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, readdir, realpath, rename, rm, stat } from "node:fs/promises";
+import { copyFile, cp, mkdir, readFile, readdir, realpath, rename, rm, stat } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { gunzipSync } from "node:zlib";
 import { homedir } from "node:os";
@@ -6,7 +6,7 @@ import { join, resolve } from "node:path";
 import { bestAsset, discoverThemes, effectiveIcons, sortedEntries, type IconEntry } from "./catalog";
 import { activePalette, samples } from "./palette";
 import { lucideDir, readLucide, themedSvg } from "../src/lucide";
-import { mappingPath, mappingScale, projectDir, readMappings, saveMappings, validKdeName, validLucideName } from "../src/mappings";
+import { iconCategories, mappingCategories, mappingPath, mappingScale, projectDir, readMappings, saveMappings, validKdeName, validLucideName, type IconCategory } from "../src/mappings";
 
 const editorDir = import.meta.dir;
 const archivePath = join(projectDir, "dist", "Lucide-KDE.tar.gz");
@@ -66,7 +66,7 @@ async function applyTheme(): Promise<void> {
     const target = await stat(installedDir);
     if (!target.isDirectory()) throw new Error("Installed theme path is not a directory");
     const index = await readFile(join(installedDir, "index.theme"), "utf8");
-    if (!index.includes("Name=Lucide KDE") || !index.includes("Directories=scalable/status")) {
+    if (!index.includes("Name=Lucide KDE") || !index.includes("Directories=scalable/")) {
       throw new Error("Installed Lucide-KDE directory does not match this project");
     }
     if (await realpath(installedDir) !== resolve(installedDir)) throw new Error("Installed theme is a symlink");
@@ -78,10 +78,9 @@ async function applyTheme(): Promise<void> {
   const stage = join(parent, `.Lucide-KDE-stage-${process.pid}`);
   const backup = join(parent, `.Lucide-KDE-backup-${Date.now()}`);
   await rm(stage, { recursive: true, force: true });
-  await mkdir(join(stage, "scalable", "status"), { recursive: true });
+  await mkdir(stage, { recursive: true });
   for (const file of ["index.theme", "LICENSE-LUCIDE", "LICENSE-GPL-3.0"]) await copyFile(join(generatedDir, file), join(stage, file));
-  const icons = await readdir(join(generatedDir, "scalable", "status"));
-  for (const icon of icons) await copyFile(join(generatedDir, "scalable", "status", icon), join(stage, "scalable", "status", icon));
+  await cp(join(generatedDir, "scalable"), join(stage, "scalable"), { recursive: true });
   if (exists) await rename(installedDir, backup);
   try { await rename(stage, installedDir); }
   catch (error) { if (exists) await rename(backup, installedDir); throw error; }
@@ -146,10 +145,11 @@ const server = Bun.serve({
         if (busy) return errorResponse(new Error("Another operation is running"), 409);
         const body: unknown = await request.json();
         if (!body || typeof body !== "object") throw new Error("Invalid mapping request");
-        const { kdeName, lucideName, mirror } = body as Record<string, unknown>;
+        const { kdeName, lucideName, mirror, categories } = body as Record<string, unknown>;
         if (typeof kdeName !== "string" || !validKdeName.test(kdeName)) throw new Error("Invalid KDE icon name");
         if (lucideName !== null && (typeof lucideName !== "string" || !validLucideName.test(lucideName))) throw new Error("Invalid Lucide icon name");
         if (mirror !== undefined && typeof mirror !== "boolean") throw new Error("Invalid mirror option");
+        if (categories !== undefined && (!Array.isArray(categories) || !categories.length || new Set(categories).size !== categories.length || !categories.every((category) => iconCategories.includes(category)))) throw new Error("Invalid icon categories");
         if (lucideName !== null) await readLucide(lucideName as string);
         busy = true;
         try {
@@ -157,8 +157,9 @@ const server = Bun.serve({
           if (lucideName === null) delete mappings[kdeName];
           else {
             const scale = mappings[kdeName] ? mappingScale(mappings[kdeName]) : 1;
-            mappings[kdeName] = mirror || scale !== 1
-              ? { icon: lucideName as string, ...(mirror ? { mirror: true as const } : {}), ...(scale !== 1 ? { scale } : {}) }
+            const assignedCategories = categories as IconCategory[] | undefined ?? (mappings[kdeName] ? mappingCategories(mappings[kdeName]) : ["status"]);
+            mappings[kdeName] = mirror || scale !== 1 || assignedCategories.length !== 1 || assignedCategories[0] !== "status"
+              ? { icon: lucideName as string, ...(mirror ? { mirror: true as const } : {}), ...(scale !== 1 ? { scale } : {}), ...(assignedCategories.length !== 1 || assignedCategories[0] !== "status" ? { categories: assignedCategories } : {}) }
               : lucideName as string;
           }
           await saveMappings(mappings);

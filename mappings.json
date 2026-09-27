@@ -1,35 +1,155 @@
 {
   "alarm-symbolic": "alarm-clock",
-  "albumfolder-user-trash": "trash",
-  "albumfolder-user-trash-symbolic": "trash",
-  "amarok_cart_view": "shopping-cart",
-  "amarok_cart_view-symbolic": "shopping-cart",
-  "application-menu": "menu",
-  "application-menu-symbolic": "menu",
+  "albumfolder-user-trash": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "albumfolder-user-trash-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "amarok_cart_view": {
+    "icon": "shopping-cart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "amarok_cart_view-symbolic": {
+    "icon": "shopping-cart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "application-menu": {
+    "icon": "menu",
+    "categories": [
+      "actions"
+    ]
+  },
+  "application-menu-symbolic": {
+    "icon": "menu",
+    "categories": [
+      "actions"
+    ]
+  },
   "appointment-missed-symbolic": "alarm-clock",
   "appointment-recurring": "refresh-cw",
   "appointment-recurring-symbolic": "refresh-cw",
   "appointment-reminder": "bell",
   "appointment-reminder-symbolic": "bell",
   "appointment-soon-symbolic": "alarm-clock-check",
-  "arrow": "mouse-pointer-2",
-  "arrow-down": "chevron-down",
-  "arrow-down-double": "chevrons-down",
-  "arrow-down-double-symbolic": "chevrons-down",
-  "arrow-down-symbolic": "chevron-down",
-  "arrow-left": "chevron-left",
-  "arrow-left-double": "chevrons-left",
-  "arrow-left-double-symbolic": "chevrons-left",
-  "arrow-left-symbolic": "chevron-left",
-  "arrow-right": "chevron-right",
-  "arrow-right-double": "chevrons-right",
-  "arrow-right-double-symbolic": "chevrons-right",
-  "arrow-right-symbolic": "chevron-right",
-  "arrow-symbolic": "mouse-pointer-2",
-  "arrow-up": "chevron-up",
-  "arrow-up-double": "chevrons-up",
-  "arrow-up-double-symbolic": "chevrons-up",
-  "arrow-up-symbolic": "chevron-up",
+  "arrow": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-down": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-down-double": {
+    "icon": "chevrons-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-down-double-symbolic": {
+    "icon": "chevrons-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-down-symbolic": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-left": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-left-double": {
+    "icon": "chevrons-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-left-double-symbolic": {
+    "icon": "chevrons-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-left-symbolic": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-right": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-right-double": {
+    "icon": "chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-right-double-symbolic": {
+    "icon": "chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-right-symbolic": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-symbolic": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-up": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-up-double": {
+    "icon": "chevrons-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-up-double-symbolic": {
+    "icon": "chevrons-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "arrow-up-symbolic": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
   "audio-off": "volume-off",
   "audio-off-rtl": {
     "icon": "volume-off",
@@ -127,8 +247,18 @@
   "battery-profile-performance-symbolic": "rocket",
   "battery-profile-powersave": "leaf",
   "battery-profile-powersave-symbolic": "leaf",
-  "brightness-high-symbolic": "sun-medium",
-  "builder-view-left-pane-symbolic": "panel-left",
+  "brightness-high-symbolic": {
+    "icon": "sun-medium",
+    "categories": [
+      "actions"
+    ]
+  },
+  "builder-view-left-pane-symbolic": {
+    "icon": "panel-left",
+    "categories": [
+      "actions"
+    ]
+  },
   "call-incoming": "phone-incoming",
   "call-incoming-symbolic": "phone-incoming",
   "call-missed": "phone-missed",
@@ -141,402 +271,2087 @@
   "camera-on-symbolic": "webcam",
   "camera-ready": "webcam",
   "camera-ready-symbolic": "webcam",
-  "certificate-server": "lock",
-  "certificate-server-symbolic": "lock",
+  "certificate-server": {
+    "icon": "lock",
+    "categories": [
+      "places"
+    ]
+  },
+  "certificate-server-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "places"
+    ]
+  },
   "changes-allow-symbolic": "unlock",
   "changes-prevent-symbolic": "lock",
   "channel-insecure-symbolic": "unlock",
   "channel-secure-symbolic": "lock",
-  "circular-arrow-shape": "rotate-cw",
-  "circular-arrow-shape-symbolic": "rotate-cw",
+  "circular-arrow-shape": {
+    "icon": "rotate-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "circular-arrow-shape-symbolic": {
+    "icon": "rotate-cw",
+    "categories": [
+      "actions"
+    ]
+  },
   "cloudstatus": "cloud",
   "cloudstatus-symbolic": "cloud",
-  "composite-track-preview": "layout-grid",
-  "composite-track-preview-symbolic": "layout-grid",
-  "configure": "settings-2",
+  "composite-track-preview": {
+    "icon": "layout-grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "composite-track-preview-symbolic": {
+    "icon": "layout-grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "configure": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "content-loading-symbolic": "ellipsis",
   "crow-translate-tray": "languages",
   "crow-translate-tray-symbolic": "languages",
-  "cursor-arrow": "mouse-pointer-2",
-  "cursor-arrow-symbolic": "mouse-pointer-2",
-  "desktop": "monitor",
-  "desktop-symbolic": "monitor",
+  "cursor-arrow": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cursor-arrow-symbolic": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "desktop": {
+    "icon": "monitor",
+    "categories": [
+      "places"
+    ]
+  },
+  "desktop-symbolic": {
+    "icon": "monitor",
+    "categories": [
+      "places"
+    ]
+  },
   "device-notifier-symbolic": "eject",
-  "dialog-filters": "filter",
-  "dialog-filters-symbolic": "filter",
-  "dialog-icon-preview": "file-search-2",
-  "dialog-icon-preview-symbolic": "file-search-2",
-  "dialog-object-properties": "table-properties",
-  "dialog-object-properties-symbolic": "table-properties",
-  "document-multiple": "files",
-  "document-multiple-symbolic": "files",
-  "document-open-recent": "file-clock",
-  "document-open-recent-symbolic": "file-clock",
-  "document-preview": "file-search-2",
-  "document-preview-archive": "file-search-2",
-  "document-preview-archive-symbolic": "file-search-2",
-  "document-preview-symbolic": "file-search-2",
-  "document-print-preview": "file-search-2",
-  "document-print-preview-symbolic": "file-search-2",
-  "document-properties": "table-properties",
-  "document-properties-symbolic": "table-properties",
-  "documentinfo": "info",
-  "documentinfo-symbolic": "info",
-  "draw-arrow": "move-up-right",
-  "draw-arrow-back": "chevron-left",
-  "draw-arrow-back-symbolic": "chevron-left",
-  "draw-arrow-down": "chevron-down",
-  "draw-arrow-down-symbolic": "chevron-down",
-  "draw-arrow-forward": "chevron-right",
-  "draw-arrow-forward-symbolic": "chevron-right",
-  "draw-arrow-symbolic": "move-up-right",
-  "draw-arrow-up": "chevron-up",
-  "draw-arrow-up-symbolic": "chevron-up",
-  "edit-copy": "copy",
-  "edit-copy-symbolic": "copy",
-  "edit-cut": "scissors",
-  "edit-cut-symbolic": "scissors",
-  "edit-find": "search",
-  "edit-find-mail": "search",
-  "edit-find-mail-symbolic": "search",
-  "edit-find-project": "search",
-  "edit-find-project-symbolic": "search",
-  "edit-find-replace": "search-code",
-  "edit-find-replace-symbolic": "search-code",
-  "edit-find-symbolic": "search",
-  "edit-find-user": "search",
-  "edit-find-user-symbolic": "search",
-  "edit-image": "pencil",
-  "edit-image-symbolic": "pencil",
-  "edit-paste": "clipboard",
-  "edit-paste-symbolic": "clipboard",
-  "edit-redo": "redo-2",
+  "dialog-filters": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-filters-symbolic": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-icon-preview": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-icon-preview-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-object-properties": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-object-properties-symbolic": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-multiple": {
+    "icon": "files",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "document-multiple-symbolic": {
+    "icon": "files",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "document-open-recent": {
+    "icon": "file-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-recent-symbolic": {
+    "icon": "file-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-preview": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-preview-archive": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-preview-archive-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-preview-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-preview": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-preview-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-properties": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-properties-symbolic": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentinfo": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentinfo-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow": {
+    "icon": "move-up-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-back": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-back-symbolic": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-down": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-down-symbolic": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-forward": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-forward-symbolic": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-symbolic": {
+    "icon": "move-up-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-up": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-arrow-up-symbolic": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-copy": {
+    "icon": "copy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-copy-symbolic": {
+    "icon": "copy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-cut": {
+    "icon": "scissors",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-cut-symbolic": {
+    "icon": "scissors",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-mail": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-mail-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-project": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-project-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-replace": {
+    "icon": "search-code",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-replace-symbolic": {
+    "icon": "search-code",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-user": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-find-user-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-image": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-image-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-paste": {
+    "icon": "clipboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-paste-symbolic": {
+    "icon": "clipboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-redo": {
+    "icon": "redo-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-redo-rtl-symbolic": {
     "icon": "redo-2",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "edit-redo-symbolic": "redo-2",
-  "edit-redo-symbolic-rtl": "redo-2",
-  "edit-rename": "pencil",
-  "edit-rename-symbolic": "pencil",
-  "edit-undo": "undo-2",
-  "edit-undo-history": "clock",
-  "edit-undo-history-symbolic": "clock",
+  "edit-redo-symbolic": {
+    "icon": "redo-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-redo-symbolic-rtl": {
+    "icon": "redo-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-rename": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-rename-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-undo": {
+    "icon": "undo-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-undo-history": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-undo-history-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-undo-rtl-symbolic": {
     "icon": "undo-2",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "edit-undo-symbolic": "undo-2",
+  "edit-undo-symbolic": {
+    "icon": "undo-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-undo-symbolic-rtl": {
     "icon": "undo-2",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "editimage": "pencil",
-  "editimage-symbolic": "pencil",
-  "exifinfo": "info",
-  "exifinfo-symbolic": "info",
-  "favorites": "star",
-  "favorites-symbolic": "star",
-  "file-search-symbolic": "search",
-  "file-zoom-in": "zoom-in",
-  "file-zoom-in-symbolic": "zoom-in",
-  "file-zoom-out": "zoom-out",
-  "file-zoom-out-symbolic": "zoom-out",
-  "fileview-preview": "image",
-  "fileview-preview-symbolic": "image",
-  "filter-symbolic": "filter",
-  "folder": "folder",
-  "folder_html": "earth",
-  "folder_html-symbolic": "earth",
-  "folder-appimage": "settings",
-  "folder-appimage-symbolic": "settings",
-  "folder-book": "book",
-  "folder-book-symbolic": "book",
-  "folder-bookmark": "bookmark",
-  "folder-bookmark-symbolic": "bookmark",
-  "folder-build": "bolt",
-  "folder-build-symbolic": "bolt",
-  "folder-calculate": "radical",
-  "folder-calculate-symbolic": "radical",
-  "folder-chart": "bar-chart-3",
-  "folder-chart-symbolic": "bar-chart-3",
-  "folder-cloud": "cloud",
-  "folder-cloud-symbolic": "cloud",
-  "folder-comic": "messages-square",
-  "folder-comic-symbolic": "messages-square",
-  "folder-database": "database",
-  "folder-database-symbolic": "database",
-  "folder-desktop": "monitor",
-  "folder-desktop-symbolic": "monitor",
-  "folder-development": "code-2",
-  "folder-development-symbolic": "code-2",
-  "folder-documents": "files",
-  "folder-documents-symbolic": "files",
-  "folder-download": "download",
-  "folder-download-symbolic": "download",
-  "folder-downloads": "download",
-  "folder-downloads-symbolic": "download",
-  "folder-drawing": "tangent",
-  "folder-drawing-symbolic": "tangent",
-  "folder-dropbox": "cloud",
-  "folder-dropbox-symbolic": "cloud",
-  "folder-extension": "blocks",
-  "folder-extension-symbolic": "blocks",
-  "folder-favorites": "star",
-  "folder-favorites-symbolic": "star",
-  "folder-flatpak": "package",
-  "folder-flatpak-symbolic": "package",
-  "folder-games": "gamepad-2",
-  "folder-games-symbolic": "gamepad-2",
-  "folder-git": "git-pull-request-arrow",
-  "folder-git-symbolic": "git-pull-request-arrow",
-  "folder-html": "earth",
-  "folder-html-symbolic": "earth",
-  "folder-image": "image",
-  "folder-image-people": "user",
-  "folder-image-people-symbolic": "user",
-  "folder-image-symbolic": "image",
-  "folder-images": "image",
-  "folder-images-symbolic": "image",
-  "folder-important": "circle-alert",
-  "folder-important-symbolic": "circle-alert",
-  "folder-language": "languages",
-  "folder-language-symbolic": "languages",
-  "folder-library": "library",
-  "folder-library-symbolic": "library",
-  "folder-locked": "lock",
-  "folder-locked-symbolic": "lock",
-  "folder-log": "logs",
-  "folder-log-symbolic": "logs",
-  "folder-mail": "mail",
-  "folder-mail-symbolic": "mail",
-  "folder-music": "music",
-  "folder-music-symbolic": "music",
-  "folder-network": "network",
-  "folder-network-symbolic": "network",
-  "folder-notes": "notebook-text",
-  "folder-notes-symbolic": "notebook-text",
-  "folder-onedrive": "cloud",
-  "folder-onedrive-symbolic": "cloud",
-  "folder-open-recent": "folder-clock",
-  "folder-open-recent-symbolic": "folder-clock",
-  "folder-owncloud": "cloud",
-  "folder-owncloud-symbolic": "cloud",
-  "folder-paint": "brush",
-  "folder-paint-symbolic": "brush",
-  "folder-picture": "image",
-  "folder-picture-symbolic": "image",
-  "folder-pictures": "image",
-  "folder-pictures-symbolic": "image",
-  "folder-podcast": "rss",
-  "folder-podcast-symbolic": "rss",
-  "folder-presentation": "presentation",
-  "folder-presentation-symbolic": "presentation",
-  "folder-print": "printer",
-  "folder-print-symbolic": "printer",
-  "folder-public": "users",
-  "folder-public-symbolic": "users",
-  "folder-publicshare": "users",
-  "folder-publicshare-symbolic": "users",
-  "folder-recent": "clock",
-  "folder-recent-symbolic": "clock",
-  "folder-remote": "earth",
-  "folder-remote-symbolic": "earth",
-  "folder-rpm": "gauge",
-  "folder-rpm-symbolic": "gauge",
-  "folder-saved-search-symbolic": "search",
-  "folder-script": "terminal-square",
-  "folder-script-symbolic": "terminal-square",
-  "folder-sign": "pencil-line",
-  "folder-sign-symbolic": "pencil-line",
-  "folder-sound": "music",
-  "folder-sound-symbolic": "music",
-  "folder-symbolic": "folder",
-  "folder-table": "sheet",
-  "folder-table-symbolic": "sheet",
-  "folder-tar": "archive",
-  "folder-tar-symbolic": "archive",
-  "folder-temp": "clock-fading",
-  "folder-temp-symbolic": "clock-fading",
-  "folder-templates": "angle",
-  "folder-templates-symbolic": "angle",
-  "folder-text": "text",
-  "folder-text-symbolic": "text",
-  "folder-trash": "trash",
-  "folder-trash-symbolic": "trash",
-  "folder-txt": "text",
-  "folder-txt-symbolic": "text",
-  "folder-unlocked": "unlock",
-  "folder-unlocked-symbolic": "unlock",
-  "folder-video": "film",
-  "folder-video-symbolic": "film",
-  "folder-videos": "film",
-  "folder-videos-symbolic": "film",
-  "folder-windows": "grid-2x2",
-  "folder-windows-symbolic": "grid-2x2",
-  "gnumeric-autofilter": "filter",
-  "gnumeric-autofilter-delete": "filter-x",
-  "gnumeric-autofilter-delete-symbolic": "filter-x",
-  "gnumeric-autofilter-symbolic": "filter",
-  "gnumeric-object-arrow": "move-up-left",
-  "gnumeric-object-arrow-symbolic": "move-up-left",
-  "go-bottom": "arrow-down-to-line",
-  "go-bottom-symbolic": "arrow-down-to-line",
-  "go-down": "chevron-down",
-  "go-down-search": "chevron-down",
-  "go-down-search-symbolic": "chevron-down",
-  "go-down-skip": "chevrons-down",
-  "go-down-skip-symbolic": "chevrons-down",
-  "go-down-symbolic": "chevron-down",
-  "go-first": "arrow-left-to-line",
+  "editimage": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "editimage-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "exifinfo": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "exifinfo-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "favorites": {
+    "icon": "star",
+    "categories": [
+      "places"
+    ]
+  },
+  "favorites-symbolic": {
+    "icon": "star",
+    "categories": [
+      "places"
+    ]
+  },
+  "file-search-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "file-zoom-in": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "file-zoom-in-symbolic": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "file-zoom-out": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "file-zoom-out-symbolic": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "fileview-preview": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "fileview-preview-symbolic": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "filter-symbolic": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "folder": {
+    "icon": "folder",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder_html": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder_html-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-appimage": {
+    "icon": "settings",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-appimage-symbolic": {
+    "icon": "settings",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-book": {
+    "icon": "book",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-book-symbolic": {
+    "icon": "book",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-bookmark": {
+    "icon": "bookmark",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-bookmark-symbolic": {
+    "icon": "bookmark",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-build": {
+    "icon": "bolt",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-build-symbolic": {
+    "icon": "bolt",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-calculate": {
+    "icon": "radical",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-calculate-symbolic": {
+    "icon": "radical",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-chart": {
+    "icon": "bar-chart-3",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-chart-symbolic": {
+    "icon": "bar-chart-3",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-cloud": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-cloud-symbolic": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-comic": {
+    "icon": "messages-square",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-comic-symbolic": {
+    "icon": "messages-square",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-database": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-database-symbolic": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-desktop": {
+    "icon": "monitor",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-desktop-symbolic": {
+    "icon": "monitor",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-development": {
+    "icon": "code-2",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-development-symbolic": {
+    "icon": "code-2",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-documents": {
+    "icon": "files",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-documents-symbolic": {
+    "icon": "files",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-download": {
+    "icon": "download",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-download-symbolic": {
+    "icon": "download",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-downloads": {
+    "icon": "download",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-downloads-symbolic": {
+    "icon": "download",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-drawing": {
+    "icon": "tangent",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-drawing-symbolic": {
+    "icon": "tangent",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-dropbox": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-dropbox-symbolic": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-extension": {
+    "icon": "blocks",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-extension-symbolic": {
+    "icon": "blocks",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-favorites": {
+    "icon": "star",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-favorites-symbolic": {
+    "icon": "star",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-flatpak": {
+    "icon": "package",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-flatpak-symbolic": {
+    "icon": "package",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-games": {
+    "icon": "gamepad-2",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-games-symbolic": {
+    "icon": "gamepad-2",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-git": {
+    "icon": "git-pull-request-arrow",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-git-symbolic": {
+    "icon": "git-pull-request-arrow",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-html": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-html-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-image": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-image-people": {
+    "icon": "user",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-image-people-symbolic": {
+    "icon": "user",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-image-symbolic": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-images": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-images-symbolic": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-important": {
+    "icon": "circle-alert",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-important-symbolic": {
+    "icon": "circle-alert",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-language": {
+    "icon": "languages",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-language-symbolic": {
+    "icon": "languages",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-library": {
+    "icon": "library",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-library-symbolic": {
+    "icon": "library",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-locked": {
+    "icon": "lock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-locked-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-log": {
+    "icon": "logs",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-log-symbolic": {
+    "icon": "logs",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-mail": {
+    "icon": "mail",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-mail-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-music": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-music-symbolic": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-network": {
+    "icon": "network",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-network-symbolic": {
+    "icon": "network",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-notes": {
+    "icon": "notebook-text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-notes-symbolic": {
+    "icon": "notebook-text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-onedrive": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-onedrive-symbolic": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-open-recent": {
+    "icon": "folder-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "folder-open-recent-symbolic": {
+    "icon": "folder-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "folder-owncloud": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-owncloud-symbolic": {
+    "icon": "cloud",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-paint": {
+    "icon": "brush",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-paint-symbolic": {
+    "icon": "brush",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-picture": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-picture-symbolic": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-pictures": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-pictures-symbolic": {
+    "icon": "image",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-podcast": {
+    "icon": "rss",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-podcast-symbolic": {
+    "icon": "rss",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-presentation": {
+    "icon": "presentation",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-presentation-symbolic": {
+    "icon": "presentation",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-print": {
+    "icon": "printer",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-print-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-public": {
+    "icon": "users",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-public-symbolic": {
+    "icon": "users",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-publicshare": {
+    "icon": "users",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-publicshare-symbolic": {
+    "icon": "users",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-recent": {
+    "icon": "clock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-recent-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-remote": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-remote-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-rpm": {
+    "icon": "gauge",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-rpm-symbolic": {
+    "icon": "gauge",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-saved-search-symbolic": {
+    "icon": "search",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-script": {
+    "icon": "terminal-square",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-script-symbolic": {
+    "icon": "terminal-square",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-sign": {
+    "icon": "pencil-line",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-sign-symbolic": {
+    "icon": "pencil-line",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-sound": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-sound-symbolic": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "folder-table": {
+    "icon": "sheet",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-table-symbolic": {
+    "icon": "sheet",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-tar": {
+    "icon": "archive",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-tar-symbolic": {
+    "icon": "archive",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-temp": {
+    "icon": "clock-fading",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-temp-symbolic": {
+    "icon": "clock-fading",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-templates": {
+    "icon": "angle",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-templates-symbolic": {
+    "icon": "angle",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-text": {
+    "icon": "text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-text-symbolic": {
+    "icon": "text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-trash": {
+    "icon": "trash",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-trash-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-txt": {
+    "icon": "text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-txt-symbolic": {
+    "icon": "text",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-unlocked": {
+    "icon": "unlock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-unlocked-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-video": {
+    "icon": "film",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-video-symbolic": {
+    "icon": "film",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-videos": {
+    "icon": "film",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-videos-symbolic": {
+    "icon": "film",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-windows": {
+    "icon": "grid-2x2",
+    "categories": [
+      "places"
+    ]
+  },
+  "folder-windows-symbolic": {
+    "icon": "grid-2x2",
+    "categories": [
+      "places"
+    ]
+  },
+  "gnumeric-autofilter": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-autofilter-delete": {
+    "icon": "filter-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-autofilter-delete-symbolic": {
+    "icon": "filter-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-autofilter-symbolic": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-arrow": {
+    "icon": "move-up-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-arrow-symbolic": {
+    "icon": "move-up-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-bottom": {
+    "icon": "arrow-down-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-bottom-symbolic": {
+    "icon": "arrow-down-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down-search": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down-search-symbolic": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down-skip": {
+    "icon": "chevrons-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down-skip-symbolic": {
+    "icon": "chevrons-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-down-symbolic": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-first": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-first-rtl-symbolic": {
     "icon": "arrow-left-to-line",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-first-symbolic": "arrow-left-to-line",
+  "go-first-symbolic": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-first-symbolic-rtl": {
     "icon": "arrow-left-to-line",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-first-view": "arrow-left-to-line",
-  "go-first-view-page": "arrow-left-to-line",
-  "go-first-view-page-symbolic": "arrow-left-to-line",
-  "go-first-view-symbolic": "arrow-left-to-line",
-  "go-home": "home",
-  "go-home-large": "home",
-  "go-home-large-symbolic": "home",
-  "go-home-symbolic": "home",
-  "go-jump": "arrow-right",
-  "go-jump-locationbar": "arrow-right",
-  "go-jump-locationbar-symbolic": "arrow-right",
-  "go-jump-rtl-symbolic": "arrow-right",
-  "go-jump-symbolic": "arrow-right",
-  "go-jump-today": "calendar",
-  "go-jump-today-symbolic": "calendar",
-  "go-last": "arrow-right-to-line",
+  "go-first-view": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-first-view-page": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-first-view-page-symbolic": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-first-view-symbolic": {
+    "icon": "arrow-left-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-home": {
+    "icon": "home",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-home-large": {
+    "icon": "home",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-home-large-symbolic": {
+    "icon": "home",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-home-symbolic": {
+    "icon": "home",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump": {
+    "icon": "arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-locationbar": {
+    "icon": "arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-locationbar-symbolic": {
+    "icon": "arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-rtl-symbolic": {
+    "icon": "arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-symbolic": {
+    "icon": "arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-today": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-jump-today-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-last": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-last-rtl-symbolic": {
     "icon": "arrow-right-to-line",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-last-symbolic": "arrow-right-to-line",
+  "go-last-symbolic": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-last-symbolic-rtl": {
     "icon": "arrow-right-to-line",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-last-view": "arrow-right-to-line",
-  "go-last-view-page": "arrow-right-to-line",
-  "go-last-view-page-symbolic": "arrow-right-to-line",
-  "go-last-view-symbolic": "arrow-right-to-line",
-  "go-next": "chevron-right",
+  "go-last-view": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-last-view-page": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-last-view-page-symbolic": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-last-view-symbolic": {
+    "icon": "arrow-right-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-next-rtl-symbolic": {
     "icon": "chevron-right",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-next-skip": "chevrons-right",
-  "go-next-skip-symbolic": "chevrons-right",
-  "go-next-symbolic": "chevron-right",
+  "go-next-skip": {
+    "icon": "chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next-skip-symbolic": {
+    "icon": "chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next-symbolic": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-next-symbolic-rtl": {
     "icon": "chevron-right",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-next-view": "chevron-right",
-  "go-next-view-page": "chevron-right",
-  "go-next-view-page-symbolic": "chevron-right",
-  "go-next-view-symbolic": "chevron-right",
-  "go-parent-folder": "folder-up",
-  "go-parent-folder-symbolic": "folder-up",
-  "go-previous": "chevron-left",
+  "go-next-view": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next-view-page": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next-view-page-symbolic": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-next-view-symbolic": {
+    "icon": "chevron-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-parent-folder": {
+    "icon": "folder-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-parent-folder-symbolic": {
+    "icon": "folder-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-previous-rtl-symbolic": {
     "icon": "chevron-left",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-previous-skip": "chevrons-left",
-  "go-previous-skip-symbolic": "chevrons-left",
-  "go-previous-symbolic": "chevron-left",
+  "go-previous-skip": {
+    "icon": "chevrons-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous-skip-symbolic": {
+    "icon": "chevrons-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous-symbolic": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
   "go-previous-symbolic-rtl": {
     "icon": "chevron-left",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "go-previous-view": "chevron-left",
-  "go-previous-view-page": "chevron-left",
-  "go-previous-view-page-symbolic": "chevron-left",
-  "go-previous-view-symbolic": "chevron-left",
-  "go-top": "arrow-up-to-line",
-  "go-top-symbolic": "arrow-up-to-line",
-  "go-up": "chevron-up",
-  "go-up-search": "chevron-up",
-  "go-up-search-symbolic": "chevron-up",
-  "go-up-skip": "chevrons-up",
-  "go-up-skip-symbolic": "chevrons-up",
-  "go-up-symbolic": "chevron-up",
-  "gtk-properties": "table-properties",
-  "gtk-properties-symbolic": "table-properties",
-  "gtk-tab-new": "folder-plus",
-  "gtk-tab-new-symbolic": "folder-plus",
-  "help-about": "info",
-  "help-about-symbolic": "info",
-  "help-contents": "life-buoy",
-  "help-contents-symbolic": "life-buoy",
-  "help-contextual": "info",
-  "help-contextual-symbolic": "info",
-  "help-donate": "heart",
-  "help-donate-symbolic": "heart",
-  "help-feedback": "info",
-  "help-feedback-symbolic": "info",
-  "help-hint": "info",
-  "help-hint-symbolic": "info",
-  "help-latex": "info",
-  "help-latex-symbolic": "info",
-  "help-whatsthis": "info",
-  "help-whatsthis-symbolic": "info",
-  "info": "info",
-  "info-symbolic": "info",
+  "go-previous-view": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous-view-page": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous-view-page-symbolic": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-previous-view-symbolic": {
+    "icon": "chevron-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-top": {
+    "icon": "arrow-up-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-top-symbolic": {
+    "icon": "arrow-up-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up-search": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up-search-symbolic": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up-skip": {
+    "icon": "chevrons-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up-skip-symbolic": {
+    "icon": "chevrons-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "go-up-symbolic": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-properties": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-properties-symbolic": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-tab-new": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-tab-new-symbolic": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-about": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-about-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-contents": {
+    "icon": "life-buoy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-contents-symbolic": {
+    "icon": "life-buoy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-contextual": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-contextual-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-symbolic": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-feedback": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-feedback-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-hint": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-hint-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-latex": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-latex-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-whatsthis": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-whatsthis-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "info": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "info-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
   "input-keyboard-virtual-off": "keyboard",
   "input-keyboard-virtual-off-symbolic": "keyboard",
   "input-touchpad-off": "touchpad-off",
   "input-touchpad-off-symbolic": "touchpad-off",
   "input-touchpad-on": "touchpad",
   "input-touchpad-on-symbolic": "touchpad",
-  "insert-image": "image-plus",
-  "insert-image-symbolic": "image-plus",
+  "insert-image": {
+    "icon": "image-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "insert-image-symbolic": {
+    "icon": "image-plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "install": "download",
   "install-symbolic": "download",
   "kalarm-disabled": "bell-off",
   "kalarm-partdisabled": "bell-minus",
   "kdeconnect-tray": "smartphone",
   "kdeconnect-tray-symbolic": "smartphone",
-  "kdocumentinfo": "info",
-  "kdocumentinfo-symbolic": "info",
+  "kdocumentinfo": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kdocumentinfo-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
   "keyboard-layout": "keyboard",
-  "klipper-symbolic": "clipboard-list",
+  "klipper-symbolic": {
+    "icon": "clipboard-list",
+    "categories": [
+      "apps",
+      "status"
+    ]
+  },
   "konv_message": "megaphone",
-  "kt-add-filters": "funnel-plus",
-  "kt-add-filters-symbolic": "funnel-plus",
-  "kt-info-widget": "info",
-  "kt-info-widget-symbolic": "info",
-  "kt-remove-filters": "funnel-x",
-  "kt-remove-filters-symbolic": "funnel-x",
-  "labplot-cursor-arrow": "mouse-pointer-2",
-  "labplot-cursor-arrow-symbolic": "mouse-pointer-2",
-  "layer-rename": "pencil",
-  "layer-rename-symbolic": "pencil",
-  "library-music": "music",
-  "library-music-symbolic": "music",
-  "mail-attachment-symbolic": "paperclip",
-  "mail-folder-inbox": "inbox",
-  "mail-folder-inbox-symbolic": "inbox",
-  "mail-folder-outbox": "mail-pen",
-  "mail-folder-outbox-symbolic": "mail-pen",
-  "mail-folder-sent": "send",
-  "mail-folder-sent-symbolic": "send",
-  "mail-message": "mail-open",
-  "mail-message-symbolic": "mail-open",
-  "mail-outbox-symbolic": "mail-pen",
-  "mail-read-symbolic": "mail-open",
-  "mail-replied-symbolic": "mail-pen",
-  "mail-unread": "mail",
-  "mail-unread-new": "mail-badge",
-  "mail-unread-symbolic": "mail",
+  "kt-add-filters": {
+    "icon": "funnel-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-add-filters-symbolic": {
+    "icon": "funnel-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-info-widget": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-info-widget-symbolic": {
+    "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-remove-filters": {
+    "icon": "funnel-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-remove-filters-symbolic": {
+    "icon": "funnel-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "labplot-cursor-arrow": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "labplot-cursor-arrow-symbolic": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-rename": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-rename-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "library-music": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "library-music-symbolic": {
+    "icon": "music",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-attachment-symbolic": {
+    "icon": "paperclip",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
+  "mail-folder-inbox": {
+    "icon": "inbox",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-folder-inbox-symbolic": {
+    "icon": "inbox",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-folder-outbox": {
+    "icon": "mail-pen",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-folder-outbox-symbolic": {
+    "icon": "mail-pen",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-folder-sent": {
+    "icon": "send",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-folder-sent-symbolic": {
+    "icon": "send",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-message": {
+    "icon": "mail-open",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "mail-message-symbolic": {
+    "icon": "mail-open",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "mail-outbox-symbolic": {
+    "icon": "mail-pen",
+    "categories": [
+      "places"
+    ]
+  },
+  "mail-read-symbolic": {
+    "icon": "mail-open",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
+  "mail-replied-symbolic": {
+    "icon": "mail-pen",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
+  "mail-unread": {
+    "icon": "mail",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
+  "mail-unread-new": {
+    "icon": "mail-badge",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
+  "mail-unread-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
   "media-playback-playing": "circle-play",
@@ -545,19 +2360,52 @@
   "media-playback-stopped-symbolic": "circle-stop",
   "media-playlist-consecutive-symbolic": "list",
   "media-playlist-consecutive-symbolic-rtl": "list",
-  "media-playlist-repeat-song-symbolic": "repeat-1",
+  "media-playlist-repeat-song-symbolic": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
   "media-playlist-repeat-song-symbolic-rtl": "repeat-1",
-  "media-playlist-repeat-symbolic": "repeat",
+  "media-playlist-repeat-symbolic": {
+    "icon": "repeat",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
   "media-playlist-repeat-symbolic-rtl": "repeat",
-  "media-playlist-shuffle-symbolic": "shuffle",
+  "media-playlist-shuffle-symbolic": {
+    "icon": "shuffle",
+    "categories": [
+      "actions",
+      "status"
+    ]
+  },
   "media-playlist-shuffle-symbolic-rtl": "shuffle",
   "meeting-organizer": "user",
   "meeting-organizer-symbolic": "user",
-  "menu_new": "menu",
-  "menu_new-symbolic": "menu",
+  "menu_new": {
+    "icon": "menu",
+    "categories": [
+      "actions"
+    ]
+  },
+  "menu_new-symbolic": {
+    "icon": "menu",
+    "categories": [
+      "actions"
+    ]
+  },
   "mic-off": "mic-off",
   "mic-off-symbolic": "mic-off",
-  "microphone": "mic",
+  "microphone": {
+    "icon": "mic",
+    "categories": [
+      "applets"
+    ]
+  },
   "microphone-sensitivity-muted": "mic-off",
   "microphone-sensitivity-muted-rtl": {
     "icon": "mic-off",
@@ -571,88 +2419,382 @@
   "network-bluetooth-activated": "bluetooth-connected",
   "network-bluetooth-activated-symbolic": "bluetooth-connected",
   "network-bluetooth-inactive-symbolic": "bluetooth",
-  "network-bluetooth-symbolic": "bluetooth",
-  "network-server": "server",
-  "network-server-database": "database",
-  "network-server-database-symbolic": "database",
-  "network-server-symbolic": "server",
-  "network-wired-activated": "ethernet-port",
-  "network-workgroup": "server",
-  "network-workgroup-symbolic": "server",
-  "open-menu-symbolic": "menu",
+  "network-bluetooth-symbolic": {
+    "icon": "bluetooth",
+    "categories": [
+      "devices",
+      "status"
+    ]
+  },
+  "network-server": {
+    "icon": "server",
+    "categories": [
+      "places"
+    ]
+  },
+  "network-server-database": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "network-server-database-symbolic": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "network-server-symbolic": {
+    "icon": "server",
+    "categories": [
+      "places"
+    ]
+  },
+  "network-wired-activated": {
+    "icon": "ethernet-port",
+    "categories": [
+      "devices",
+      "status"
+    ]
+  },
+  "network-workgroup": {
+    "icon": "server",
+    "categories": [
+      "places"
+    ]
+  },
+  "network-workgroup-symbolic": {
+    "icon": "server",
+    "categories": [
+      "places"
+    ]
+  },
+  "open-menu-symbolic": {
+    "icon": "menu",
+    "categories": [
+      "actions"
+    ]
+  },
   "org.kde.CrowTranslate-tray": "languages",
   "org.kde.CrowTranslate-tray-symbolic": "languages",
-  "org.xfce.gigolo": "network",
-  "org.xfce.gigolo-symbolic": "network",
+  "org.xfce.gigolo": {
+    "icon": "network",
+    "categories": [
+      "places"
+    ]
+  },
+  "org.xfce.gigolo-symbolic": {
+    "icon": "network",
+    "categories": [
+      "places"
+    ]
+  },
   "pidgin-tray-email": "mail",
   "pidgin-tray-email-symbolic": "mail",
   "plasmavault_error": "folder-lock",
-  "playlist-sort": "sort-asc",
-  "playlist-sort-symbolic": "sort-asc",
-  "preferences-system-search-symbolic": "search",
-  "preview": "file-search-2",
-  "preview_math": "pi",
-  "preview_math-symbolic": "pi",
-  "preview_sel": "mouse-pointer-2",
-  "preview_sel-symbolic": "mouse-pointer-2",
-  "preview-add-zone": "list-plus",
-  "preview-add-zone-symbolic": "list-plus",
-  "preview-remove-all": "list-x",
-  "preview-remove-all-symbolic": "list-x",
-  "preview-remove-zone": "list-minus",
-  "preview-remove-zone-symbolic": "list-minus",
-  "preview-render-off": "play-off",
-  "preview-render-off-symbolic": "play-off",
-  "preview-render-on": "play",
-  "preview-render-on-symbolic": "play",
-  "preview-symbolic": "file-search-2",
+  "playlist-sort": {
+    "icon": "sort-asc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "playlist-sort-symbolic": {
+    "icon": "sort-asc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preferences-system-search-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview_math": {
+    "icon": "pi",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview_math-symbolic": {
+    "icon": "pi",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview_sel": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview_sel-symbolic": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-add-zone": {
+    "icon": "list-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-add-zone-symbolic": {
+    "icon": "list-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-remove-all": {
+    "icon": "list-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-remove-all-symbolic": {
+    "icon": "list-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-remove-zone": {
+    "icon": "list-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-remove-zone-symbolic": {
+    "icon": "list-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-render-off": {
+    "icon": "play-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-render-off-symbolic": {
+    "icon": "play-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-render-on": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-render-on-symbolic": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preview-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "printer-error-symbolic": "printer-x",
   "printer-printing-symbolic": "printer",
   "printer-warning-symbolic": "printer-x",
   "process-working-symbolic": "settings",
-  "quickview": "eye",
-  "quickview-symbolic": "eye",
-  "quickwizard": "wand-2",
-  "quickwizard-symbolic": "wand-2",
-  "repository": "database",
-  "repository-symbolic": "database",
-  "search": "search",
-  "search-symbolic": "search",
+  "quickview": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "quickview-symbolic": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "quickwizard": {
+    "icon": "wand-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "quickwizard-symbolic": {
+    "icon": "wand-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "repository": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "repository-symbolic": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "search": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "search-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
   "security-high": "shield-half",
   "security-high-symbolic": "shield-half",
   "security-low": "shield-x",
   "security-low-symbolic": "shield-x",
   "security-medium": "shield",
   "security-medium-symbolic": "shield",
-  "server-database": "database",
-  "server-database-symbolic": "database",
+  "server-database": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
+  "server-database-symbolic": {
+    "icon": "database",
+    "categories": [
+      "places"
+    ]
+  },
   "showinfo": "info",
-  "sort_incr": "sort-asc",
-  "sort_incr-symbolic": "sort-asc",
-  "sort-name": "arrow-up-z-a",
-  "sort-name-symbolic": "arrow-up-z-a",
-  "special_paste": "clipboard-type",
-  "special_paste-symbolic": "clipboard-type",
-  "stock_folder": "folder",
-  "stock_folder-symbolic": "folder",
-  "system-log-out": "chevron-left-circle",
+  "sort_incr": {
+    "icon": "sort-asc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "sort_incr-symbolic": {
+    "icon": "sort-asc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "sort-name": {
+    "icon": "arrow-up-z-a",
+    "categories": [
+      "actions"
+    ]
+  },
+  "sort-name-symbolic": {
+    "icon": "arrow-up-z-a",
+    "categories": [
+      "actions"
+    ]
+  },
+  "special_paste": {
+    "icon": "clipboard-type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "special_paste-symbolic": {
+    "icon": "clipboard-type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "stock_folder": {
+    "icon": "folder",
+    "categories": [
+      "places"
+    ]
+  },
+  "stock_folder-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "places"
+    ]
+  },
+  "system-log-out": {
+    "icon": "chevron-left-circle",
+    "categories": [
+      "actions"
+    ]
+  },
   "system-log-out-rtl": {
     "icon": "chevron-left-circle",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
   "system-log-out-rtl-symbolic": {
     "icon": "chevron-left-circle",
-    "mirror": true
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
   },
-  "system-log-out-symbolic": "chevron-left-circle",
-  "system-search": "search",
-  "system-search-symbolic": "search",
-  "system-software-update": "circle-fading-arrow-up",
+  "system-log-out-symbolic": {
+    "icon": "chevron-left-circle",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-search": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-search-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-software-update": {
+    "icon": "circle-fading-arrow-up",
+    "categories": [
+      "apps",
+      "status"
+    ]
+  },
   "system-software-update-symbolic": "circle-fading-arrow-up",
-  "tab-new": "folder-plus",
-  "tab-new-symbolic": "folder-plus",
-  "tag-properties": "table-properties",
-  "tag-properties-symbolic": "table-properties",
+  "tab-new": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tab-new-symbolic": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tag-properties": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tag-properties-symbolic": {
+    "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
   "task-complete": "list-check",
   "task-complete-symbolic": "list-check",
   "task-recurring": "refresh-cw",
@@ -665,318 +2807,1835 @@
   "temperature-normal-symbolic": "thermometer",
   "temperature-warm": "thermometer-sun",
   "temperature-warm-symbolic": "thermometer-sun",
-  "tool_imageeffects": "pencil",
-  "tool_imageeffects-symbolic": "pencil",
-  "tool_review": "message-square",
-  "tool_review-symbolic": "message-square",
-  "tools-wizard": "wand-2",
-  "tools-wizard-symbolic": "wand-2",
+  "tool_imageeffects": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tool_imageeffects-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tool_review": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tool_review-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tools-wizard": {
+    "icon": "wand-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tools-wizard-symbolic": {
+    "icon": "wand-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "touchpad_disabled": "touchpad-off",
   "touchpad_enabled": "touchpad",
   "transmission-tray-icon": "download",
   "transmission-tray-icon-symbolic": "download",
-  "transsearch": "search",
-  "transsearch-symbolic": "search",
-  "trash-empty": "trash",
-  "trash-empty-symbolic": "trash",
-  "user-bookmarks-symbolic": "star",
-  "user-desktop": "monitor",
+  "transsearch": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "transsearch-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "trash-empty": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "trash-empty-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "user-bookmarks-symbolic": {
+    "icon": "star",
+    "categories": [
+      "places"
+    ]
+  },
+  "user-desktop": {
+    "icon": "monitor",
+    "categories": [
+      "places"
+    ]
+  },
   "user-desktop-symbolic": {
     "icon": "monitor",
-    "scale": 0.75
+    "scale": 0.75,
+    "categories": [
+      "places"
+    ]
   },
-  "user-home": "home",
-  "user-home-symbolic": "home",
-  "user-identity": "user",
-  "user-identity-symbolic": "user",
-  "user-trash": "trash",
-  "user-trash-full": "trash",
-  "user-trash-full-symbolic": "trash",
-  "user-trash-symbolic": "trash",
-  "usermenu-down": "chevron-down",
-  "usermenu-down-symbolic": "chevron-down",
-  "usermenu-up": "chevron-up",
-  "usermenu-up-symbolic": "chevron-up",
-  "view-app-grid-symbolic": "grip",
-  "view-barcode": "barcode",
-  "view-barcode-add": "barcode",
-  "view-barcode-add-symbolic": "barcode",
-  "view-barcode-qr": "qr-code",
-  "view-barcode-qr-symbolic": "qr-code",
-  "view-barcode-symbolic": "barcode",
-  "view-calendar": "calendar",
-  "view-calendar-agenda": "calendar-range",
-  "view-calendar-agenda-symbolic": "calendar-range",
-  "view-calendar-birthday": "cake",
-  "view-calendar-birthday-symbolic": "cake",
-  "view-calendar-day": "calendar-days",
-  "view-calendar-day-symbolic": "calendar-days",
-  "view-calendar-holiday": "calendar-heart",
-  "view-calendar-holiday-symbolic": "calendar-heart",
-  "view-calendar-journal": "calendar-plus-2",
-  "view-calendar-journal-symbolic": "calendar-plus-2",
-  "view-calendar-list": "calendar-range",
-  "view-calendar-list-symbolic": "calendar-range",
-  "view-calendar-month": "calendar-1",
-  "view-calendar-month-symbolic": "calendar-1",
-  "view-calendar-special-occasion": "calendar-heart",
-  "view-calendar-special-occasion-symbolic": "calendar-heart",
-  "view-calendar-symbolic": "calendar",
-  "view-calendar-tasks": "calendar-range",
-  "view-calendar-tasks-symbolic": "calendar-range",
-  "view-calendar-time-spent": "calendar-clock",
-  "view-calendar-time-spent-symbolic": "calendar-clock",
-  "view-calendar-timeline": "calendar-range",
-  "view-calendar-timeline-symbolic": "calendar-range",
-  "view-calendar-upcoming-days": "calendar-chevrons-right",
-  "view-calendar-upcoming-days-symbolic": "calendar-chevrons-right",
-  "view-calendar-upcoming-events": "calendar-chevrons-right",
-  "view-calendar-upcoming-events-symbolic": "calendar-chevrons-right",
-  "view-calendar-wedding-anniversary": "calendar-heart",
-  "view-calendar-wedding-anniversary-symbolic": "calendar-heart",
-  "view-calendar-week": "calendar-days",
-  "view-calendar-week-symbolic": "calendar-days",
-  "view-calendar-whatsnext": "calendar-arrow-down",
-  "view-calendar-whatsnext-symbolic": "calendar-arrow-down",
-  "view-calendar-workweek": "calendar-days",
-  "view-calendar-workweek-symbolic": "calendar-days",
-  "view-catalog": "book-image",
-  "view-catalog-symbolic": "book-image",
-  "view-categories-expenditures": "banknote-arrow-down",
-  "view-categories-expenditures-symbolic": "banknote-arrow-down",
-  "view-categories-incomes": "banknote-arrow-up",
-  "view-categories-incomes-symbolic": "banknote-arrow-up",
-  "view-choose": "layout-dashboard",
-  "view-choose-symbolic": "layout-dashboard",
-  "view-close": "square-x",
-  "view-close-symbolic": "square-x",
-  "view-conversation-balloon": "message-square",
-  "view-conversation-balloon-symbolic": "message-square",
-  "view-currency-list": "banknote",
-  "view-currency-list-symbolic": "banknote",
-  "view-dual-symbolic": "columns-2",
-  "view-file-columns": "columns-3",
-  "view-file-columns-symbolic": "columns-3",
-  "view-filter": "filter",
-  "view-filter-symbolic": "filter",
-  "view-financial-list": "notepad-text",
-  "view-financial-list-symbolic": "notepad-text",
-  "view-form": "form",
-  "view-form-action": "form",
-  "view-form-action-symbolic": "form",
-  "view-form-symbolic": "form",
-  "view-fullscreen": "fullscreen",
-  "view-fullscreen-symbolic": "fullscreen",
-  "view-grid": "grip",
-  "view-grid-symbolic": "grip",
-  "view-group": "group",
-  "view-group-symbolic": "group",
-  "view-hidden": "eye-off",
-  "view-hidden-symbolic": "eye-off",
-  "view-history": "clock",
-  "view-history-symbolic": "clock",
-  "view-left-close": "panel-left-close",
-  "view-left-close-symbolic": "panel-left-close",
-  "view-left-new": "panel-left-dashed",
-  "view-left-new-symbolic": "panel-left-dashed",
-  "view-list-details": "layout-list",
-  "view-list-details-symbolic": "layout-list",
-  "view-list-icons": "layout-grid",
-  "view-list-icons-symbolic": "layout-grid",
-  "view-list-text": "list",
-  "view-list-text-symbolic": "list",
-  "view-list-tree": "list-tree",
-  "view-list-tree-symbolic": "list-tree",
-  "view-media-album-cover": "turntable",
-  "view-media-album-cover-symbolic": "turntable",
-  "view-media-artist": "user",
-  "view-media-artist-symbolic": "user",
-  "view-media-chart": "chart-line",
-  "view-media-chart-symbolic": "chart-line",
-  "view-media-config": "keyboard",
-  "view-media-config-symbolic": "keyboard",
-  "view-media-equalizer": "sliders-horizontal",
-  "view-media-equalizer-symbolic": "sliders-horizontal",
-  "view-media-favorite": "star",
-  "view-media-favorite-symbolic": "star",
-  "view-media-genre": "film",
-  "view-media-genre-symbolic": "film",
-  "view-media-lyrics": "list-music",
-  "view-media-lyrics-symbolic": "list-music",
-  "view-media-playcount": "bar-chart-4",
-  "view-media-playcount-symbolic": "bar-chart-4",
-  "view-media-playlist": "list-music",
-  "view-media-playlist-symbolic": "list-music",
-  "view-media-publisher": "briefcase",
-  "view-media-publisher-symbolic": "briefcase",
-  "view-media-recent": "calendar",
-  "view-media-recent-symbolic": "calendar",
-  "view-media-similarartists": "users",
-  "view-media-similarartists-symbolic": "users",
-  "view-media-title": "notebook",
-  "view-media-title-symbolic": "notebook",
-  "view-media-track": "music",
-  "view-media-track-symbolic": "music",
-  "view-media-visualization": "audio-lines",
-  "view-media-visualization-symbolic": "audio-lines",
-  "view-more-horizontal-symbolic": "ellipsis",
-  "view-more-symbolic": "ellipsis-vertical",
-  "view-multiple-objects": "layout-panel-top",
-  "view-multiple-objects-symbolic": "layout-panel-top",
-  "view-object-histogram-linear": "chart-column-decreasing",
-  "view-object-histogram-linear-symbolic": "chart-column-decreasing",
-  "view-object-histogram-logarithmic": "chart-column",
-  "view-object-histogram-logarithmic-symbolic": "chart-column",
-  "view-pages-continuous": "rows",
-  "view-pages-continuous-symbolic": "rows",
-  "view-pages-facing": "columns",
-  "view-pages-facing-first-centered": "layout-panel-top",
-  "view-pages-facing-first-centered-symbolic": "layout-panel-top",
-  "view-pages-facing-symbolic": "columns",
-  "view-pages-overview": "sticky-notes",
-  "view-pages-overview-symbolic": "sticky-notes",
-  "view-pages-single": "sticky-note",
-  "view-pages-single-symbolic": "sticky-note",
-  "view-pim-calendar": "calendar",
-  "view-pim-calendar-symbolic": "calendar",
-  "view-pim-contacts": "notebook",
-  "view-pim-contacts-symbolic": "notebook",
-  "view-pim-journal": "notebook-pen",
-  "view-pim-journal-symbolic": "notebook-pen",
-  "view-pim-mail": "mail",
-  "view-pim-mail-symbolic": "mail",
-  "view-pim-news": "newspaper",
-  "view-pim-news-symbolic": "newspaper",
-  "view-pim-notes": "notepad-text",
-  "view-pim-notes-symbolic": "notepad-text",
-  "view-pim-tasks": "list-checks",
-  "view-pim-tasks-pending": "list-todo",
-  "view-pim-tasks-pending-symbolic": "list-todo",
-  "view-pim-tasks-symbolic": "list-checks",
-  "view-presentation": "presentation",
-  "view-presentation-symbolic": "presentation",
-  "view-preview": "image",
-  "view-preview-symbolic": "image",
-  "view-private": "hat-glasses",
-  "view-private-symbolic": "hat-glasses",
-  "view-process-all": "layout-list",
-  "view-process-all-symbolic": "layout-list",
-  "view-process-all-tree": "list-tree",
-  "view-process-all-tree-symbolic": "list-tree",
-  "view-process-own": "user",
-  "view-process-own-symbolic": "user",
-  "view-process-system": "monitor-pc",
-  "view-process-system-symbolic": "monitor-pc",
-  "view-process-tree": "list-tree",
-  "view-process-tree-symbolic": "list-tree",
-  "view-process-users": "users",
-  "view-process-users-symbolic": "users",
-  "view-readermode": "book-open",
-  "view-readermode-active": "book-open-text",
-  "view-readermode-active-symbolic": "book-open-text",
-  "view-readermode-symbolic": "book-open",
-  "view-refresh": "refresh-cw",
-  "view-refresh-symbolic": "refresh-cw",
-  "view-resource-calendar": "calendar",
-  "view-resource-calendar-symbolic": "calendar",
-  "view-restore": "archive-restore",
-  "view-restore-symbolic": "archive-restore",
-  "view-right-close": "panel-right-close",
-  "view-right-close-symbolic": "panel-right-close",
-  "view-right-new": "panel-right-dashed",
-  "view-right-new-symbolic": "panel-right-dashed",
-  "view-services-scripted-amarok": "square-terminal",
-  "view-services-scripted-amarok-symbolic": "square-terminal",
-  "view-sidetree": "folder-tree",
-  "view-sidetree-symbolic": "folder-tree",
-  "view-sort": "arrow-up-down",
-  "view-sort-ascending": "arrow-up-down",
-  "view-sort-ascending-name": "arrow-up-a-z",
-  "view-sort-ascending-name-symbolic": "arrow-up-a-z",
-  "view-sort-ascending-symbolic": "arrow-up-down",
-  "view-sort-descending": "sort-desc",
-  "view-sort-descending-name": "arrow-down-z-a",
-  "view-sort-descending-name-symbolic": "arrow-down-z-a",
-  "view-sort-descending-symbolic": "sort-desc",
-  "view-sort-symbolic": "arrow-up-down",
-  "view-split-effect": "split-square-horizontal",
-  "view-split-effect-symbolic": "split-square-horizontal",
-  "view-split-left-right": "columns-2",
-  "view-split-left-right-symbolic": "columns-2",
-  "view-split-top-bottom": "rows-2",
-  "view-split-top-bottom-symbolic": "rows-2",
-  "view-statistics": "chart-no-axes-column-increasing",
-  "view-statistics-symbolic": "chart-no-axes-column-increasing",
-  "view-table-of-contents-ltr": "table-of-contents",
-  "view-table-of-contents-ltr-symbolic": "table-of-contents",
-  "view-table-of-contents-rtl": "table-of-contents",
-  "view-table-of-contents-rtl-symbolic": "table-of-contents",
-  "view-task": "list-todo",
-  "view-task-add": "check",
-  "view-task-add-symbolic": "check",
-  "view-task-child": "check-check",
-  "view-task-child-add": "check-check",
-  "view-task-child-add-symbolic": "check-check",
-  "view-task-child-symbolic": "check-check",
-  "view-task-symbolic": "list-todo",
-  "view-tasks-all-symbolic": "list-todo",
-  "view-tasks-today-symbolic": "calendar-days",
-  "view-tasks-unscheduled-symbolic": "notebook",
-  "view-tasks-week-symbolic": "calendar-days",
-  "view-time-schedule": "calendar-range",
-  "view-time-schedule-baselined": "calendar-range",
-  "view-time-schedule-baselined-add": "calendar-plus",
-  "view-time-schedule-baselined-add-symbolic": "calendar-plus",
-  "view-time-schedule-baselined-remove": "calendar-minus",
-  "view-time-schedule-baselined-remove-symbolic": "calendar-minus",
-  "view-time-schedule-baselined-symbolic": "calendar-range",
-  "view-time-schedule-calculus": "calendar-cog",
-  "view-time-schedule-calculus-symbolic": "calendar-cog",
-  "view-time-schedule-child-insert": "calendar-plus-2",
-  "view-time-schedule-child-insert-symbolic": "calendar-plus-2",
-  "view-time-schedule-edit": "calendar-range",
-  "view-time-schedule-edit-symbolic": "calendar-range",
-  "view-time-schedule-insert": "calendar-range",
-  "view-time-schedule-insert-symbolic": "calendar-range",
-  "view-time-schedule-symbolic": "calendar-range",
-  "view-unsplit-effect": "align-right",
-  "view-unsplit-effect-symbolic": "align-right",
-  "view-visible": "eye",
-  "view-visible-off": "eye-off",
-  "view-visible-off-symbolic": "eye-off",
-  "view-visible-symbolic": "eye",
-  "view-web-browser-dom-tree": "list-tree",
-  "view-web-browser-dom-tree-symbolic": "list-tree",
+  "user-home": {
+    "icon": "home",
+    "categories": [
+      "places"
+    ]
+  },
+  "user-home-symbolic": {
+    "icon": "home",
+    "categories": [
+      "places"
+    ]
+  },
+  "user-identity": {
+    "icon": "user",
+    "categories": [
+      "actions",
+      "applets",
+      "places"
+    ]
+  },
+  "user-identity-symbolic": {
+    "icon": "user",
+    "categories": [
+      "actions",
+      "places"
+    ]
+  },
+  "user-trash": {
+    "icon": "trash",
+    "categories": [
+      "places"
+    ]
+  },
+  "user-trash-full": {
+    "icon": "trash",
+    "categories": [
+      "places"
+    ]
+  },
+  "user-trash-full-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "places",
+      "status"
+    ]
+  },
+  "user-trash-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "places"
+    ]
+  },
+  "usermenu-down": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "usermenu-down-symbolic": {
+    "icon": "chevron-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "usermenu-up": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "usermenu-up-symbolic": {
+    "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-app-grid-symbolic": {
+    "icon": "grip",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode": {
+    "icon": "barcode",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode-add": {
+    "icon": "barcode",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode-add-symbolic": {
+    "icon": "barcode",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode-qr": {
+    "icon": "qr-code",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode-qr-symbolic": {
+    "icon": "qr-code",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-barcode-symbolic": {
+    "icon": "barcode",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-agenda": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-agenda-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-birthday": {
+    "icon": "cake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-birthday-symbolic": {
+    "icon": "cake",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-day": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-day-symbolic": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-holiday": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-holiday-symbolic": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-journal": {
+    "icon": "calendar-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-journal-symbolic": {
+    "icon": "calendar-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-list": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-list-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-month": {
+    "icon": "calendar-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-month-symbolic": {
+    "icon": "calendar-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-special-occasion": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-special-occasion-symbolic": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-tasks": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-tasks-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-time-spent": {
+    "icon": "calendar-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-time-spent-symbolic": {
+    "icon": "calendar-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-timeline": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-timeline-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-upcoming-days": {
+    "icon": "calendar-chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-upcoming-days-symbolic": {
+    "icon": "calendar-chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-upcoming-events": {
+    "icon": "calendar-chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-upcoming-events-symbolic": {
+    "icon": "calendar-chevrons-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-wedding-anniversary": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-wedding-anniversary-symbolic": {
+    "icon": "calendar-heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-week": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-week-symbolic": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-whatsnext": {
+    "icon": "calendar-arrow-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-whatsnext-symbolic": {
+    "icon": "calendar-arrow-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-workweek": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-calendar-workweek-symbolic": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-catalog": {
+    "icon": "book-image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-catalog-symbolic": {
+    "icon": "book-image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-categories-expenditures": {
+    "icon": "banknote-arrow-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-categories-expenditures-symbolic": {
+    "icon": "banknote-arrow-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-categories-incomes": {
+    "icon": "banknote-arrow-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-categories-incomes-symbolic": {
+    "icon": "banknote-arrow-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-choose": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-choose-symbolic": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-close": {
+    "icon": "square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-close-symbolic": {
+    "icon": "square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-conversation-balloon": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-conversation-balloon-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-currency-list": {
+    "icon": "banknote",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-currency-list-symbolic": {
+    "icon": "banknote",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-dual-symbolic": {
+    "icon": "columns-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-file-columns": {
+    "icon": "columns-3",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-file-columns-symbolic": {
+    "icon": "columns-3",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-filter": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-filter-symbolic": {
+    "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-financial-list": {
+    "icon": "notepad-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-financial-list-symbolic": {
+    "icon": "notepad-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-form": {
+    "icon": "form",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-form-action": {
+    "icon": "form",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-form-action-symbolic": {
+    "icon": "form",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-form-symbolic": {
+    "icon": "form",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-fullscreen": {
+    "icon": "fullscreen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-fullscreen-symbolic": {
+    "icon": "fullscreen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-grid": {
+    "icon": "grip",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-grid-symbolic": {
+    "icon": "grip",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-group": {
+    "icon": "group",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-group-symbolic": {
+    "icon": "group",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-hidden": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-hidden-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-history": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-history-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-left-close": {
+    "icon": "panel-left-close",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-left-close-symbolic": {
+    "icon": "panel-left-close",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-left-new": {
+    "icon": "panel-left-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-left-new-symbolic": {
+    "icon": "panel-left-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-details": {
+    "icon": "layout-list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-details-symbolic": {
+    "icon": "layout-list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-icons": {
+    "icon": "layout-grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-icons-symbolic": {
+    "icon": "layout-grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-text": {
+    "icon": "list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-text-symbolic": {
+    "icon": "list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-tree": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-list-tree-symbolic": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-album-cover": {
+    "icon": "turntable",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-album-cover-symbolic": {
+    "icon": "turntable",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-artist": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-artist-symbolic": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-chart": {
+    "icon": "chart-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-chart-symbolic": {
+    "icon": "chart-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-config": {
+    "icon": "keyboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-config-symbolic": {
+    "icon": "keyboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-equalizer": {
+    "icon": "sliders-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-equalizer-symbolic": {
+    "icon": "sliders-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-favorite": {
+    "icon": "star",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-favorite-symbolic": {
+    "icon": "star",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-genre": {
+    "icon": "film",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-genre-symbolic": {
+    "icon": "film",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-lyrics": {
+    "icon": "list-music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-lyrics-symbolic": {
+    "icon": "list-music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-playcount": {
+    "icon": "bar-chart-4",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-playcount-symbolic": {
+    "icon": "bar-chart-4",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-playlist": {
+    "icon": "list-music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-playlist-symbolic": {
+    "icon": "list-music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-publisher": {
+    "icon": "briefcase",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-publisher-symbolic": {
+    "icon": "briefcase",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-recent": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-recent-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-similarartists": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-similarartists-symbolic": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-title": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-title-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-track": {
+    "icon": "music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-track-symbolic": {
+    "icon": "music",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-visualization": {
+    "icon": "audio-lines",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-media-visualization-symbolic": {
+    "icon": "audio-lines",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-more-horizontal-symbolic": {
+    "icon": "ellipsis",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-more-symbolic": {
+    "icon": "ellipsis-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-multiple-objects": {
+    "icon": "layout-panel-top",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-multiple-objects-symbolic": {
+    "icon": "layout-panel-top",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-object-histogram-linear": {
+    "icon": "chart-column-decreasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-object-histogram-linear-symbolic": {
+    "icon": "chart-column-decreasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-object-histogram-logarithmic": {
+    "icon": "chart-column",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-object-histogram-logarithmic-symbolic": {
+    "icon": "chart-column",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-continuous": {
+    "icon": "rows",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-continuous-symbolic": {
+    "icon": "rows",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-facing": {
+    "icon": "columns",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-facing-first-centered": {
+    "icon": "layout-panel-top",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-facing-first-centered-symbolic": {
+    "icon": "layout-panel-top",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-facing-symbolic": {
+    "icon": "columns",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-overview": {
+    "icon": "sticky-notes",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-overview-symbolic": {
+    "icon": "sticky-notes",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-single": {
+    "icon": "sticky-note",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pages-single-symbolic": {
+    "icon": "sticky-note",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-calendar": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-calendar-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-contacts": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-contacts-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-journal": {
+    "icon": "notebook-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-journal-symbolic": {
+    "icon": "notebook-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-mail": {
+    "icon": "mail",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-mail-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-news": {
+    "icon": "newspaper",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-news-symbolic": {
+    "icon": "newspaper",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-notes": {
+    "icon": "notepad-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-notes-symbolic": {
+    "icon": "notepad-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-tasks": {
+    "icon": "list-checks",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-tasks-pending": {
+    "icon": "list-todo",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-tasks-pending-symbolic": {
+    "icon": "list-todo",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-pim-tasks-symbolic": {
+    "icon": "list-checks",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-presentation": {
+    "icon": "presentation",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-presentation-symbolic": {
+    "icon": "presentation",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-preview": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-preview-symbolic": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-private": {
+    "icon": "hat-glasses",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-private-symbolic": {
+    "icon": "hat-glasses",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-all": {
+    "icon": "layout-list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-all-symbolic": {
+    "icon": "layout-list",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-all-tree": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-all-tree-symbolic": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-own": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-own-symbolic": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-system": {
+    "icon": "monitor-pc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-system-symbolic": {
+    "icon": "monitor-pc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-tree": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-tree-symbolic": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-users": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-process-users-symbolic": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-readermode": {
+    "icon": "book-open",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-readermode-active": {
+    "icon": "book-open-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-readermode-active-symbolic": {
+    "icon": "book-open-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-readermode-symbolic": {
+    "icon": "book-open",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-refresh": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-refresh-symbolic": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-resource-calendar": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-resource-calendar-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-restore": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-restore-symbolic": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-right-close": {
+    "icon": "panel-right-close",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-right-close-symbolic": {
+    "icon": "panel-right-close",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-right-new": {
+    "icon": "panel-right-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-right-new-symbolic": {
+    "icon": "panel-right-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-services-scripted-amarok": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-services-scripted-amarok-symbolic": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sidetree": {
+    "icon": "folder-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sidetree-symbolic": {
+    "icon": "folder-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort": {
+    "icon": "arrow-up-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-ascending": {
+    "icon": "arrow-up-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-ascending-name": {
+    "icon": "arrow-up-a-z",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-ascending-name-symbolic": {
+    "icon": "arrow-up-a-z",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-ascending-symbolic": {
+    "icon": "arrow-up-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-descending": {
+    "icon": "sort-desc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-descending-name": {
+    "icon": "arrow-down-z-a",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-descending-name-symbolic": {
+    "icon": "arrow-down-z-a",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-descending-symbolic": {
+    "icon": "sort-desc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-sort-symbolic": {
+    "icon": "arrow-up-down",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-effect": {
+    "icon": "split-square-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-effect-symbolic": {
+    "icon": "split-square-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-left-right": {
+    "icon": "columns-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-left-right-symbolic": {
+    "icon": "columns-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-top-bottom": {
+    "icon": "rows-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-split-top-bottom-symbolic": {
+    "icon": "rows-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-statistics": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-statistics-symbolic": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-table-of-contents-ltr": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-table-of-contents-ltr-symbolic": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-table-of-contents-rtl": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-table-of-contents-rtl-symbolic": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task": {
+    "icon": "list-todo",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-add": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-add-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-child": {
+    "icon": "check-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-child-add": {
+    "icon": "check-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-child-add-symbolic": {
+    "icon": "check-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-child-symbolic": {
+    "icon": "check-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-task-symbolic": {
+    "icon": "list-todo",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-tasks-all-symbolic": {
+    "icon": "list-todo",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-tasks-today-symbolic": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-tasks-unscheduled-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-tasks-week-symbolic": {
+    "icon": "calendar-days",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined-add": {
+    "icon": "calendar-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined-add-symbolic": {
+    "icon": "calendar-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined-remove": {
+    "icon": "calendar-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined-remove-symbolic": {
+    "icon": "calendar-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-baselined-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-calculus": {
+    "icon": "calendar-cog",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-calculus-symbolic": {
+    "icon": "calendar-cog",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-child-insert": {
+    "icon": "calendar-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-child-insert-symbolic": {
+    "icon": "calendar-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-edit": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-edit-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-insert": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-insert-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-time-schedule-symbolic": {
+    "icon": "calendar-range",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-unsplit-effect": {
+    "icon": "align-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-unsplit-effect-symbolic": {
+    "icon": "align-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-visible": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-visible-off": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-visible-off-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-visible-symbolic": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-web-browser-dom-tree": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-web-browser-dom-tree-symbolic": {
+    "icon": "list-tree",
+    "categories": [
+      "actions"
+    ]
+  },
   "view-wrapped-symbolic": "rotate-cw",
   "view-wrapped-symbolic-rtl": "rotate-ccw",
-  "view-zoom-in-symbolic": "zoom-in",
-  "view-zoom-out-symbolic": "zoom-out",
-  "viewbib-symbolic": "notebook",
-  "viewhtml-symbolic": "earth",
-  "viewimage": "image",
-  "viewimage-symbolic": "image",
-  "viewlog": "message-square",
-  "viewlog-symbolic": "message-square",
-  "viewps-symbolic": "printer",
+  "view-zoom-in-symbolic": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "view-zoom-out-symbolic": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewbib-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewhtml-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewimage": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewimage-symbolic": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewlog": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewlog-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "viewps-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
   "waveform-off": "audio-lines",
   "waveform-off-symbolic": "audio-lines-off",
-  "window-new": "square-plus",
-  "window-new-symbolic": "square-plus",
-  "window-pin": "pin",
-  "x-shape-image": "image",
-  "x-shape-image-symbolic": "image",
-  "zoom": "search",
-  "zoom-in": "zoom-in",
-  "zoom-in-large": "zoom-in",
-  "zoom-in-large-symbolic": "zoom-in",
-  "zoom-in-map": "plus",
-  "zoom-in-map-symbolic": "plus",
-  "zoom-in-symbolic": "zoom-in",
-  "zoom-out": "zoom-out",
-  "zoom-out-large": "zoom-out",
-  "zoom-out-large-symbolic": "zoom-out",
-  "zoom-out-map": "minus",
-  "zoom-out-map-symbolic": "minus",
-  "zoom-out-symbolic": "zoom-out",
-  "zoom-symbolic": "search"
+  "window-new": {
+    "icon": "square-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "window-new-symbolic": {
+    "icon": "square-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "window-pin": {
+    "icon": "pin",
+    "categories": [
+      "actions"
+    ]
+  },
+  "x-shape-image": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "x-shape-image-symbolic": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in-large": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in-large-symbolic": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in-map": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in-map-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-in-symbolic": {
+    "icon": "zoom-in",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out-large": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out-large-symbolic": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out-map": {
+    "icon": "minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out-map-symbolic": {
+    "icon": "minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-out-symbolic": {
+    "icon": "zoom-out",
+    "categories": [
+      "actions"
+    ]
+  },
+  "zoom-symbolic": {
+    "icon": "search",
+    "categories": [
+      "actions"
+    ]
+  }
 }

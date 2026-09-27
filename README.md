@@ -18,8 +18,9 @@ The build creates `dist/Lucide-KDE.tar.gz`. In **System Settings → Colors & Th
 Icons**, click **Install from File…**, select that archive, then select **Lucide
 KDE** and click **Apply**. Installing the archive does not require Bun.
 
-The archive contains one top-level `Lucide-KDE` directory with `index.theme`, the
-generated SVGs, and both license notices.
+The archive contains one top-level `Lucide-KDE` directory with `index.theme`, SVGs
+under `scalable/<category>`, and both license notices. Icons found in multiple KDE
+categories are included in each corresponding directory.
 
 The installable theme includes the full [Lucide license](theme/Lucide-KDE/LICENSE-LUCIDE)
 and this project's [GPLv3 license](theme/Lucide-KDE/LICENSE-GPL-3.0).
@@ -38,7 +39,9 @@ bun run typecheck
 `lucide-static` version and replaces `theme/Lucide-KDE` with generated output.
 Mirrored RTL assignments use an object such as
 `{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
-An object can also set `"scale":0.75` to shrink the drawing within its icon area.
+An object can also set `"scale":0.75` to shrink the drawing within its icon area,
+or `"categories":["actions","status"]` to place it in multiple theme directories.
+Assignments without categories use `status`.
 
 ## Local editor
 

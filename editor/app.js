@@ -217,7 +217,8 @@ async function saveMapping(lucideName) {
   if (!state.kde) return;
   setBusy(true); notice("");
   try {
-    const result = await api("/api/mapping", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kdeName: state.kde, lucideName, mirror: state.mirror }) });
+    const categories = state.icons.find((icon) => icon.name === state.kde)?.categories;
+    const result = await api("/api/mapping", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kdeName: state.kde, lucideName, mirror: state.mirror, categories }) });
     state.mappings = result.mappings; state.needsBuild = true;
     if (lucideName === null) { state.candidate = ""; state.mirror = false; state.scale = 1; }
     renderStatus(); renderKde(); renderSelection(); renderLucide();
