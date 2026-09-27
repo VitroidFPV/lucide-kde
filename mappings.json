@@ -641,6 +641,18 @@
       "actions"
     ]
   },
+  "dialog-ok-apply": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok-apply-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-multiple": {
     "icon": "files",
     "categories": [
@@ -990,6 +1002,18 @@
   },
   "edit-rename-symbolic": {
     "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-select-invert": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-select-invert-symbolic": {
+    "icon": "squares-exclude",
     "categories": [
       "actions"
     ]
@@ -2337,6 +2361,18 @@
       "actions"
     ]
   },
+  "gtk-apply": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-apply-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-clear": {
     "icon": "delete",
     "categories": [
@@ -2469,6 +2505,12 @@
       "actions"
     ]
   },
+  "image-invert-symbolic": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
   "info": {
     "icon": "info",
     "categories": [
@@ -2481,8 +2523,34 @@
       "actions"
     ]
   },
+  "input-caps-on": "arrow-big-up-dash",
+  "input-caps-on-symbolic": "arrow-big-up-dash",
+  "input-keyboard": {
+    "icon": "keyboard",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-keyboard-symbolic": {
+    "icon": "keyboard",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-keyboard-virtual-off": "keyboard",
   "input-keyboard-virtual-off-symbolic": "keyboard",
+  "input-mouse": {
+    "icon": "mouse",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-mouse-symbolic": {
+    "icon": "mouse",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-touchpad-off": "touchpad-off",
   "input-touchpad-off-symbolic": "touchpad-off",
   "input-touchpad-on": "touchpad",
@@ -2501,6 +2569,18 @@
   },
   "install": "download",
   "install-symbolic": "download",
+  "invertimage": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "invertimage-symbolic": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
   "kalarm-disabled": "bell-off",
   "kalarm-partdisabled": "bell-minus",
   "kdeconnect-tray": "smartphone",
@@ -2732,6 +2812,12 @@
       "status"
     ]
   },
+  "mask-invert": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
   "media-playback-playing": "circle-play",
@@ -2849,6 +2935,66 @@
       "places"
     ]
   },
+  "notification-active": {
+    "icon": "bell-ring",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-active-symbolic": {
+    "icon": "bell-ring",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-disabled": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-disabled-symbolic": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-inactive": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-inactive-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-disabled": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-disabled-symbolic": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
   "object-locked": {
     "icon": "lock",
     "categories": [
@@ -2916,6 +3062,12 @@
   },
   "preferences-desktop-display-randr-symbolic": {
     "icon": "monitor-cog",
+    "categories": [
+      "preferences"
+    ]
+  },
+  "preferences-desktop-notification-symbolic": {
+    "icon": "bell",
     "categories": [
       "preferences"
     ]
@@ -3365,6 +3517,18 @@
   "temperature-normal-symbolic": "thermometer",
   "temperature-warm": "thermometer-sun",
   "temperature-warm-symbolic": "thermometer-sun",
+  "text-speak": {
+    "icon": "message-square-more",
+    "categories": [
+      "actions"
+    ]
+  },
+  "text-speak-symbolic": {
+    "icon": "message-square-more",
+    "categories": [
+      "actions"
+    ]
+  },
   "tool_imageeffects": {
     "icon": "pencil",
     "categories": [
