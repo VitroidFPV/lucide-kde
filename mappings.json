@@ -553,6 +553,18 @@
       "devices"
     ]
   },
+  "cell_edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cell_edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "certificate-server": {
     "icon": "lock",
     "categories": [
@@ -1517,6 +1529,30 @@
       "actions"
     ]
   },
+  "edit-clear-all": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-all-symbolic": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-history": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-history-symbolic": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-clear-list": {
     "icon": "delete",
     "categories": [
@@ -1609,6 +1645,18 @@
       "actions"
     ]
   },
+  "edit-entry": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-entry-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-find": {
     "icon": "search",
     "categories": [
@@ -1681,6 +1729,18 @@
       "actions"
     ]
   },
+  "edit-map": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-map-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-paste": {
     "icon": "clipboard",
     "categories": [
@@ -1742,6 +1802,12 @@
       "actions"
     ]
   },
+  "edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-undo": {
     "icon": "undo-2",
     "categories": [
@@ -1792,10 +1858,46 @@
       "actions"
     ]
   },
+  "editor": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "editor-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edittext": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edittext-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "emblem-documents-symbolic": {
     "icon": "files",
     "categories": [
       "emblems"
+    ]
+  },
+  "entry-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "entry-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
     ]
   },
   "exifinfo": {
@@ -2693,6 +2795,30 @@
       "actions"
     ]
   },
+  "gnumeric-comment-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-object-arrow": {
     "icon": "move-up-left",
     "categories": [
@@ -3103,6 +3229,18 @@
       "actions"
     ]
   },
+  "group-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-add": {
     "icon": "plus",
     "categories": [
@@ -3135,6 +3273,18 @@
   },
   "gtk-clear-symbolic": {
     "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-edit-symbolic": {
+    "icon": "pencil",
     "categories": [
       "actions"
     ]
@@ -3628,6 +3778,18 @@
     ]
   },
   "media-playlist-shuffle-symbolic-rtl": "shuffle",
+  "media-track-edit-amarok": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-track-edit-amarok-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "meeting-organizer": "user",
   "meeting-organizer-symbolic": "user",
   "menu_new": {
@@ -3793,6 +3955,18 @@
   },
   "object-unlocked-symbolic": {
     "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "open-for-editing": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "open-for-editing-symbolic": {
+    "icon": "pencil",
     "categories": [
       "actions"
     ]
