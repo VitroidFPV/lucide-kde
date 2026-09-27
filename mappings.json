@@ -652,6 +652,30 @@
       "actions"
     ]
   },
+  "delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-comment": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-comment-symbolic": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "desktop": {
     "icon": "monitor",
     "categories": [
@@ -1486,6 +1510,18 @@
       "actions"
     ]
   },
+  "draw-eraser-delete-objects": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-eraser-delete-objects-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "drive-removable-media": {
     "icon": "eject",
     "categories": [
@@ -1629,6 +1665,42 @@
   },
   "edit-cut-symbolic": {
     "icon": "scissors",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-remove": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-remove-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-shred": {
+    "icon": "shredder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-shred-symbolic": {
+    "icon": "shredder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-symbolic": {
+    "icon": "trash",
     "categories": [
       "actions"
     ]
@@ -1886,6 +1958,18 @@
     "icon": "files",
     "categories": [
       "emblems"
+    ]
+  },
+  "entry-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "entry-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
     ]
   },
   "entry-edit": {
@@ -2795,6 +2879,18 @@
       "actions"
     ]
   },
+  "gnumeric-comment-delete": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-delete-symbolic": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-comment-edit": {
     "icon": "pencil",
     "categories": [
@@ -3229,6 +3325,18 @@
       "actions"
     ]
   },
+  "group-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "group-edit": {
     "icon": "pencil",
     "categories": [
@@ -3309,6 +3417,32 @@
   },
   "gtk-tab-new-symbolic": {
     "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-ltr": {
+    "icon": "redo-2",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-ltr-symbolic": {
+    "icon": "redo-2",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-rtl": {
+    "icon": "redo-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-rtl-symbolic": {
+    "icon": "redo-2",
     "categories": [
       "actions"
     ]
@@ -3509,6 +3643,18 @@
       "status"
     ]
   },
+  "knotes_delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "konv_message": "megaphone",
   "kt-add-filters": {
     "icon": "funnel-plus",
@@ -3566,6 +3712,18 @@
   },
   "labplot-cursor-arrow-symbolic": {
     "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-delete": {
+    "icon": "layers-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-delete-symbolic": {
+    "icon": "layers-minus",
     "categories": [
       "actions"
     ]
@@ -3635,6 +3793,18 @@
     "categories": [
       "actions",
       "status"
+    ]
+  },
+  "mail-deleted": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "mail-deleted-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
     ]
   },
   "mail-download-now": {
@@ -4494,6 +4664,18 @@
       "actions"
     ]
   },
+  "tag-delete": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tag-delete-symbolic": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
   "tag-properties": {
     "icon": "table-properties",
     "categories": [
@@ -4638,6 +4820,18 @@
       "places"
     ]
   },
+  "user-group-delete": {
+    "icon": "user-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "user-group-delete-symbolic": {
+    "icon": "user-x",
+    "categories": [
+      "actions"
+    ]
+  },
   "user-home": {
     "icon": "home",
     "categories": [
@@ -4690,6 +4884,18 @@
       "places"
     ]
   },
+  "usermenu-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "usermenu-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "usermenu-down": {
     "icon": "chevron-down",
     "categories": [
@@ -4710,6 +4916,18 @@
   },
   "usermenu-up-symbolic": {
     "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "vcs-branch-delete": {
+    "icon": "git-branch-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "vcs-branch-delete-symbolic": {
+    "icon": "git-branch-minus",
     "categories": [
       "actions"
     ]
@@ -6310,6 +6528,18 @@
   },
   "x-shape-image-symbolic": {
     "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "xml-attribute-delete": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "xml-attribute-delete-symbolic": {
+    "icon": "tag-x",
     "categories": [
       "actions"
     ]
