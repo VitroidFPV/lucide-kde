@@ -25,6 +25,28 @@ categories are included in each corresponding directory.
 The installable theme includes the full [Lucide license](theme/Lucide-KDE/LICENSE-LUCIDE)
 and this project's [GPLv3 license](theme/Lucide-KDE/LICENSE-GPL-3.0).
 
+## Releases
+
+Pull requests and pushes to `main` run the tests, typecheck, and archive build in
+GitHub Actions. The build also checks that the committed theme matches the
+generated output. Pull requests upload `Lucide-KDE.tar.gz` as a preview in the
+CI run's Artifacts section.
+
+Releases use semantic versions and Git tags. Prepare a release with:
+
+```sh
+bun run release:prepare 0.2.0
+bun install --lockfile-only
+git add package.json bun.lock
+git commit -m "Release: 0.2.0"
+git tag v0.2.0
+git push origin main v0.2.0
+```
+
+The tag rebuilds and checks the archive, then creates a draft GitHub Release with
+generated notes and `Lucide-KDE.tar.gz` attached. Review and publish the draft
+in GitHub.
+
 ## Build from source
 
 Install [Bun](https://bun.sh/), then run:

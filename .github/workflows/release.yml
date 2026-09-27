@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - run: bun install --frozen-lockfile
+      - name: Check release version
+        run: |
+          bun -e 'const tag = `v${require("./package.json").version}`; if (tag !== process.env.GITHUB_REF_NAME) throw new Error(`Expected ${tag}, got ${process.env.GITHUB_REF_NAME}`)'
+      - run: bun test
+      - run: bun run typecheck
+      - run: bun run pack
+      - name: Check generated theme
+        run: |
+          git status --short -- theme/Lucide-KDE
+          test -z "$(git status --porcelain -- theme/Lucide-KDE)"
+      - name: Create draft release
+        run: gh release create "$GITHUB_REF_NAME" dist/Lucide-KDE.tar.gz --draft --generate-notes --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

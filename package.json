@@ -1,10 +1,12 @@
 {
   "name": "lucide-kde",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "bun run src/generate.ts",
     "pack": "bun run src/package.ts",
+    "release:prepare": "bun run src/prepare-release.ts",
     "typecheck": "tsc --noEmit",
     "editor": "bun run editor/server.ts"
   },
