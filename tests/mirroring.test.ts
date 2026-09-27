@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 import { readLucide, themedSvg } from "../src/lucide";
-import { mappingCategories, mappingIcon, mappingMirrored, mappingScale, validateMappings } from "../src/mappings";
+import { mappingCategories, mappingIcon, mappingMirrored, mappingRotation, mappingScale, validateMappings } from "../src/mappings";
 
 test("mirrored mappings coexist with existing string mappings", () => {
   const mappings = validateMappings({
@@ -34,4 +34,17 @@ test("scaled mapping keeps artwork centered in the original viewBox", async () =
   expect(mappingScale(mapping)).toBe(0.75);
   expect(themedSvg(await readLucide(mappingIcon(mapping)), false, mappingScale(mapping))).toContain('transform="translate(3 3) scale(0.75)"');
   expect(() => validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0 } })).toThrow();
+});
+
+test("rotation uses 22.5 degree steps around the viewBox center", async () => {
+  const mapping = validateMappings({ arrow: { icon: "arrow-right", rotate: 22.5 } }).arrow;
+  expect(mappingRotation(mapping)).toBe(22.5);
+  expect(mappingRotation("arrow-right")).toBe(0);
+  const source = await readLucide("arrow-right");
+  expect(themedSvg(source, false, 1, mappingRotation(mapping))).toContain('transform="rotate(22.5 12 12)"');
+  expect(themedSvg(source, true, 1, 22.5)).toContain('transform="rotate(22.5 12 12) translate(24 0) scale(-1 1)"');
+  for (const rotate of [-22.5, 23, 360, Infinity]) {
+    expect(() => validateMappings({ arrow: { icon: "arrow-right", rotate } })).toThrow();
+    expect(() => themedSvg(source, false, 1, rotate)).toThrow();
+  }
 });

@@ -1,7 +1,7 @@
 import { searchKdeNames } from "./search.js";
 
 const $ = (id) => document.getElementById(id);
-const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, scale: 1, previewPalette: "current", size: 22, needsBuild: true, busy: false };
+const state = { themes: [], icons: [], lucide: [], mappings: {}, palette: null, theme: "", kde: "", candidate: "", mirror: false, scale: 1, rotate: 0, previewPalette: "current", size: 22, needsBuild: true, busy: false };
 const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 let noticeTimeout;
 let visibleKdeCount = 200;
@@ -9,11 +9,12 @@ let filteredKdeNames = [];
 const mappingIcon = (mapping) => typeof mapping === "string" ? mapping : mapping?.icon || "";
 const mappingMirrored = (mapping) => typeof mapping === "object" && mapping?.mirror === true;
 const mappingScale = (mapping) => typeof mapping === "object" && mapping?.scale || 1;
+const mappingRotation = (mapping) => typeof mapping === "object" && mapping?.rotate || 0;
 const isRtlName = (name) => /-rtl(?:-symbolic)?$/.test(name);
 const categoryLabel = (category) => category === "mimetypes" ? "MIME types" : category[0].toUpperCase() + category.slice(1);
 const canAssign = (name) => {
   const mapping = state.mappings[state.kde];
-  return !!state.kde && !!name && (mappingIcon(mapping) !== name || mappingMirrored(mapping) !== state.mirror);
+  return !!state.kde && !!name && (mappingIcon(mapping) !== name || mappingMirrored(mapping) !== state.mirror || mappingRotation(mapping) !== state.rotate);
 };
 function updateQuickAssignButtons() {
   for (const button of document.querySelectorAll(".lucide-assign")) button.disabled = state.busy || !canAssign(button.dataset.icon);
@@ -165,6 +166,7 @@ function renderSelection() {
   const assigned = mappingIcon(mapping);
   const assignedMirror = mappingMirrored(mapping);
   const assignedScale = mappingScale(mapping);
+  const assignedRotation = mappingRotation(mapping);
   $("detail-heading").textContent = state.kde || "Select a KDE icon";
   $("source-label").textContent = entry ? `From ${entry.source} · ${entry.categories.map(categoryLabel).join(", ")}` : state.kde ? "Manual name" : "";
   $("mapping-label").textContent = assigned ? "Assigned" : "";
@@ -173,6 +175,9 @@ function renderSelection() {
   mirrorButton.hidden = !isRtlName(state.kde);
   mirrorButton.disabled = state.busy || !state.candidate;
   mirrorButton.setAttribute("aria-pressed", String(state.mirror));
+  $("rotate-value").textContent = `${state.rotate}°`;
+  $("rotate-left").disabled = state.busy || !state.candidate;
+  $("rotate-right").disabled = state.busy || !state.candidate;
   $("remove").hidden = !assigned;
   $("remove").disabled = state.busy;
   $("assign").disabled = state.busy || !canAssign(state.candidate);
@@ -183,14 +188,14 @@ function renderSelection() {
   const assignedIcon = $("assigned-icon");
   assignedIcon.hidden = !assigned;
   $("assigned-empty").hidden = !!assigned;
-  if (assigned) { assignedIcon.src = candidateUrl(assigned, state.previewPalette, assignedMirror, assignedScale); assignedIcon.width = state.size; assignedIcon.height = state.size; }
+  if (assigned) { assignedIcon.src = candidateUrl(assigned, state.previewPalette, assignedMirror, assignedScale); assignedIcon.width = state.size; assignedIcon.height = state.size; assignedIcon.style.transform = `rotate(${assignedRotation}deg)`; }
   const candidate = $("candidate-icon");
   candidate.hidden = !state.candidate;
   $("candidate-empty").hidden = !!state.candidate;
-  if (state.candidate) { candidate.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); candidate.width = state.size; candidate.height = state.size; }
+  if (state.candidate) { candidate.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); candidate.width = state.size; candidate.height = state.size; candidate.style.transform = `rotate(${state.rotate}deg)`; }
   for (const image of document.querySelectorAll(".context-icon")) {
     image.hidden = !state.candidate;
-    if (state.candidate) { image.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); image.width = state.size; image.height = state.size; }
+    if (state.candidate) { image.src = candidateUrl(state.candidate, state.previewPalette, state.mirror, state.scale); image.width = state.size; image.height = state.size; image.style.transform = `rotate(${state.rotate}deg)`; }
   }
 }
 function selectKde(name, focus = false) {
@@ -198,6 +203,7 @@ function selectKde(name, focus = false) {
   state.candidate = mappingIcon(state.mappings[name]);
   state.mirror = mappingMirrored(state.mappings[name]);
   state.scale = mappingScale(state.mappings[name]);
+  state.rotate = mappingRotation(state.mappings[name]);
   renderKde(); renderSelection(); renderLucide();
   const selected = $("kde-list").querySelector(".selected");
   selected?.scrollIntoView({ block: "center" });
@@ -218,9 +224,9 @@ async function saveMapping(lucideName) {
   setBusy(true); notice("");
   try {
     const categories = state.icons.find((icon) => icon.name === state.kde)?.categories;
-    const result = await api("/api/mapping", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kdeName: state.kde, lucideName, mirror: state.mirror, categories }) });
+    const result = await api("/api/mapping", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kdeName: state.kde, lucideName, mirror: state.mirror, rotate: state.rotate, categories }) });
     state.mappings = result.mappings; state.needsBuild = true;
-    if (lucideName === null) { state.candidate = ""; state.mirror = false; state.scale = 1; }
+    if (lucideName === null) { state.candidate = ""; state.mirror = false; state.scale = 1; state.rotate = 0; }
     renderStatus(); renderKde(); renderSelection(); renderLucide();
     notice(lucideName ? "Assignment saved" : "Assignment removed", false, 4000);
   } catch (error) { notice(error.message, true); }
@@ -270,6 +276,10 @@ $("manual-form").addEventListener("submit", (event) => {
 });
 $("assign").addEventListener("click", () => saveMapping(state.candidate));
 $("mirror").addEventListener("click", () => { state.mirror = !state.mirror; renderSelection(); updateQuickAssignButtons(); });
+for (const [id, direction] of [["rotate-left", -1], ["rotate-right", 1]]) $(id).addEventListener("click", () => {
+  state.rotate = (state.rotate + direction * 22.5 + 360) % 360;
+  renderSelection(); updateQuickAssignButtons();
+});
 $("remove").addEventListener("click", () => saveMapping(null));
 $("build").addEventListener("click", () => execute("build"));
 $("apply").addEventListener("click", () => execute("apply"));
