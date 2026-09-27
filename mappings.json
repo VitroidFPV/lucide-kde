@@ -2908,6 +2908,18 @@
       "actions"
     ]
   },
+  "preferences-desktop-display-randr": {
+    "icon": "monitor-cog",
+    "categories": [
+      "preferences"
+    ]
+  },
+  "preferences-desktop-display-randr-symbolic": {
+    "icon": "monitor-cog",
+    "categories": [
+      "preferences"
+    ]
+  },
   "preferences-system-search-symbolic": {
     "icon": "search",
     "categories": [
@@ -3050,6 +3062,12 @@
       "actions"
     ]
   },
+  "redshift-status-day": "sun",
+  "redshift-status-day-symbolic": "sun",
+  "redshift-status-off": "lightbulb-off",
+  "redshift-status-off-symbolic": "lightbulb-off",
+  "redshift-status-on": "moon-star",
+  "redshift-status-on-symbolic": "moon-star",
   "repository": {
     "icon": "database",
     "categories": [
@@ -3411,6 +3429,19 @@
       "actions"
     ]
   },
+  "tv": {
+    "icon": "monitor",
+    "categories": [
+      "applets",
+      "devices"
+    ]
+  },
+  "tv-symbolic": {
+    "icon": "monitor",
+    "categories": [
+      "devices"
+    ]
+  },
   "unlock": {
     "icon": "unlock",
     "categories": [
@@ -3516,6 +3547,18 @@
     "icon": "chevron-up",
     "categories": [
       "actions"
+    ]
+  },
+  "video-display-brightness": {
+    "icon": "monitor-dot",
+    "categories": [
+      "devices"
+    ]
+  },
+  "video-display-brightness-symbolic": {
+    "icon": "monitor-dot",
+    "categories": [
+      "devices"
     ]
   },
   "view-app-grid-symbolic": {
