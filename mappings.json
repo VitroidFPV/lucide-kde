@@ -3916,10 +3916,46 @@
       "actions"
     ]
   },
+  "media-playback-pause": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-pause-symbolic": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
   "media-playback-playing": "circle-play",
   "media-playback-playing-symbolic": "circle-play",
+  "media-playback-start": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-start-symbolic": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-stop": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-stop-symbolic": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playback-stopped": "circle-stop",
   "media-playback-stopped-symbolic": "circle-stop",
   "media-playlist-consecutive-symbolic": "list",
@@ -4192,6 +4228,18 @@
     "icon": "bell",
     "categories": [
       "preferences"
+    ]
+  },
+  "preferences-media-playback-amarok": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preferences-media-playback-amarok-symbolic": {
+    "icon": "play",
+    "categories": [
+      "actions"
     ]
   },
   "preferences-system-search-symbolic": {
