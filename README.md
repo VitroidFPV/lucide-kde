@@ -1,5 +1,7 @@
 # Lucide KDE
 
+![Lucide KDE icon](editor/favicon.svg)
+
 A KDE icon theme made from selected [Lucide](https://lucide.dev/) SVGs. The theme
 inherits Breeze, so names without a Lucide replacement keep their Breeze icons.
 The first version replaces `audio-volume-high` only.
