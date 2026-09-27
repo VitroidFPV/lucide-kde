@@ -210,6 +210,42 @@
       "actions"
     ]
   },
+  "audio-headphones": {
+    "icon": "headphones",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headphones-symbolic": {
+    "icon": "headphones",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headset": {
+    "icon": "headset",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headset-symbolic": {
+    "icon": "headset",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-input-microphone": {
+    "icon": "mic",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-input-microphone-symbolic": {
+    "icon": "mic",
+    "categories": [
+      "devices"
+    ]
+  },
   "audio-off": "volume-off",
   "audio-off-rtl": {
     "icon": "volume-off",
@@ -239,6 +275,18 @@
   "audio-ready-symbolic-rtl": {
     "icon": "volume",
     "mirror": true
+  },
+  "audio-speakers-symbolic": {
+    "icon": "volume-2",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-symbolic": {
+    "icon": "volume-2",
+    "categories": [
+      "actions"
+    ]
   },
   "audio-volume-high": "volume-2",
   "audio-volume-high-danger": "volume-2",
