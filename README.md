@@ -1,9 +1,18 @@
-# Lucide KDE
+<!--![Lucide KDE Banner](images/lucide-kde-banner.png)-->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/lucide-kde-banner.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/lucide-kde-banner-black.png">
+  <img alt="Banner" src="images/lucide-kde-banner.png">
+</picture>
 
-![Lucide KDE icon](editor/favicon.svg)
+# Lucide KDE
 
 A KDE icon theme made from selected [Lucide](https://lucide.dev/) SVGs. The theme
 inherits Breeze by default, so names without a Lucide replacement keep their Breeze icons.
+
+![Desktop Screenshot](images/desktop.png)
+![Application Launcher Screenshot](images/application-launcher.png)
+![Lucide KDE Panels Screenshot](images/lucide-kde-panels.png)
 
 ## Install the theme
 
