@@ -515,8 +515,44 @@
   "camera-off-symbolic": "webcam-off",
   "camera-on": "webcam",
   "camera-on-symbolic": "webcam",
+  "camera-photo": {
+    "icon": "camera",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-photo-symbolic": {
+    "icon": "camera",
+    "categories": [
+      "devices"
+    ]
+  },
   "camera-ready": "webcam",
   "camera-ready-symbolic": "webcam",
+  "camera-video": {
+    "icon": "video",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-video-symbolic": {
+    "icon": "video",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-web": {
+    "icon": "webcam",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-web-symbolic": {
+    "icon": "webcam",
+    "categories": [
+      "devices"
+    ]
+  },
   "certificate-server": {
     "icon": "lock",
     "categories": [
@@ -605,6 +641,54 @@
     ]
   },
   "device-notifier-symbolic": "eject",
+  "dialog-align-and-distribute": {
+    "icon": "align-start-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-align-and-distribute-symbolic": {
+    "icon": "align-start-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-cancel": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-cancel-symbolic": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-close": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-close-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-fill-and-stroke": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-fill-and-stroke-symbolic": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
   "dialog-filters": {
     "icon": "filter",
     "categories": [
@@ -629,6 +713,42 @@
       "actions"
     ]
   },
+  "dialog-layers": {
+    "icon": "layers",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-layers-symbolic": {
+    "icon": "layers",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-memory": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-memory-symbolic": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-messages": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-messages-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
   "dialog-object-properties": {
     "icon": "table-properties",
     "categories": [
@@ -641,6 +761,12 @@
       "actions"
     ]
   },
+  "dialog-ok": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
   "dialog-ok-apply": {
     "icon": "check",
     "categories": [
@@ -649,6 +775,60 @@
   },
   "dialog-ok-apply-symbolic": {
     "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-rows-and-columns": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-rows-and-columns-symbolic": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-scripts": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-scripts-symbolic": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-text-and-font": {
+    "icon": "letter-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-text-and-font-symbolic": {
+    "icon": "letter-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-xml-editor": {
+    "icon": "code-xml",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-xml-editor-symbolic": {
+    "icon": "code-xml",
     "categories": [
       "actions"
     ]
@@ -797,6 +977,43 @@
     "icon": "chevron-up",
     "categories": [
       "actions"
+    ]
+  },
+  "drive-removable-media": {
+    "icon": "eject",
+    "categories": [
+      "preferences",
+      "devices"
+    ]
+  },
+  "drive-removable-media-symbolic": {
+    "icon": "eject",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-pendrive": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-pendrive-symbolic": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-symbolic": {
+    "icon": "usb",
+    "categories": [
+      "devices"
     ]
   },
   "edit-clear": {
@@ -3177,6 +3394,18 @@
   "printer-error-symbolic": "printer-x",
   "printer-printing-symbolic": "printer",
   "printer-warning-symbolic": "printer-x",
+  "process-stop": {
+    "icon": "circle-stop",
+    "categories": [
+      "actions"
+    ]
+  },
+  "process-stop-symbolic": {
+    "icon": "circle-stop",
+    "categories": [
+      "actions"
+    ]
+  },
   "process-working-symbolic": "settings",
   "project_add": {
     "icon": "plus",
@@ -3270,6 +3499,18 @@
   },
   "settings-configure-symbolic": {
     "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "show-dialogs": {
+    "icon": "message-square-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "show-dialogs-symbolic": {
+    "icon": "message-square-off",
     "categories": [
       "actions"
     ]
@@ -3395,6 +3636,19 @@
   },
   "system-reboot-update-symbolic": {
     "icon": "rotate-cw-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-run": {
+    "icon": "play-square",
+    "categories": [
+      "actions",
+      "apps"
+    ]
+  },
+  "system-run-symbolic": {
+    "icon": "play-square",
     "categories": [
       "actions"
     ]
