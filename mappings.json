@@ -4014,6 +4014,42 @@
   "media-playback-stopped-symbolic": "circle-stop",
   "media-playlist-consecutive-symbolic": "list",
   "media-playlist-consecutive-symbolic-rtl": "list",
+  "media-playlist-no-shuffle": {
+    "icon": "move-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playlist-no-shuffle-symbolic": {
+    "icon": "move-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playlist-repeat": {
+    "icon": "repeat",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playlist-repeat-amarok": {
+    "icon": "repeat-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playlist-repeat-amarok-symbolic": {
+    "icon": "repeat-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playlist-repeat-song": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playlist-repeat-song-symbolic": {
     "icon": "repeat-1",
     "categories": [
@@ -4030,6 +4066,12 @@
     ]
   },
   "media-playlist-repeat-symbolic-rtl": "repeat",
+  "media-playlist-shuffle": {
+    "icon": "shuffle",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playlist-shuffle-symbolic": {
     "icon": "shuffle",
     "categories": [
@@ -4038,6 +4080,114 @@
     ]
   },
   "media-playlist-shuffle-symbolic-rtl": "shuffle",
+  "media-repeat-all": {
+    "icon": "repeat",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-all-symbolic": {
+    "icon": "repeat",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-none": {
+    "icon": "repeat-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-none-symbolic": {
+    "icon": "repeat-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-playlist-amarok": {
+    "icon": "repeat-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-playlist-amarok-symbolic": {
+    "icon": "repeat-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-single": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-single-symbolic": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-track-amarok": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-repeat-track-amarok-symbolic": {
+    "icon": "repeat-1",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-seek-backward": {
+    "icon": "rewind",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-seek-backward-symbolic": {
+    "icon": "rewind",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-seek-forward": {
+    "icon": "fast-forward",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-seek-forward-symbolic": {
+    "icon": "fast-forward",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-skip-backward": {
+    "icon": "skip-back",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-skip-backward-symbolic": {
+    "icon": "skip-back",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-skip-forward": {
+    "icon": "skip-forward",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-skip-forward-symbolic": {
+    "icon": "skip-forward",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-track-edit-amarok": {
     "icon": "pencil",
     "categories": [
