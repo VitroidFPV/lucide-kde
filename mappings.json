@@ -66,6 +66,12 @@
       "categories"
     ]
   },
+  "applications-internet": {
+    "icon": "earth",
+    "categories": [
+      "categories"
+    ]
+  },
   "applications-internet-symbolic": {
     "icon": "earth",
     "categories": [
@@ -86,6 +92,12 @@
   },
   "applications-other-symbolic": {
     "icon": "circle-ellipsis",
+    "categories": [
+      "categories"
+    ]
+  },
+  "applications-science-symbolic": {
+    "icon": "flask-conical",
     "categories": [
       "categories"
     ]
@@ -864,7 +876,7 @@
     ]
   },
   "dialog-text-and-font-symbolic": {
-    "icon": "letter-text",
+    "icon": "type",
     "categories": [
       "actions"
     ]
@@ -1996,6 +2008,12 @@
       "actions"
     ]
   },
+  "extension-symbolic": {
+    "icon": "blocks",
+    "categories": [
+      "actions"
+    ]
+  },
   "favorites": {
     "icon": "star",
     "categories": [
@@ -2831,6 +2849,12 @@
       "places"
     ]
   },
+  "font-symbolic": {
+    "icon": "type",
+    "categories": [
+      "actions"
+    ]
+  },
   "geany-save-all": {
     "icon": "save-all",
     "categories": [
@@ -3607,6 +3631,36 @@
   },
   "install": "download",
   "install-symbolic": "download",
+  "internet-amarok": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "internet-amarok-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "internet-services": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "internet-services-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "internet-web-browser-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "apps"
+    ]
+  },
   "invertimage": {
     "icon": "squares-exclude",
     "categories": [
@@ -4212,6 +4266,12 @@
       "actions"
     ]
   },
+  "preferences-desktop-accessibility-symbolic": {
+    "icon": "accessibility",
+    "categories": [
+      "preferences"
+    ]
+  },
   "preferences-desktop-display-randr": {
     "icon": "monitor-cog",
     "categories": [
@@ -4780,6 +4840,18 @@
   },
   "tool_review-symbolic": {
     "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tools-report-bug": {
+    "icon": "bug",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tools-report-bug-symbolic": {
+    "icon": "bug",
     "categories": [
       "actions"
     ]
