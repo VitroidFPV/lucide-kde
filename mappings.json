@@ -210,6 +210,42 @@
       "actions"
     ]
   },
+  "audio-headphones": {
+    "icon": "headphones",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headphones-symbolic": {
+    "icon": "headphones",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headset": {
+    "icon": "headset",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-headset-symbolic": {
+    "icon": "headset",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-input-microphone": {
+    "icon": "mic",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-input-microphone-symbolic": {
+    "icon": "mic",
+    "categories": [
+      "devices"
+    ]
+  },
   "audio-off": "volume-off",
   "audio-off-rtl": {
     "icon": "volume-off",
@@ -239,6 +275,18 @@
   "audio-ready-symbolic-rtl": {
     "icon": "volume",
     "mirror": true
+  },
+  "audio-speakers-symbolic": {
+    "icon": "volume-2",
+    "categories": [
+      "devices"
+    ]
+  },
+  "audio-symbolic": {
+    "icon": "volume-2",
+    "categories": [
+      "actions"
+    ]
   },
   "audio-volume-high": "volume-2",
   "audio-volume-high-danger": "volume-2",
@@ -421,6 +469,30 @@
       "actions"
     ]
   },
+  "bqm-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-addqueue": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-addqueue-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "brightness-high-symbolic": {
     "icon": "sun-medium",
     "categories": [
@@ -443,8 +515,56 @@
   "camera-off-symbolic": "webcam-off",
   "camera-on": "webcam",
   "camera-on-symbolic": "webcam",
+  "camera-photo": {
+    "icon": "camera",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-photo-symbolic": {
+    "icon": "camera",
+    "categories": [
+      "devices"
+    ]
+  },
   "camera-ready": "webcam",
   "camera-ready-symbolic": "webcam",
+  "camera-video": {
+    "icon": "video",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-video-symbolic": {
+    "icon": "video",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-web": {
+    "icon": "webcam",
+    "categories": [
+      "devices"
+    ]
+  },
+  "camera-web-symbolic": {
+    "icon": "webcam",
+    "categories": [
+      "devices"
+    ]
+  },
+  "cell_edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cell_edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "certificate-server": {
     "icon": "lock",
     "categories": [
@@ -469,6 +589,18 @@
   },
   "circular-arrow-shape-symbolic": {
     "icon": "rotate-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cloud-download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "cloud-download-symbolic": {
+    "icon": "download",
     "categories": [
       "actions"
     ]
@@ -520,6 +652,30 @@
       "actions"
     ]
   },
+  "delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-comment": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-comment-symbolic": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "desktop": {
     "icon": "monitor",
     "categories": [
@@ -533,6 +689,54 @@
     ]
   },
   "device-notifier-symbolic": "eject",
+  "dialog-align-and-distribute": {
+    "icon": "align-start-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-align-and-distribute-symbolic": {
+    "icon": "align-start-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-cancel": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-cancel-symbolic": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-close": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-close-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-fill-and-stroke": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-fill-and-stroke-symbolic": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
   "dialog-filters": {
     "icon": "filter",
     "categories": [
@@ -557,6 +761,42 @@
       "actions"
     ]
   },
+  "dialog-layers": {
+    "icon": "layers",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-layers-symbolic": {
+    "icon": "layers",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-memory": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-memory-symbolic": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-messages": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-messages-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
   "dialog-object-properties": {
     "icon": "table-properties",
     "categories": [
@@ -565,6 +805,246 @@
   },
   "dialog-object-properties-symbolic": {
     "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok-apply": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok-apply-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-ok-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-rows-and-columns": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-rows-and-columns-symbolic": {
+    "icon": "layout-dashboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-scripts": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-scripts-symbolic": {
+    "icon": "square-terminal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-text-and-font": {
+    "icon": "letter-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-text-and-font-symbolic": {
+    "icon": "letter-text",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-xml-editor": {
+    "icon": "code-xml",
+    "categories": [
+      "actions"
+    ]
+  },
+  "dialog-xml-editor-symbolic": {
+    "icon": "code-xml",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-cleanup": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-cleanup-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-close": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-close-symbolic": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-decrypt": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-decrypt-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-duplicate": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-duplicate-symbolic": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-sign": {
+    "icon": "file-pen-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-sign-symbolic": {
+    "icon": "file-pen-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-verify": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-edit-verify-symbolic": {
+    "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypt": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypt-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypted": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-encrypted-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-ocal": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-ocal-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-table": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-export-table-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-ocal": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-ocal-symbolic": {
+    "icon": "file-input",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-import-symbolic": {
+    "icon": "file-input",
     "categories": [
       "actions"
     ]
@@ -583,6 +1063,60 @@
       "places"
     ]
   },
+  "document-new": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-from-template": {
+    "icon": "file-box",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-from-template-symbolic": {
+    "icon": "file-box",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-new-symbolic": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open": {
+    "icon": "file",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-data": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-data-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-folder": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-folder-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-open-recent": {
     "icon": "file-clock",
     "categories": [
@@ -591,6 +1125,30 @@
   },
   "document-open-recent-symbolic": {
     "icon": "file-clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-remote": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-remote-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-open-symbolic": {
+    "icon": "file",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-page-setup-symbolic": {
+    "icon": "file-sliders",
     "categories": [
       "actions"
     ]
@@ -619,6 +1177,36 @@
       "actions"
     ]
   },
+  "document-print": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-direct": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-direct-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-frame": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-frame-symbolic": {
+    "icon": "printer",
+    "categories": [
+      "actions"
+    ]
+  },
   "document-print-preview": {
     "icon": "file-search-2",
     "categories": [
@@ -627,6 +1215,12 @@
   },
   "document-print-preview-symbolic": {
     "icon": "file-search-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-print-symbolic": {
+    "icon": "printer",
     "categories": [
       "actions"
     ]
@@ -643,6 +1237,183 @@
       "actions"
     ]
   },
+  "document-replace": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-replace-symbolic": {
+    "icon": "file-x-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert-symbolic": {
+    "icon": "file-output",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-revert-symbolic-rtl": {
+    "icon": "file-output",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-all": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-all-symbolic": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as": {
+    "icon": "save-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-symbolic": {
+    "icon": "save-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-template": {
+    "icon": "save-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-as-template-symbolic": {
+    "icon": "save-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-save-symbolic": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-scan": {
+    "icon": "file-scan",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-scan-symbolic": {
+    "icon": "file-scan",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send": {
+    "icon": "send",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-rtl": {
+    "icon": "send",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-symbolic": {
+    "icon": "send",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-send-symbolic-rtl": {
+    "icon": "send",
+    "mirror": true,
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-share": {
+    "icon": "share-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-share-symbolic": {
+    "icon": "share-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-sign": {
+    "icon": "pencil-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-sign-symbolic": {
+    "icon": "pencil-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-single": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-single-symbolic": {
+    "icon": "file-plus-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-swap": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "document-swap-symbolic": {
+    "icon": "files",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentation": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "documentation-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
   "documentinfo": {
     "icon": "info",
     "categories": [
@@ -651,6 +1422,30 @@
   },
   "documentinfo-symbolic": {
     "icon": "info",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-amarok": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-amarok-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "download-symbolic": {
+    "icon": "download",
     "categories": [
       "actions"
     ]
@@ -715,6 +1510,141 @@
       "actions"
     ]
   },
+  "draw-eraser-delete-objects": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "draw-eraser-delete-objects-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "drive-removable-media": {
+    "icon": "eject",
+    "categories": [
+      "preferences",
+      "devices"
+    ]
+  },
+  "drive-removable-media-symbolic": {
+    "icon": "eject",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-pendrive": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-pendrive-symbolic": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "drive-removable-media-usb-symbolic": {
+    "icon": "usb",
+    "categories": [
+      "devices"
+    ]
+  },
+  "edit-clear": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-all": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-all-symbolic": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-history": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-history-symbolic": {
+    "icon": "broom",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-list": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-list-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-ltr": {
+    "icon": "delete",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-ltr-symbolic": {
+    "icon": "delete",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-rtl": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-rtl-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-rtl-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-symbolic-rtl": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-copy": {
     "icon": "copy",
     "categories": [
@@ -735,6 +1665,66 @@
   },
   "edit-cut-symbolic": {
     "icon": "scissors",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-remove": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-remove-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-shred": {
+    "icon": "shredder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-shred-symbolic": {
+    "icon": "shredder",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-download": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-download-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-entry": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-entry-symbolic": {
+    "icon": "pencil",
     "categories": [
       "actions"
     ]
@@ -811,6 +1801,18 @@
       "actions"
     ]
   },
+  "edit-map": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-map-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "edit-paste": {
     "icon": "clipboard",
     "categories": [
@@ -855,6 +1857,24 @@
     ]
   },
   "edit-rename-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-select-invert": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-select-invert-symbolic": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-symbolic": {
     "icon": "pencil",
     "categories": [
       "actions"
@@ -905,6 +1925,60 @@
     ]
   },
   "editimage-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "editor": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "editor-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edittext": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edittext-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "emblem-documents-symbolic": {
+    "icon": "files",
+    "categories": [
+      "emblems"
+    ]
+  },
+  "entry-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "entry-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "entry-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "entry-edit-symbolic": {
     "icon": "pencil",
     "categories": [
       "actions"
@@ -1757,6 +2831,30 @@
       "places"
     ]
   },
+  "geany-save-all": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "geany-save-all-symbolic": {
+    "icon": "save-all",
+    "categories": [
+      "actions"
+    ]
+  },
+  "get-hot-new-stuff": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "get-hot-new-stuff-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-autofilter": {
     "icon": "filter",
     "categories": [
@@ -1777,6 +2875,42 @@
   },
   "gnumeric-autofilter-symbolic": {
     "icon": "filter",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-delete": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-delete-symbolic": {
+    "icon": "message-square-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-edit-symbolic": {
+    "icon": "pencil",
     "categories": [
       "actions"
     ]
@@ -2191,6 +3325,78 @@
       "actions"
     ]
   },
+  "group-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-apply": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-apply-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-clear": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-clear-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-edit": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-edit-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-properties": {
     "icon": "table-properties",
     "categories": [
@@ -2211,6 +3417,32 @@
   },
   "gtk-tab-new-symbolic": {
     "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-ltr": {
+    "icon": "redo-2",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-ltr-symbolic": {
+    "icon": "redo-2",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-rtl": {
+    "icon": "redo-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-undelete-rtl-symbolic": {
+    "icon": "redo-2",
     "categories": [
       "actions"
     ]
@@ -2311,6 +3543,12 @@
       "actions"
     ]
   },
+  "image-invert-symbolic": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
   "info": {
     "icon": "info",
     "categories": [
@@ -2323,8 +3561,34 @@
       "actions"
     ]
   },
+  "input-caps-on": "arrow-big-up-dash",
+  "input-caps-on-symbolic": "arrow-big-up-dash",
+  "input-keyboard": {
+    "icon": "keyboard",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-keyboard-symbolic": {
+    "icon": "keyboard",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-keyboard-virtual-off": "keyboard",
   "input-keyboard-virtual-off-symbolic": "keyboard",
+  "input-mouse": {
+    "icon": "mouse",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-mouse-symbolic": {
+    "icon": "mouse",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-touchpad-off": "touchpad-off",
   "input-touchpad-off-symbolic": "touchpad-off",
   "input-touchpad-on": "touchpad",
@@ -2343,6 +3607,18 @@
   },
   "install": "download",
   "install-symbolic": "download",
+  "invertimage": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "invertimage-symbolic": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
   "kalarm-disabled": "bell-off",
   "kalarm-partdisabled": "bell-minus",
   "kdeconnect-tray": "smartphone",
@@ -2365,6 +3641,18 @@
     "categories": [
       "apps",
       "status"
+    ]
+  },
+  "knotes_delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
     ]
   },
   "konv_message": "megaphone",
@@ -2404,6 +3692,18 @@
       "actions"
     ]
   },
+  "kt-set-max-download-speed": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-set-max-download-speed-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
   "labplot-cursor-arrow": {
     "icon": "mouse-pointer-2",
     "categories": [
@@ -2412,6 +3712,18 @@
   },
   "labplot-cursor-arrow-symbolic": {
     "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-delete": {
+    "icon": "layers-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "layer-delete-symbolic": {
+    "icon": "layers-minus",
     "categories": [
       "actions"
     ]
@@ -2440,6 +3752,30 @@
       "places"
     ]
   },
+  "lighttableadd": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lighttableadd-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "lock": {
     "icon": "lock",
     "categories": [
@@ -2457,6 +3793,30 @@
     "categories": [
       "actions",
       "status"
+    ]
+  },
+  "mail-deleted": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "mail-deleted-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "mail-download-now": {
+    "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "mail-download-now-symbolic": {
+    "icon": "download",
+    "categories": [
+      "actions"
     ]
   },
   "mail-folder-inbox": {
@@ -2550,10 +3910,52 @@
       "status"
     ]
   },
+  "mask-invert": {
+    "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-pause": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-pause-symbolic": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playback-paused": "circle-pause",
   "media-playback-paused-symbolic": "circle-pause",
   "media-playback-playing": "circle-play",
   "media-playback-playing-symbolic": "circle-play",
+  "media-playback-start": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-start-symbolic": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-stop": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-playback-stop-symbolic": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
   "media-playback-stopped": "circle-stop",
   "media-playback-stopped-symbolic": "circle-stop",
   "media-playlist-consecutive-symbolic": "list",
@@ -2582,6 +3984,18 @@
     ]
   },
   "media-playlist-shuffle-symbolic-rtl": "shuffle",
+  "media-track-edit-amarok": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "media-track-edit-amarok-symbolic": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
   "meeting-organizer": "user",
   "meeting-organizer-symbolic": "user",
   "menu_new": {
@@ -2667,6 +4081,66 @@
       "places"
     ]
   },
+  "notification-active": {
+    "icon": "bell-ring",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-active-symbolic": {
+    "icon": "bell-ring",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-disabled": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-disabled-symbolic": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-inactive": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notification-inactive-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-disabled": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-disabled-symbolic": {
+    "icon": "bell-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "notifications-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "actions"
+    ]
+  },
   "object-locked": {
     "icon": "lock",
     "categories": [
@@ -2687,6 +4161,18 @@
   },
   "object-unlocked-symbolic": {
     "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "open-for-editing": {
+    "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "open-for-editing-symbolic": {
+    "icon": "pencil",
     "categories": [
       "actions"
     ]
@@ -2722,6 +4208,36 @@
   },
   "playlist-sort-symbolic": {
     "icon": "sort-asc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preferences-desktop-display-randr": {
+    "icon": "monitor-cog",
+    "categories": [
+      "preferences"
+    ]
+  },
+  "preferences-desktop-display-randr-symbolic": {
+    "icon": "monitor-cog",
+    "categories": [
+      "preferences"
+    ]
+  },
+  "preferences-desktop-notification-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "preferences"
+    ]
+  },
+  "preferences-media-playback-amarok": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "preferences-media-playback-amarok-symbolic": {
+    "icon": "play",
     "categories": [
       "actions"
     ]
@@ -2831,7 +4347,31 @@
   "printer-error-symbolic": "printer-x",
   "printer-printing-symbolic": "printer",
   "printer-warning-symbolic": "printer-x",
+  "process-stop": {
+    "icon": "circle-stop",
+    "categories": [
+      "actions"
+    ]
+  },
+  "process-stop-symbolic": {
+    "icon": "circle-stop",
+    "categories": [
+      "actions"
+    ]
+  },
   "process-working-symbolic": "settings",
+  "project_add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "project_add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "quickview": {
     "icon": "eye",
     "categories": [
@@ -2856,6 +4396,12 @@
       "actions"
     ]
   },
+  "redshift-status-day": "sun",
+  "redshift-status-day-symbolic": "sun",
+  "redshift-status-off": "lightbulb-off",
+  "redshift-status-off-symbolic": "lightbulb-off",
+  "redshift-status-on": "moon-star",
+  "redshift-status-on-symbolic": "moon-star",
   "repository": {
     "icon": "database",
     "categories": [
@@ -2896,6 +4442,30 @@
     "icon": "database",
     "categories": [
       "places"
+    ]
+  },
+  "settings-configure": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "settings-configure-symbolic": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "show-dialogs": {
+    "icon": "message-square-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "show-dialogs-symbolic": {
+    "icon": "message-square-off",
+    "categories": [
+      "actions"
     ]
   },
   "showinfo": "info",
@@ -3023,6 +4593,31 @@
       "actions"
     ]
   },
+  "system-run": {
+    "icon": "play-square",
+    "categories": [
+      "actions",
+      "apps"
+    ]
+  },
+  "system-run-symbolic": {
+    "icon": "play-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-save-session": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "system-save-session-symbolic": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
   "system-search": {
     "icon": "search",
     "categories": [
@@ -3117,6 +4712,18 @@
       "actions"
     ]
   },
+  "tag-delete": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "tag-delete-symbolic": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
   "tag-properties": {
     "icon": "table-properties",
     "categories": [
@@ -3141,6 +4748,18 @@
   "temperature-normal-symbolic": "thermometer",
   "temperature-warm": "thermometer-sun",
   "temperature-warm-symbolic": "thermometer-sun",
+  "text-speak": {
+    "icon": "message-square-more",
+    "categories": [
+      "actions"
+    ]
+  },
+  "text-speak-symbolic": {
+    "icon": "message-square-more",
+    "categories": [
+      "actions"
+    ]
+  },
   "tool_imageeffects": {
     "icon": "pencil",
     "categories": [
@@ -3205,6 +4824,19 @@
       "actions"
     ]
   },
+  "tv": {
+    "icon": "monitor",
+    "categories": [
+      "applets",
+      "devices"
+    ]
+  },
+  "tv-symbolic": {
+    "icon": "monitor",
+    "categories": [
+      "devices"
+    ]
+  },
   "unlock": {
     "icon": "unlock",
     "categories": [
@@ -3234,6 +4866,18 @@
     "scale": 0.75,
     "categories": [
       "places"
+    ]
+  },
+  "user-group-delete": {
+    "icon": "user-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "user-group-delete-symbolic": {
+    "icon": "user-x",
+    "categories": [
+      "actions"
     ]
   },
   "user-home": {
@@ -3288,6 +4932,18 @@
       "places"
     ]
   },
+  "usermenu-delete": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
+  "usermenu-delete-symbolic": {
+    "icon": "trash",
+    "categories": [
+      "actions"
+    ]
+  },
   "usermenu-down": {
     "icon": "chevron-down",
     "categories": [
@@ -3310,6 +4966,30 @@
     "icon": "chevron-up",
     "categories": [
       "actions"
+    ]
+  },
+  "vcs-branch-delete": {
+    "icon": "git-branch-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "vcs-branch-delete-symbolic": {
+    "icon": "git-branch-minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "video-display-brightness": {
+    "icon": "monitor-dot",
+    "categories": [
+      "devices"
+    ]
+  },
+  "video-display-brightness-symbolic": {
+    "icon": "monitor-dot",
+    "categories": [
+      "devices"
     ]
   },
   "view-app-grid-symbolic": {
@@ -4896,6 +6576,18 @@
   },
   "x-shape-image-symbolic": {
     "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "xml-attribute-delete": {
+    "icon": "tag-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "xml-attribute-delete-symbolic": {
+    "icon": "tag-x",
     "categories": [
       "actions"
     ]
