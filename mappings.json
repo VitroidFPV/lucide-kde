@@ -421,6 +421,30 @@
       "actions"
     ]
   },
+  "bqm-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-addqueue": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "bqm-addqueue-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "brightness-high-symbolic": {
     "icon": "sun-medium",
     "categories": [
@@ -711,6 +735,68 @@
   },
   "draw-arrow-up-symbolic": {
     "icon": "chevron-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-list": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-list-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-ltr": {
+    "icon": "delete",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-ltr-symbolic": {
+    "icon": "delete",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-rtl": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-locationbar-rtl-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-rtl-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "edit-clear-symbolic-rtl": {
+    "icon": "delete",
     "categories": [
       "actions"
     ]
@@ -2191,6 +2277,30 @@
       "actions"
     ]
   },
+  "gtk-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-clear": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-clear-symbolic": {
+    "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-properties": {
     "icon": "table-properties",
     "categories": [
@@ -2438,6 +2548,30 @@
     "icon": "music",
     "categories": [
       "places"
+    ]
+  },
+  "lighttableadd": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lighttableadd-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
     ]
   },
   "lock": {
@@ -2832,6 +2966,18 @@
   "printer-printing-symbolic": "printer",
   "printer-warning-symbolic": "printer-x",
   "process-working-symbolic": "settings",
+  "project_add": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "project_add-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "quickview": {
     "icon": "eye",
     "categories": [
@@ -2896,6 +3042,18 @@
     "icon": "database",
     "categories": [
       "places"
+    ]
+  },
+  "settings-configure": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "settings-configure-symbolic": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
     ]
   },
   "showinfo": "info",
