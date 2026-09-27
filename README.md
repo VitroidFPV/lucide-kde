@@ -4,7 +4,6 @@
 
 A KDE icon theme made from selected [Lucide](https://lucide.dev/) SVGs. The theme
 inherits Breeze, so names without a Lucide replacement keep their Breeze icons.
-The first version replaces `audio-volume-high` only.
 
 ## Install the theme
 
@@ -36,9 +35,8 @@ bun run typecheck
 ```
 
 `mappings.json` maps KDE icon names to Lucide icon names. The build uses the pinned
-`lucide-static` version and replaces `theme/Lucide-KDE` with generated output. For
-now, every mapped icon is emitted into `scalable/status` for small system and tray
-icons. Mirrored RTL assignments use an object such as
+`lucide-static` version and replaces `theme/Lucide-KDE` with generated output.
+Mirrored RTL assignments use an object such as
 `{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
 An object can also set `"scale":0.75` to shrink the drawing within its icon area.
 
@@ -58,8 +56,7 @@ Plasma** regenerates the theme in the current user's icon directory and requests
 an icon refresh. It keeps the previous installed copy at
 `~/.local/share/icons/.Lucide-KDE-previous`. Some running tray applications may
 hold old pixmaps until their state changes or the theme is selected again in
-System Settings. The editor binds only to localhost. See [the editor plan](EDITOR_PLAN.md)
-for the current scope.
+System Settings. The editor binds only to localhost.
 
 Some tray applications provide their own pixmaps instead of icon theme names;
 those icons cannot be changed by this theme. Plasma may also request a
