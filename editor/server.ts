@@ -135,7 +135,8 @@ const server = Bun.serve({
         const color = paletteColor(url.searchParams.get("palette") || "current", await activePalette());
         const mirror = url.searchParams.get("mirror") === "1";
         const scale = Number(url.searchParams.get("scale") || 1);
-        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror, scale), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
+        const rotate = Number(url.searchParams.get("rotate") || 0);
+        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror, scale, rotate), color), { headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" } });
       }
       if (request.method === "GET" && url.pathname === "/download") {
         if (await buildStatus()) return errorResponse(new Error("Build the archive first"), 409);
@@ -145,10 +146,11 @@ const server = Bun.serve({
         if (busy) return errorResponse(new Error("Another operation is running"), 409);
         const body: unknown = await request.json();
         if (!body || typeof body !== "object") throw new Error("Invalid mapping request");
-        const { kdeName, lucideName, mirror, categories } = body as Record<string, unknown>;
+        const { kdeName, lucideName, mirror, rotate, categories } = body as Record<string, unknown>;
         if (typeof kdeName !== "string" || !validKdeName.test(kdeName)) throw new Error("Invalid KDE icon name");
         if (lucideName !== null && (typeof lucideName !== "string" || !validLucideName.test(lucideName))) throw new Error("Invalid Lucide icon name");
         if (mirror !== undefined && typeof mirror !== "boolean") throw new Error("Invalid mirror option");
+        if (rotate !== undefined && (typeof rotate !== "number" || !Number.isInteger(rotate / 22.5) || rotate < 0 || rotate >= 360)) throw new Error("Invalid rotation option");
         if (categories !== undefined && (!Array.isArray(categories) || !categories.length || new Set(categories).size !== categories.length || !categories.every((category) => iconCategories.includes(category)))) throw new Error("Invalid icon categories");
         if (lucideName !== null) await readLucide(lucideName as string);
         busy = true;
@@ -158,8 +160,8 @@ const server = Bun.serve({
           else {
             const scale = mappings[kdeName] ? mappingScale(mappings[kdeName]) : 1;
             const assignedCategories = categories as IconCategory[] | undefined ?? (mappings[kdeName] ? mappingCategories(mappings[kdeName]) : ["status"]);
-            mappings[kdeName] = mirror || scale !== 1 || assignedCategories.length !== 1 || assignedCategories[0] !== "status"
-              ? { icon: lucideName as string, ...(mirror ? { mirror: true as const } : {}), ...(scale !== 1 ? { scale } : {}), ...(assignedCategories.length !== 1 || assignedCategories[0] !== "status" ? { categories: assignedCategories } : {}) }
+            mappings[kdeName] = mirror || scale !== 1 || rotate || assignedCategories.length !== 1 || assignedCategories[0] !== "status"
+              ? { icon: lucideName as string, ...(mirror ? { mirror: true as const } : {}), ...(scale !== 1 ? { scale } : {}), ...(rotate ? { rotate: rotate as number } : {}), ...(assignedCategories.length !== 1 || assignedCategories[0] !== "status" ? { categories: assignedCategories } : {}) }
               : lucideName as string;
           }
           await saveMappings(mappings);

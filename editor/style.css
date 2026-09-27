@@ -436,8 +436,36 @@ input::placeholder {
   font-weight: 550;
   overflow-wrap: anywhere;
 }
+.rotate-stepper {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--button);
+  color: var(--button-text);
+}
+.rotate-stepper button {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0 9px;
+  font-size: 19px;
+  line-height: 1;
+}
+.rotate-stepper button:hover:not(:disabled) {
+  background: color-mix(in srgb,var(--selection) 16%,var(--button));
+}
+.rotate-stepper output {
+  min-width: 42px;
+  text-align: center;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
 .assignment-actions {
   display: flex;
+  align-items: center;
   gap: 8px;
   flex-wrap: wrap;
   justify-content: flex-end;

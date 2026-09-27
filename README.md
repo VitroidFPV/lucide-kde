@@ -82,6 +82,7 @@ bun run typecheck
 Mirrored RTL assignments use an object such as
 `{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
 An object can also set `"scale":0.75` to shrink the drawing within its icon area,
+or `"rotate":22.5` to rotate it in 22.5° increments,
 or `"categories":["actions","status"]` to place it in multiple theme directories.
 Assignments without categories use `status`.
 
@@ -95,6 +96,7 @@ Use **Alt+Up** and **Alt+Down** to move through the KDE names shown by the
 current search and filters.
 Assignments save to `mappings.json` immediately; previews do not change Plasma.
 For RTL names, **Mirror** flips the candidate horizontally before assigning it.
+Use the rotation buttons to turn the candidate in 22.5° increments before assigning it.
 
 **Build Archive** creates a downloadable `dist/Lucide-KDE.tar.gz`. **Apply to
 Plasma** regenerates the theme in the current user's icon directory and requests

@@ -15,15 +15,17 @@ export async function readLucide(name: string): Promise<string> {
   }
 }
 
-export function themedSvg(source: string, mirror = false, scale = 1): string {
+export function themedSvg(source: string, mirror = false, scale = 1, rotate = 0): string {
   const openingTag = source.match(/<svg\b[^>]*>/)?.[0];
   if (!openingTag || !source.includes("</svg>")) throw new Error("Lucide asset is not an SVG document");
   const viewBox = openingTag.match(/\sviewBox="([^"]+)"/)?.[1].split(/[\s,]+/).map(Number);
   if (!Number.isFinite(scale) || scale <= 0 || scale > 1) throw new Error("Invalid icon scale");
-  if ((mirror || scale !== 1) && (!viewBox || viewBox.length !== 4 || !viewBox.every(Number.isFinite) || viewBox[2] <= 0 || viewBox[3] <= 0)) {
+  if (!Number.isInteger(rotate / 22.5) || rotate < 0 || rotate >= 360) throw new Error("Invalid icon rotation");
+  if ((mirror || scale !== 1 || rotate !== 0) && (!viewBox || viewBox.length !== 4 || !viewBox.every(Number.isFinite) || viewBox[2] <= 0 || viewBox[3] <= 0)) {
     throw new Error("Lucide asset needs a valid viewBox to transform");
   }
   const transforms: string[] = [];
+  if (rotate && viewBox) transforms.push(`rotate(${rotate} ${viewBox[0] + viewBox[2] / 2} ${viewBox[1] + viewBox[3] / 2})`);
   if (scale !== 1 && viewBox) {
     transforms.push(`translate(${(1 - scale) * (viewBox[0] + viewBox[2] / 2)} ${(1 - scale) * (viewBox[1] + viewBox[3] / 2)}) scale(${scale})`);
   }
