@@ -1,4 +1,9 @@
-![Lucide KDE Banner](images/lucide-kde-banner.png)
+<!--![Lucide KDE Banner](images/lucide-kde-banner.png)-->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/lucide-kde-banner.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/lucide-kde-banner-black.png">
+  <img alt="Banner" src="images/lucide-kde-banner.png">
+</picture>
 
 # Lucide KDE
 
