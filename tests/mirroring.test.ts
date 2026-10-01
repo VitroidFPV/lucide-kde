@@ -1,6 +1,13 @@
 import { expect, test } from "bun:test";
 import { readLucide, themedSvg } from "../src/lucide";
-import { mappingCategories, mappingIcon, mappingMirrored, mappingRotation, mappingScale, validateMappings } from "../src/mappings";
+import {
+  mappingCategories,
+  mappingIcon,
+  mappingMirrored,
+  mappingRotation,
+  mappingScale,
+  validateMappings,
+} from "../src/mappings";
 
 test("mirrored mappings coexist with existing string mappings", () => {
   const mappings = validateMappings({
@@ -16,7 +23,9 @@ test("mirrored mappings coexist with existing string mappings", () => {
 });
 
 test("mappings keep every source category", () => {
-  const mapping = validateMappings({ "mail-unread": { icon: "mail", categories: ["actions", "status"] } })["mail-unread"];
+  const mapping = validateMappings({ "mail-unread": { icon: "mail", categories: ["actions", "status"] } })[
+    "mail-unread"
+  ];
   expect(mappingCategories(mapping)).toEqual(["actions", "status"]);
   expect(mappingCategories("mail")).toEqual(["status"]);
   expect(() => validateMappings({ "mail-unread": { icon: "mail", categories: ["actions", "actions"] } })).toThrow();
@@ -30,9 +39,13 @@ test("mirrored SVG reflects the icon across its viewBox", async () => {
 });
 
 test("scaled mapping keeps artwork centered in the original viewBox", async () => {
-  const mapping = validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0.75 } })["user-desktop-symbolic"];
+  const mapping = validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0.75 } })[
+    "user-desktop-symbolic"
+  ];
   expect(mappingScale(mapping)).toBe(0.75);
-  expect(themedSvg(await readLucide(mappingIcon(mapping)), false, mappingScale(mapping))).toContain('transform="translate(3 3) scale(0.75)"');
+  expect(themedSvg(await readLucide(mappingIcon(mapping)), false, mappingScale(mapping))).toContain(
+    'transform="translate(3 3) scale(0.75)"',
+  );
   expect(() => validateMappings({ "user-desktop-symbolic": { icon: "panel-bottom", scale: 0 } })).toThrow();
 });
 
