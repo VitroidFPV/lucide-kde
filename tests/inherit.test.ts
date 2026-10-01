@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 import { spawnSync } from "node:child_process";
-import { chmodSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { chmodSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
@@ -13,8 +13,11 @@ test("selects an installed parent by name or menu number and preserves other met
   const bin = join(home, "bin");
   const signalArgs = join(home, "gdbus-args");
   const env = {
-    ...process.env, HOME: home, XDG_DATA_HOME: join(home, ".local", "share"),
-    XDG_DATA_DIRS: join(home, "system"), PATH: `${bin}:${process.env.PATH}`,
+    ...process.env,
+    HOME: home,
+    XDG_DATA_HOME: join(home, ".local", "share"),
+    XDG_DATA_DIRS: join(home, "system"),
+    PATH: `${bin}:${process.env.PATH}`,
     TEST_GDBUS_ARGS: signalArgs,
   };
   const run = (args: string[], input?: string) => spawnSync("sh", [script, ...args], { env, input, encoding: "utf8" });
@@ -23,17 +26,26 @@ test("selects an installed parent by name or menu number and preserves other met
     mkdirSync(bin);
     writeFileSync(join(bin, "gdbus"), '#!/bin/sh\nprintf "%s\\n" "$@" > "$TEST_GDBUS_ARGS"\n');
     chmodSync(join(bin, "gdbus"), 0o755);
-    for (const name of ["Lucide-KDE", "breeze", "Vimix-cursors", ".Lucide-KDE-previous"]) mkdirSync(join(icons, name), { recursive: true });
+    for (const name of ["Lucide-KDE", "breeze", "Vimix-cursors", ".Lucide-KDE-previous"])
+      mkdirSync(join(icons, name), { recursive: true });
     mkdirSync(join(systemIcons, "Papirus-Dark"), { recursive: true });
-    writeFileSync(index, "[Icon Theme]\nName=Lucide KDE\nInherits=breeze\nDirectories=scalable/actions\n\n[scalable/actions]\nSize=22\n");
+    writeFileSync(
+      index,
+      "[Icon Theme]\nName=Lucide KDE\nInherits=breeze\nDirectories=scalable/actions\n\n[scalable/actions]\nSize=22\n",
+    );
     writeFileSync(join(icons, "breeze", "index.theme"), "[Icon Theme]\nName=Breeze\nDirectories=16x16/apps\n");
     writeFileSync(join(icons, "Vimix-cursors", "index.theme"), "[Icon Theme]\nName=Vimix Cursors\nInherits=default\n");
     writeFileSync(join(icons, ".Lucide-KDE-previous", "index.theme"), "[Icon Theme]\nName=Backup\n");
-    writeFileSync(join(systemIcons, "Papirus-Dark", "index.theme"), "[Icon Theme]\nName=Papirus Dark\nDirectories=16x16/apps\n");
+    writeFileSync(
+      join(systemIcons, "Papirus-Dark", "index.theme"),
+      "[Icon Theme]\nName=Papirus Dark\nDirectories=16x16/apps\n",
+    );
 
     expect(run(["Papirus-Dark"]).status).toBe(0);
     expect(readFileSync(index, "utf8")).toContain("Inherits=Papirus-Dark,breeze\nDirectories=scalable/actions");
-    expect(readFileSync(signalArgs, "utf8")).toBe("emit\n--session\n--object-path\n/KIconLoader\n--signal\norg.kde.KIconLoader.iconChanged\n4\n");
+    expect(readFileSync(signalArgs, "utf8")).toBe(
+      "emit\n--session\n--object-path\n/KIconLoader\n--signal\norg.kde.KIconLoader.iconChanged\n4\n",
+    );
 
     const menu = run([], "1\n");
     expect(menu.status).toBe(0);

@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui,-apple-system,"Noto Sans",sans-serif;
+  font-family: system-ui, -apple-system, "Noto Sans", sans-serif;
   color-scheme: dark;
   --window: #31363b;
   --window-text: #eff0f1;
@@ -9,8 +9,8 @@
   --button-text: #eff0f1;
   --selection: #3daee9;
   --selection-text: #eff0f1;
-  --border: color-mix(in srgb,var(--window-text) 19%,transparent);
-  --muted: color-mix(in srgb,var(--window-text) 65%,transparent);
+  --border: color-mix(in srgb, var(--window-text) 19%, transparent);
+  --muted: color-mix(in srgb, var(--window-text) 65%, transparent);
 }
 * {
   box-sizing: border-box;
@@ -27,26 +27,33 @@ body {
   display: flex;
   flex-direction: column;
 }
-button,input,select {
+button,
+input,
+select {
   font: inherit;
 }
-button,.button,select,input {
+button,
+.button,
+select,
+input {
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--button);
   color: var(--button-text);
 }
-button,.button {
+button,
+.button {
   padding: 8px 12px;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
 }
-button:hover:not(:disabled),.button:hover {
+button:hover:not(:disabled),
+.button:hover {
   border-color: var(--selection);
 }
 button:disabled {
-  opacity: .42;
+  opacity: 0.42;
   cursor: default;
 }
 .primary {
@@ -58,7 +65,8 @@ button:disabled {
 .primary:hover:not(:disabled) {
   filter: brightness(1.07);
 }
-input,select {
+input,
+select {
   padding: 8px 10px;
   min-width: 0;
 }
@@ -75,7 +83,8 @@ input::placeholder {
   outline-offset: 2px;
 }
 [hidden] {
-  display: none!important;
+  /* biome-ignore lint/complexity/noImportantStyles: Hidden elements must stay out of the layout. */
+  display: none !important;
 }
 .sr-only {
   position: absolute;
@@ -84,7 +93,7 @@ input::placeholder {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
@@ -101,14 +110,15 @@ input::placeholder {
   padding: 12px 22px;
   border-bottom: 1px solid var(--border);
 }
-.brand,.top-actions {
+.brand,
+.top-actions {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .brand h1 {
   font-size: 17px;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   margin: 0;
   font-weight: 650;
 }
@@ -139,10 +149,10 @@ input::placeholder {
   right: 22px;
   bottom: 44px;
   z-index: 10;
-  max-width: min(400px,calc(100vw - 32px));
+  max-width: min(400px, calc(100vw - 32px));
   padding: 10px 14px;
   border-radius: 7px;
-  box-shadow: 0 8px 24px color-mix(in srgb,var(--window) 60%,transparent);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--window) 60%, transparent);
   background: var(--selection);
   color: var(--selection-text);
   font-size: 13px;
@@ -153,7 +163,7 @@ input::placeholder {
 }
 .workspace {
   display: grid;
-  grid-template-columns: minmax(300px,36%) minmax(0,1fr);
+  grid-template-columns: minmax(300px, 36%) minmax(0, 1fr);
   flex: 1;
   min-height: 0;
 }
@@ -173,12 +183,14 @@ input::placeholder {
   justify-content: space-between;
   gap: 12px;
 }
-.pane-head h2,.lucide-head h3 {
+.pane-head h2,
+.lucide-head h3 {
   font-size: 15px;
   margin: 0;
   font-weight: 650;
 }
-.toolbar,.manual-row {
+.toolbar,
+.manual-row {
   padding: 0 22px 13px;
   display: flex;
   gap: 8px;
@@ -194,10 +206,12 @@ input::placeholder {
   gap: 6px;
   min-width: 0;
 }
-.field span,.size-control,.eyebrow {
+.field span,
+.size-control,
+.eyebrow {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   color: var(--muted);
 }
 .grow {
@@ -234,11 +248,11 @@ input::placeholder {
   min-height: 42px;
 }
 .kde-row:hover {
-  background: color-mix(in srgb,var(--selection) 12%,transparent);
+  background: color-mix(in srgb, var(--selection) 12%, transparent);
   border: 0;
 }
 .kde-row.selected {
-  background: color-mix(in srgb,var(--selection) 22%,transparent);
+  background: color-mix(in srgb, var(--selection) 22%, transparent);
 }
 .kde-thumbnail {
   width: 22px;
@@ -298,6 +312,8 @@ input::placeholder {
 }
 .segmented {
   display: flex;
+  margin: 0;
+  border: 0;
   gap: 3px;
   background: var(--view);
   padding: 3px;
@@ -325,8 +341,8 @@ input::placeholder {
 }
 .preview-surface {
   margin: 0 22px;
-  background: var(--preview-window,var(--window));
-  color: var(--preview-text,var(--window-text));
+  background: var(--preview-window, var(--window));
+  color: var(--preview-text, var(--window-text));
   border: 1px solid var(--border);
   border-radius: 9px;
   padding: 18px 20px 20px;
@@ -356,21 +372,21 @@ input::placeholder {
   margin-top: 12px;
 }
 .context-previews {
-  border-top: 1px solid color-mix(in srgb,var(--preview-text) 18%,transparent);
+  border-top: 1px solid color-mix(in srgb, var(--preview-text) 18%, transparent);
   padding-top: 15px;
   display: grid;
-  grid-template-columns: minmax(125px,1fr) minmax(230px,2fr);
+  grid-template-columns: minmax(125px, 1fr) minmax(230px, 2fr);
   gap: 20px;
 }
 .context-block .eyebrow {
   display: block;
   margin-bottom: 10px;
-  color: color-mix(in srgb,var(--preview-text) 60%,transparent);
+  color: color-mix(in srgb, var(--preview-text) 60%, transparent);
 }
 .tray {
   height: 44px;
   border-radius: 7px;
-  background: var(--preview-view,var(--view));
+  background: var(--preview-view, var(--view));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,7 +408,7 @@ input::placeholder {
 }
 .notification {
   height: 60px;
-  background: var(--preview-view,var(--view));
+  background: var(--preview-view, var(--view));
   border-radius: 7px;
   padding: 10px 12px;
   display: flex;
@@ -408,9 +424,10 @@ input::placeholder {
 .notification strong {
   font-size: 12px;
 }
-.notification div span,.notification-time {
+.notification div span,
+.notification-time {
   font-size: 11px;
-  color: color-mix(in srgb,var(--preview-text) 63%,transparent);
+  color: color-mix(in srgb, var(--preview-text) 63%, transparent);
 }
 .notification-time {
   margin-left: auto;
@@ -419,7 +436,7 @@ input::placeholder {
 .assignment {
   margin-top: 18px;
   padding-top: 16px;
-  border-top: 1px solid color-mix(in srgb,var(--preview-text) 18%,transparent);
+  border-top: 1px solid color-mix(in srgb, var(--preview-text) 18%, transparent);
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -429,7 +446,7 @@ input::placeholder {
 .assignment .eyebrow {
   display: block;
   margin-bottom: 6px;
-  color: color-mix(in srgb,var(--preview-text) 64%,transparent);
+  color: color-mix(in srgb, var(--preview-text) 64%, transparent);
 }
 .assignment strong {
   font-size: 13px;
@@ -444,6 +461,8 @@ input::placeholder {
   border-radius: 6px;
   background: var(--button);
   color: var(--button-text);
+  padding: 0;
+  margin: 0;
 }
 .rotate-stepper button {
   height: 100%;
@@ -455,7 +474,7 @@ input::placeholder {
   line-height: 1;
 }
 .rotate-stepper button:hover:not(:disabled) {
-  background: color-mix(in srgb,var(--selection) 16%,var(--button));
+  background: color-mix(in srgb, var(--selection) 16%, var(--button));
 }
 .rotate-stepper output {
   min-width: 42px;
@@ -473,7 +492,7 @@ input::placeholder {
 }
 .assignment-actions button[aria-pressed="true"] {
   border-color: var(--selection);
-  background: color-mix(in srgb,var(--selection) 24%,var(--button));
+  background: color-mix(in srgb, var(--selection) 24%, var(--button));
 }
 .lucide-head {
   padding: 18px 22px 10px;
@@ -490,9 +509,11 @@ input::placeholder {
   min-height: 160px;
   padding: 4px 16px 20px 22px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(125px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
   gap: 6px;
   align-content: start;
+  margin: 0;
+  list-style: none;
 }
 .lucide-cell {
   position: relative;
@@ -513,13 +534,14 @@ input::placeholder {
   min-width: 0;
 }
 .lucide-cell:hover .lucide-item {
-  background: color-mix(in srgb,var(--selection) 10%,transparent);
+  background: color-mix(in srgb, var(--selection) 10%, transparent);
   border-color: var(--border);
 }
 .lucide-cell .lucide-item.selected {
-  background: color-mix(in srgb,var(--selection) 18%,transparent);
+  background: color-mix(in srgb, var(--selection) 18%, transparent);
   border-color: var(--selection);
 }
+/* biome-ignore lint/style/noDescendingSpecificity: The notification and icon-list selectors style unrelated components. */
 .lucide-item span {
   font-size: 11px;
   overflow: hidden;
@@ -568,7 +590,7 @@ footer span:first-child {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-@media(max-width:850px) {
+@media (max-width: 850px) {
   .app {
     height: auto;
     min-height: 100dvh;
@@ -591,7 +613,7 @@ footer span:first-child {
     grid-template-columns: 1fr 2fr;
   }
 }
-@media(max-width:550px) {
+@media (max-width: 550px) {
   .topbar {
     padding: 12px 16px;
   }
@@ -599,7 +621,11 @@ footer span:first-child {
     width: 100%;
     flex-wrap: wrap;
   }
-  .pane-head,.toolbar,.manual-row,.preview-toolbar,.lucide-head {
+  .pane-head,
+  .toolbar,
+  .manual-row,
+  .preview-toolbar,
+  .lucide-head {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -630,6 +656,7 @@ footer span:first-child {
     height: 900px;
   }
 }
-.preview-surface .preview-block .eyebrow,.preview-surface .preview-arrow {
-  color: color-mix(in srgb,var(--preview-text) 64%,transparent);
+.preview-surface .preview-block .eyebrow,
+.preview-surface .preview-arrow {
+  color: color-mix(in srgb, var(--preview-text) 64%, transparent);
 }
