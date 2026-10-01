@@ -97,7 +97,12 @@ Assignments without categories use `status`.
 
 ## Local editor
 
-Run `bun run editor` and open <http://127.0.0.1:3000>. The editor searches all icon
+For development, run `bun run editor:api` and `bun run editor:dev` in separate
+terminals, then open <http://127.0.0.1:3000>. Vite serves the Svelte UI on port
+3000 and proxies API requests to Bun on port 3001. For a built UI, run
+`bun run editor`; Bun serves both the UI and API on port 3000.
+
+The editor searches all icon
 categories in installed themes and their inherited icons; use **Category** to narrow
 the list. It also searches Lucide names and tags. Select a
 KDE name or enter one manually, choose a Lucide candidate, then click **Assign**.

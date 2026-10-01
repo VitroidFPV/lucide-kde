@@ -8,7 +8,7 @@ import { activePalette, samples } from "./palette";
 import { lucideDir, readLucide, themedSvg } from "../src/lucide";
 import { iconCategories, mappingCategories, mappingPath, mappingScale, projectDir, readMappings, saveMappings, validKdeName, validLucideName, type IconCategory } from "../src/mappings";
 
-const editorDir = import.meta.dir;
+const editorBuildDir = join(import.meta.dir, "..", "dist", "editor");
 const archivePath = join(projectDir, "dist", "Lucide-KDE.tar.gz");
 const installedDir = join(process.env.XDG_DATA_HOME || join(homedir(), ".local", "share"), "icons", "Lucide-KDE");
 let themes = await discoverThemes();
@@ -104,12 +104,16 @@ const server = Bun.serve({
     const host = request.headers.get("host") || "";
     if (host !== `127.0.0.1:${port}` && host !== `localhost:${port}`) return new Response("Forbidden", { status: 403 });
     const origin = request.headers.get("origin");
-    if (origin && origin !== `http://127.0.0.1:${port}` && origin !== `http://localhost:${port}`) return new Response("Forbidden", { status: 403 });
+    const allowedOrigins = [`http://127.0.0.1:${port}`, `http://localhost:${port}`];
+    if (port === 3001) allowedOrigins.push("http://127.0.0.1:3000", "http://localhost:3000");
+    if (origin && !allowedOrigins.includes(origin)) return new Response("Forbidden", { status: 403 });
     try {
-      if (request.method === "GET" && ["/", "/app.js", "/search.js", "/style.css", "/favicon.svg"].includes(url.pathname)) {
+      if (request.method === "GET" && (url.pathname === "/" || url.pathname === "/favicon.svg" || /^\/assets\/[\w.-]+\.(js|css|svg)$/.test(url.pathname))) {
         const path = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
+        const file = Bun.file(join(editorBuildDir, path));
+        if (!await file.exists()) return new Response("Editor assets are missing; run bun run editor:build", { status: 404 });
         const type = path.endsWith(".css") ? "text/css" : path.endsWith(".js") ? "text/javascript" : path.endsWith(".svg") ? "image/svg+xml" : "text/html";
-        return new Response(Bun.file(join(editorDir, path)), { headers: { "Content-Type": `${type}; charset=utf-8`, "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'", "Cache-Control": "no-store" } });
+        return new Response(file, { headers: { "Content-Type": `${type}; charset=utf-8`, "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'", "Cache-Control": "no-store" } });
       }
       if (request.method === "GET" && url.pathname === "/api/state") {
         const choices = [...themes.values()].filter((theme) => theme.locations.some((location) => location.directories.length)).map(({ id, label }) => ({ id, label })).sort((a, b) => a.label.localeCompare(b.label));
