@@ -8,11 +8,20 @@
     "pack": "bun run src/package.ts",
     "release:prepare": "bun run src/prepare-release.ts",
     "typecheck": "tsc --noEmit",
-    "editor": "bun run editor/server.ts"
+    "editor": "bun run editor:build && bun run editor:serve",
+    "editor:serve": "bun run editor/server.ts",
+    "editor:api": "PORT=3001 bun --watch editor/server.ts",
+    "editor:dev": "vite --config editor/vite.config.ts",
+    "editor:build": "vite build --config editor/vite.config.ts",
+    "editor:check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@types/bun": "1.4.2",
     "lucide-static": "1.48.0",
-    "typescript": "7.0.2"
+    "svelte": "^5.57.1",
+    "svelte-check": "^4.7.6",
+    "typescript": "~6",
+    "vite": "^8.3.2"
   }
 }
