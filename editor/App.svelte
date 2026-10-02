@@ -256,6 +256,7 @@ onMount(() => {
         local={state.local}
         kdeName={state.kde}
         candidateName={candidate.name}
+        {revision}
         busy={state.busy}
         {canAssign}
         onPreview={(name) => (candidate.name = name)}

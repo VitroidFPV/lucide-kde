@@ -1,7 +1,7 @@
 <script>
 import { candidateUrl } from "../icons.js";
 
-let { icons, local, kdeName, candidateName, busy, canAssign, onPreview, onAssign } = $props();
+let { icons, local, kdeName, candidateName, busy, canAssign, revision, onPreview, onAssign } = $props();
 let lucideSearch = $state("");
 let filteredLucide = $derived.by(() => {
   const terms = lucideSearch.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -26,7 +26,7 @@ let filteredLucide = $derived.by(() => {
           aria-pressed={candidateName === name}
           onclick={() => onPreview(name)}
         >
-          <img src={candidateUrl(name, "current")} alt=""><span>{name.slice(6)}</span>
+          <img src={candidateUrl(name, "current", false, 1, revision)} alt=""><span>{name.slice(6)}</span>
         </button>
         <button
           type="button"
