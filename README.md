@@ -86,14 +86,28 @@ bun run build
 bun run typecheck
 ```
 
-`mappings.json` maps KDE icon names to Lucide icon names. The build uses the pinned
-`lucide-static` version and replaces `theme/Lucide-KDE` with generated output.
+`mappings.json` maps KDE icon names to Lucide icon names or reusable SVGs in
+`icons/local/`. Use `"local:volume-2-danger"` for
+`icons/local/volume-2-danger.svg`, including in object mappings such as
+`{"icon":"local:volume-2-danger","rotate":22.5}`. Any number of KDE names may
+share a local source. The build uses the pinned `lucide-static` version and
+replaces `theme/Lucide-KDE` with generated output; local sources stay outside that
+generated directory.
 Mirrored RTL assignments use an object such as
 `{"icon":"arrow-right","mirror":true}`; ordinary assignments remain strings.
 An object can also set `"scale":0.75` to shrink the drawing within its icon area,
 or `"rotate":22.5` to rotate it in 22.5° increments,
 or `"categories":["actions","status"]` to place it in multiple theme directories.
 Assignments without categories use `status`.
+
+Local SVGs are standalone documents. They keep their authored strokes, fills,
+opacity, definitions, and groups. For strokes that follow KDE colors, set
+`stroke="currentColor"` and put a `ColorScheme-Text`,
+`ColorScheme-PositiveText`, `ColorScheme-NeutralText`, `ColorScheme-NegativeText`,
+`ColorScheme-Accent`, or `ColorScheme-Highlight` class on the shape. Unmarked
+Lucide strokes use normal text color. The editor supplies fallback colors for
+preview outside Plasma. KDE documents these SVG classes in
+[KIconColors](https://api.kde.org/kiconcolors.html).
 
 ## Local editor
 
@@ -104,13 +118,27 @@ terminals, then open <http://127.0.0.1:3000>. Vite serves the Svelte UI on port
 
 The editor searches all icon
 categories in installed themes and their inherited icons; use **Category** to narrow
-the list. It also searches Lucide names and tags. Select a
-KDE name or enter one manually, choose a Lucide candidate, then click **Assign**.
+the list. It also searches Lucide names and tags and lists SVGs from `icons/local/`.
+Select a KDE name or enter one manually, choose a source, then click **Assign**.
 Use **Alt+Up** and **Alt+Down** to move through the KDE names shown by the
 current search and filters.
 Assignments save to `mappings.json` immediately; previews do not change Plasma.
 For RTL names, **Mirror** flips the candidate horizontally before assigning it.
 Use the rotation buttons to turn the candidate in 22.5° increments before assigning it.
+
+Click **Edit SVG variant** to open the chosen source in a dialog. Choose a color role
+with **Whole icon** selected to recolor its visible strokes and fills, or select a
+shape in the preview or list to change only its stroke. Changes stay in the
+dialog preview until saved. **Save as variant** creates a local SVG without
+changing the candidate or its assignment. Its suggested name uses the Lucide
+icon name followed by the chosen non-default color roles; you can edit the name.
+Select the saved SVG from **Local variants**
+when you want to preview or assign it. For a local
+variant, **Save variant** updates its file and every KDE name that uses it. For
+hand-added SVGs, **Use theme color** explicitly converts visible strokes and fills
+to normal theme text color while retaining `none`, transparency, and opacity.
+Paint using stylesheets or paint servers needs manual editing. Rename or delete
+local files directly in `icons/local/`.
 
 **Build Archive** creates a downloadable `dist/Lucide-KDE.tar.gz`. **Apply to
 Plasma** regenerates the theme in the current user's icon directory and requests

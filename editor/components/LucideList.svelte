@@ -1,7 +1,7 @@
 <script>
 import { candidateUrl } from "../icons.js";
 
-let { icons, kdeName, candidateName, busy, canAssign, onPreview, onAssign } = $props();
+let { icons, local, kdeName, candidateName, busy, canAssign, revision, onPreview, onAssign } = $props();
 let lucideSearch = $state("");
 let filteredLucide = $derived.by(() => {
   const terms = lucideSearch.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -10,6 +10,39 @@ let filteredLucide = $derived.by(() => {
   );
 });
 </script>
+
+<div class="lucide-head">
+  <h3>Local variants</h3>
+  <span class="muted">{local.length} icons</span>
+</div>
+{#if local.length}
+  <ul class="local-list" aria-label="Local variants">
+    {#each local as name (name)}
+      <li class="lucide-cell">
+        <button
+          type="button"
+          class="lucide-item"
+          class:selected={candidateName === name}
+          aria-pressed={candidateName === name}
+          onclick={() => onPreview(name)}
+        >
+          <img src={candidateUrl(name, "current", false, 1, revision)} alt=""><span>{name.slice(6)}</span>
+        </button>
+        <button
+          type="button"
+          class="lucide-assign"
+          disabled={busy || !canAssign(name)}
+          aria-label={`Assign ${name} to ${kdeName || "selected KDE icon"}`}
+          onclick={() => onAssign(name)}
+        >
+          Assign
+        </button>
+      </li>
+    {/each}
+  </ul>
+{:else}
+  <p class="muted local-empty">Add SVG files to icons/local/ or save a variant below.</p>
+{/if}
 
 <div class="lucide-head">
   <h3>Lucide icons</h3>

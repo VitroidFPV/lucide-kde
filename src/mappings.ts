@@ -5,6 +5,8 @@ export const projectDir = resolve(import.meta.dir, "..");
 export const mappingPath = join(projectDir, "mappings.json");
 export const validKdeName = /^[A-Za-z0-9][A-Za-z0-9._-]*$/;
 export const validLucideName = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export const validLocalName = validLucideName;
+export const validSourceName = /^(?:[a-z0-9]+(?:-[a-z0-9]+)*|local:[a-z0-9]+(?:-[a-z0-9]+)*)$/;
 export const iconCategories = [
   "actions",
   "animations",
@@ -47,14 +49,14 @@ export function mappingCategories(mapping: Mapping): IconCategory[] {
 }
 
 function validMapping(value: unknown): value is Mapping {
-  if (typeof value === "string") return validLucideName.test(value);
+  if (typeof value === "string") return validSourceName.test(value);
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const fields = Object.keys(value);
   return (
     fields.every((field) => ["icon", "mirror", "scale", "rotate", "categories"].includes(field)) &&
     "icon" in value &&
     typeof value.icon === "string" &&
-    validLucideName.test(value.icon) &&
+    validSourceName.test(value.icon) &&
     (!("mirror" in value) || value.mirror === true) &&
     (!("scale" in value) ||
       (typeof value.scale === "number" && Number.isFinite(value.scale) && value.scale > 0 && value.scale <= 1)) &&
@@ -73,7 +75,7 @@ function validMapping(value: unknown): value is Mapping {
 
 export function validateMappings(value: unknown): Mappings {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
-    throw new Error("mappings.json must contain an object of KDE names to Lucide names");
+    throw new Error("mappings.json must contain an object of KDE names to source names");
   }
   const mappings: Mappings = {};
   for (const [kdeName, mapping] of Object.entries(value)) {

@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!theme", "!dist"],
+    "includes": ["**", "!theme", "!dist", "!icons/local"],
     "ignoreUnknown": true
   },
   "formatter": {

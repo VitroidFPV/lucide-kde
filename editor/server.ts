@@ -1,21 +1,27 @@
 import { execFileSync } from "node:child_process";
-import { copyFile, cp, mkdir, readdir, readFile, realpath, rename, rm, stat } from "node:fs/promises";
+import { copyFile, cp, mkdir, readdir, readFile, realpath, rename, rm, stat, writeFile } from "node:fs/promises";
 import { homedir } from "node:os";
 import { join, resolve } from "node:path";
 import { gunzipSync } from "node:zlib";
-import { lucideDir, readLucide, themedSvg } from "../src/lucide";
+import { lucideDir } from "../src/lucide";
 import {
   type IconCategory,
   iconCategories,
   mappingCategories,
+  mappingIcon,
+  mappingMirrored,
   mappingPath,
+  mappingRotation,
   mappingScale,
   projectDir,
   readMappings,
   saveMappings,
   validKdeName,
-  validLucideName,
+  validLocalName,
+  validSourceName,
 } from "../src/mappings";
+import { listLocalSources, localDir, readSource, renderSource } from "../src/sources";
+import { paletteStyles, themedSvg, validateSvg } from "../src/svg";
 import { bestAsset, discoverThemes, effectiveIcons, type IconEntry, sortedEntries } from "./catalog";
 import { activePalette, samples } from "./palette";
 
@@ -41,19 +47,27 @@ function json(value: unknown, status = 200): Response {
 function errorResponse(error: unknown, status = 400): Response {
   return json({ error: error instanceof Error ? error.message : String(error) }, status);
 }
-function safeName(value: string | null, kind: "kde" | "lucide"): string {
-  if (!value || !(kind === "kde" ? validKdeName : validLucideName).test(value)) throw new Error("Invalid icon name");
+function safeName(value: string | null, kind: "kde" | "source"): string {
+  if (!value || !(kind === "kde" ? validKdeName : validSourceName).test(value)) throw new Error("Invalid icon name");
   return value;
 }
-function paletteColor(name: string, active: Awaited<ReturnType<typeof activePalette>>): string {
-  return (name === "light" ? samples.light : name === "dark" ? samples.dark : active).viewText;
+function previewColors(name: string, active: Awaited<ReturnType<typeof activePalette>>) {
+  const palette = name === "light" ? samples.light : name === "dark" ? samples.dark : active;
+  return {
+    text: palette.viewText,
+    positive: palette.positive,
+    neutral: palette.neutral,
+    negative: palette.negative,
+    accent: palette.accent,
+    highlight: palette.highlight,
+  };
 }
-function recolorSvg(svg: string, color: string): string {
-  const style = `<style id="current-color-scheme" type="text/css">.ColorScheme-Text { color: ${color}; } .ColorScheme-NegativeText { color: ${color}; } .ColorScheme-NeutralText { color: ${color}; } .ColorScheme-PositiveText { color: ${color}; }</style>`;
+function recolorSvg(svg: string, colors: ReturnType<typeof previewColors>): string {
+  const style = `<style id="current-color-scheme" type="text/css">${paletteStyles(colors)}</style>`;
   if (/<style\b[^>]*id="current-color-scheme"[^>]*>[\s\S]*?<\/style>/i.test(svg)) {
     return svg.replace(/<style\b[^>]*id="current-color-scheme"[^>]*>[\s\S]*?<\/style>/i, style);
   }
-  return svg.replace(/<svg\b[^>]*>/i, (opening) => opening.replace(/>$/, ` style="color:${color}">${style}`));
+  return svg.replace(/<svg\b[^>]*>/i, (opening) => `${opening}${style}`);
 }
 async function catalog(theme: string): Promise<Map<string, IconEntry>> {
   if (!themes.has(theme)) throw new Error("Unknown icon theme");
@@ -66,8 +80,16 @@ async function catalog(theme: string): Promise<Map<string, IconEntry>> {
 }
 async function buildStatus(): Promise<boolean> {
   try {
-    const [mapping, archive] = await Promise.all([stat(mappingPath), stat(archivePath)]);
-    return mapping.mtimeMs > archive.mtimeMs;
+    const [mapping, archive, local] = await Promise.all([stat(mappingPath), stat(archivePath), listLocalSources()]);
+    if (mapping.mtimeMs > archive.mtimeMs) return true;
+    try {
+      if ((await stat(localDir)).mtimeMs > archive.mtimeMs) return true;
+    } catch (error) {
+      if (!(error instanceof Error && "code" in error && error.code === "ENOENT")) throw error;
+    }
+    return (await Promise.all(local.map((name) => stat(join(localDir, `${name.slice(6)}.svg`))))).some(
+      (file) => file.mtimeMs > archive.mtimeMs,
+    );
   } catch {
     return true;
   }
@@ -161,7 +183,7 @@ const server = Bun.serve({
           headers: {
             "Content-Type": `${type}; charset=utf-8`,
             "Content-Security-Policy":
-              "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'",
+              "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'",
             "Cache-Control": "no-store",
           },
         });
@@ -181,6 +203,11 @@ const server = Bun.serve({
         });
       }
       if (request.method === "GET" && url.pathname === "/api/lucide") return json(lucideIcons);
+      if (request.method === "GET" && url.pathname === "/api/local") return json(await listLocalSources());
+      if (request.method === "GET" && url.pathname === "/api/raw-source") {
+        const name = safeName(url.searchParams.get("name"), "source");
+        return json({ source: await readSource(name) });
+      }
       if (request.method === "GET" && url.pathname === "/api/icons")
         return json(sortedEntries(await catalog(url.searchParams.get("theme") || "")));
       if (request.method === "GET" && url.pathname === "/api/source") {
@@ -194,18 +221,18 @@ const server = Bun.serve({
         if (asset.type === "png")
           return new Response(bytes, { headers: { "Content-Type": "image/png", "Cache-Control": "no-store" } });
         const source = asset.type === "svgz" ? gunzipSync(bytes).toString("utf8") : bytes.toString("utf8");
-        const color = paletteColor(url.searchParams.get("palette") || "current", await activePalette());
-        return new Response(recolorSvg(source, color), {
+        const colors = previewColors(url.searchParams.get("palette") || "current", await activePalette());
+        return new Response(recolorSvg(source, colors), {
           headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" },
         });
       }
       if (request.method === "GET" && url.pathname === "/api/candidate") {
-        const name = safeName(url.searchParams.get("name"), "lucide");
-        const color = paletteColor(url.searchParams.get("palette") || "current", await activePalette());
+        const name = safeName(url.searchParams.get("name"), "source");
+        const colors = previewColors(url.searchParams.get("palette") || "current", await activePalette());
         const mirror = url.searchParams.get("mirror") === "1";
         const scale = Number(url.searchParams.get("scale") || 1);
         const rotate = Number(url.searchParams.get("rotate") || 0);
-        return new Response(recolorSvg(themedSvg(await readLucide(name), mirror, scale, rotate), color), {
+        return new Response(recolorSvg(await renderSource(name, mirror, scale, rotate), colors), {
           headers: { "Content-Type": "image/svg+xml", "Cache-Control": "no-store" },
         });
       }
@@ -224,8 +251,8 @@ const server = Bun.serve({
         if (!body || typeof body !== "object") throw new Error("Invalid mapping request");
         const { kdeName, lucideName, mirror, rotate, categories } = body as Record<string, unknown>;
         if (typeof kdeName !== "string" || !validKdeName.test(kdeName)) throw new Error("Invalid KDE icon name");
-        if (lucideName !== null && (typeof lucideName !== "string" || !validLucideName.test(lucideName)))
-          throw new Error("Invalid Lucide icon name");
+        if (lucideName !== null && (typeof lucideName !== "string" || !validSourceName.test(lucideName)))
+          throw new Error("Invalid icon source name");
         if (mirror !== undefined && typeof mirror !== "boolean") throw new Error("Invalid mirror option");
         if (
           rotate !== undefined &&
@@ -240,7 +267,7 @@ const server = Bun.serve({
             !categories.every((category) => iconCategories.includes(category)))
         )
           throw new Error("Invalid icon categories");
-        if (lucideName !== null) await readLucide(lucideName as string);
+        if (lucideName !== null) await readSource(lucideName as string);
         busy = true;
         try {
           const mappings = await readMappings();
@@ -266,6 +293,36 @@ const server = Bun.serve({
           await saveMappings(mappings);
           return json({ mappings, needsBuild: true });
         } finally {
+          busy = false;
+        }
+      }
+      if (request.method === "POST" && url.pathname === "/api/variant") {
+        if (busy) return errorResponse(new Error("Another operation is running"), 409);
+        const body: unknown = await request.json();
+        if (!body || typeof body !== "object") throw new Error("Invalid variant request");
+        const { name, source, mode } = body as Record<string, unknown>;
+        if (typeof name !== "string" || !validLocalName.test(name)) throw new Error("Invalid variant name");
+        if (typeof source !== "string") throw new Error("Missing SVG source");
+        if (mode !== "create" && mode !== "update") throw new Error("Invalid save mode");
+        validateSvg(source);
+        busy = true;
+        const path = join(localDir, `${name}.svg`);
+        const temp = join(localDir, `.${name}-${process.pid}-${Date.now()}.tmp`);
+        try {
+          await mkdir(localDir, { recursive: true });
+          const exists = await Bun.file(path).exists();
+          if (mode === "create" && exists) throw new Error("Variant name already exists");
+          if (mode === "update" && !exists) throw new Error("Variant does not exist");
+          const mappings = mode === "update" ? await readMappings() : null;
+          const uses = Object.values(mappings || {}).filter((mapping) => mappingIcon(mapping) === `local:${name}`);
+          for (const mapping of uses)
+            themedSvg(source, mappingMirrored(mapping), mappingScale(mapping), mappingRotation(mapping));
+          if (!uses.length) themedSvg(source);
+          await writeFile(temp, source);
+          await rename(temp, path);
+          return json({ local: await listLocalSources(), needsBuild: true });
+        } finally {
+          await rm(temp, { force: true });
           busy = false;
         }
       }
