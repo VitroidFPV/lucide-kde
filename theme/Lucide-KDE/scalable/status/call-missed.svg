@@ -1,22 +1,8 @@
-<!-- @license lucide-static v1.48.0 - ISC -->
-<svg
-  class="lucide lucide-phone-missed"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <style id="current-color-scheme" type="text/css">
-    .ColorScheme-Text { color: #232629; }
-  </style>
-  <g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="m16 2 6 6" />
-  <path d="m22 2-6 6" />
-  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-  </g>
+<svg class="lucide lucide-phone-missed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<style id="current-color-scheme" type="text/css">.ColorScheme-Text { color: #232629; } .ColorScheme-PositiveText { color: #27ae60; } .ColorScheme-NeutralText { color: #f67400; } .ColorScheme-NegativeText { color: #da4453; } .ColorScheme-Accent { color: #3daee9; } .ColorScheme-Highlight { color: #3daee9; }</style>
+<g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m16 2 6 6" stroke="currentColor" class="ColorScheme-NegativeText"/>
+  <path d="m22 2-6 6" stroke="currentColor" class="ColorScheme-NegativeText"/>
+  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+</g>
 </svg>

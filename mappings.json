@@ -108,12 +108,12 @@
       "categories"
     ]
   },
-  "appointment-missed-symbolic": "alarm-clock",
+  "appointment-missed-symbolic": "local:alarm-clock-negative",
   "appointment-recurring": "refresh-cw",
   "appointment-recurring-symbolic": "refresh-cw",
   "appointment-reminder": "bell",
   "appointment-reminder-symbolic": "bell",
-  "appointment-soon-symbolic": "alarm-clock-check",
+  "appointment-soon-symbolic": "local:alarm-clock-neutral",
   "arrow": {
     "icon": "mouse-pointer-2",
     "categories": [
@@ -268,24 +268,24 @@
     "icon": "volume-off",
     "mirror": true
   },
-  "audio-on": "volume-2",
+  "audio-on": "local:volume-2-positive",
   "audio-on-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-positive",
     "mirror": true
   },
-  "audio-on-symbolic": "volume-2",
+  "audio-on-symbolic": "local:volume-2-positive",
   "audio-on-symbolic-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-positive",
     "mirror": true
   },
-  "audio-ready": "volume",
+  "audio-ready": "local:volume-neutral",
   "audio-ready-rtl": {
-    "icon": "volume",
+    "icon": "local:volume-neutral",
     "mirror": true
   },
-  "audio-ready-symbolic": "volume",
+  "audio-ready-symbolic": "local:volume-neutral",
   "audio-ready-symbolic-rtl": {
-    "icon": "volume",
+    "icon": "local:volume-neutral",
     "mirror": true
   },
   "audio-speakers-symbolic": {
@@ -301,14 +301,14 @@
     ]
   },
   "audio-volume-high": "volume-2",
-  "audio-volume-high-danger": "volume-2",
+  "audio-volume-high-danger": "local:volume-2-negative",
   "audio-volume-high-danger-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-negative",
     "mirror": true
   },
-  "audio-volume-high-danger-symbolic": "volume-2",
+  "audio-volume-high-danger-symbolic": "local:volume-2-negative",
   "audio-volume-high-danger-symbolic-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-negative",
     "mirror": true
   },
   "audio-volume-high-rtl": {
@@ -320,14 +320,14 @@
     "icon": "volume-2",
     "mirror": true
   },
-  "audio-volume-high-warning": "volume-2",
+  "audio-volume-high-warning": "local:volume-2-neutral",
   "audio-volume-high-warning-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-neutral",
     "mirror": true
   },
-  "audio-volume-high-warning-symbolic": "volume-2",
+  "audio-volume-high-warning-symbolic": "local:volume-2-neutral",
   "audio-volume-high-warning-symbolic-rtl": {
-    "icon": "volume-2",
+    "icon": "local:volume-2-neutral",
     "mirror": true
   },
   "audio-volume-low": "volume",
@@ -350,14 +350,14 @@
     "icon": "volume-1",
     "mirror": true
   },
-  "audio-volume-muted": "volume-off",
+  "audio-volume-muted": "local:volume-off-negative",
   "audio-volume-muted-rtl": {
-    "icon": "volume-off",
+    "icon": "local:volume-off-negative",
     "mirror": true
   },
-  "audio-volume-muted-symbolic": "volume-off",
+  "audio-volume-muted-symbolic": "local:volume-off-negative",
   "audio-volume-muted-symbolic-rtl": {
-    "icon": "volume-off",
+    "icon": "local:volume-off-negative",
     "mirror": true
   },
   "avatar-default-symbolic": "user",
@@ -422,13 +422,13 @@
     ]
   },
   "bookmark-remove": {
-    "icon": "bookmark-x",
+    "icon": "local:bookmark-x-negative",
     "categories": [
       "actions"
     ]
   },
   "bookmark-remove-symbolic": {
-    "icon": "bookmark-x",
+    "icon": "local:bookmark-x-negative",
     "categories": [
       "actions"
     ]
@@ -519,14 +519,14 @@
   },
   "call-incoming": "phone-incoming",
   "call-incoming-symbolic": "phone-incoming",
-  "call-missed": "phone-missed",
-  "call-missed-symbolic": "phone-missed",
+  "call-missed": "local:phone-missed-negative",
+  "call-missed-symbolic": "local:phone-missed-negative",
   "call-outgoing": "phone-outgoing",
   "call-outgoing-symbolic": "phone-outgoing",
-  "camera-off": "webcam-off",
-  "camera-off-symbolic": "webcam-off",
-  "camera-on": "webcam",
-  "camera-on-symbolic": "webcam",
+  "camera-off": "local:webcam-off-negative",
+  "camera-off-symbolic": "local:webcam-off-negative",
+  "camera-on": "local:webcam-negative",
+  "camera-on-symbolic": "local:webcam-negative",
   "camera-photo": {
     "icon": "camera",
     "categories": [
@@ -539,8 +539,8 @@
       "devices"
     ]
   },
-  "camera-ready": "webcam",
-  "camera-ready-symbolic": "webcam",
+  "camera-ready": "local:webcam-neutral",
+  "camera-ready-symbolic": "local:webcam-neutral",
   "camera-video": {
     "icon": "video",
     "categories": [
@@ -665,25 +665,25 @@
     ]
   },
   "delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "delete-comment": {
-    "icon": "message-square-x",
+    "icon": "local:message-square-x-negative",
     "categories": [
       "actions"
     ]
   },
   "delete-comment-symbolic": {
-    "icon": "message-square-x",
+    "icon": "local:message-square-x-negative",
     "categories": [
       "actions"
     ]
   },
   "delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -912,7 +912,7 @@
     ]
   },
   "document-close-symbolic": {
-    "icon": "file-x-2",
+    "icon": "local:file-x-2-negative",
     "categories": [
       "actions"
     ]
@@ -1250,13 +1250,13 @@
     ]
   },
   "document-replace": {
-    "icon": "file-x-2",
+    "icon": "local:files-negative",
     "categories": [
       "actions"
     ]
   },
   "document-replace-symbolic": {
-    "icon": "file-x-2",
+    "icon": "local:files-negative",
     "categories": [
       "actions"
     ]
@@ -1523,13 +1523,13 @@
     ]
   },
   "draw-eraser-delete-objects": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "draw-eraser-delete-objects-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -1682,37 +1682,37 @@
     ]
   },
   "edit-delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "edit-delete-remove": {
-    "icon": "x",
+    "icon": "local:x-negative",
     "categories": [
       "actions"
     ]
   },
   "edit-delete-remove-symbolic": {
-    "icon": "x",
+    "icon": "local:x-negative",
     "categories": [
       "actions"
     ]
   },
   "edit-delete-shred": {
-    "icon": "shredder",
+    "icon": "local:shredder-negative",
     "categories": [
       "actions"
     ]
   },
   "edit-delete-shred-symbolic": {
-    "icon": "shredder",
+    "icon": "local:shredder-negative",
     "categories": [
       "actions"
     ]
   },
   "edit-delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -1973,13 +1973,13 @@
     ]
   },
   "entry-delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "entry-delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -2393,7 +2393,7 @@
     ]
   },
   "folder-important": {
-    "icon": "circle-alert",
+    "icon": "local:circle-alert-negative",
     "categories": [
       "places"
     ]
@@ -2573,7 +2573,7 @@
     ]
   },
   "folder-podcast": {
-    "icon": "rss",
+    "icon": "local:rss-neutral",
     "categories": [
       "places"
     ]
@@ -2657,7 +2657,7 @@
     ]
   },
   "folder-rpm": {
-    "icon": "gauge",
+    "icon": "local:gauge-negative",
     "categories": [
       "places"
     ]
@@ -2886,13 +2886,13 @@
     ]
   },
   "gnumeric-autofilter-delete": {
-    "icon": "filter-x",
+    "icon": "local:filter-x-negative",
     "categories": [
       "actions"
     ]
   },
   "gnumeric-autofilter-delete-symbolic": {
-    "icon": "filter-x",
+    "icon": "local:filter-x-negative",
     "categories": [
       "actions"
     ]
@@ -2904,13 +2904,13 @@
     ]
   },
   "gnumeric-comment-delete": {
-    "icon": "message-square-x",
+    "icon": "local:message-square-x-negative",
     "categories": [
       "actions"
     ]
   },
   "gnumeric-comment-delete-symbolic": {
-    "icon": "message-square-x",
+    "icon": "local:message-square-x-negative",
     "categories": [
       "actions"
     ]
@@ -3350,13 +3350,13 @@
     ]
   },
   "group-delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "group-delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -3613,8 +3613,8 @@
       "devices"
     ]
   },
-  "input-touchpad-off": "touchpad-off",
-  "input-touchpad-off-symbolic": "touchpad-off",
+  "input-touchpad-off": "local:touchpad-off-negative",
+  "input-touchpad-off-symbolic": "local:touchpad-off-negative",
   "input-touchpad-on": "touchpad",
   "input-touchpad-on-symbolic": "touchpad",
   "insert-image": {
@@ -3698,13 +3698,13 @@
     ]
   },
   "knotes_delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "knotes_delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -3771,13 +3771,13 @@
     ]
   },
   "layer-delete": {
-    "icon": "layers-minus",
+    "icon": "local:layers-minus-negative",
     "categories": [
       "actions"
     ]
   },
   "layer-delete-symbolic": {
-    "icon": "layers-minus",
+    "icon": "local:layers-minus-negative",
     "categories": [
       "actions"
     ]
@@ -3850,13 +3850,13 @@
     ]
   },
   "mail-deleted": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "mail-deleted-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -4093,13 +4093,13 @@
     ]
   },
   "media-repeat-none": {
-    "icon": "repeat-off",
+    "icon": "local:repeat-off-negative",
     "categories": [
       "actions"
     ]
   },
   "media-repeat-none-symbolic": {
-    "icon": "repeat-off",
+    "icon": "local:repeat-off-negative",
     "categories": [
       "actions"
     ]
@@ -4214,22 +4214,30 @@
       "actions"
     ]
   },
-  "mic-off": "mic-off",
-  "mic-off-symbolic": "mic-off",
+  "mic-off": "local:mic-off-negative",
+  "mic-off-symbolic": "local:mic-off-negative",
+  "mic-on": "local:mic-positive",
+  "mic-on-rtl": "local:mic-positive",
+  "mic-on-symbolic": "local:mic-positive",
+  "mic-on-symbolic-rtl": "local:mic-positive",
+  "mic-ready": "local:mic-neutral",
+  "mic-ready-rtl": "local:mic-neutral",
+  "mic-ready-symbolic": "local:mic-neutral",
+  "mic-ready-symbolic-rtl": "local:mic-neutral",
   "microphone": {
     "icon": "mic",
     "categories": [
       "applets"
     ]
   },
-  "microphone-sensitivity-muted": "mic-off",
+  "microphone-sensitivity-muted": "local:mic-off-negative",
   "microphone-sensitivity-muted-rtl": {
-    "icon": "mic-off",
+    "icon": "local:mic-off-negative",
     "mirror": true
   },
-  "microphone-sensitivity-muted-symbolic": "mic-off",
+  "microphone-sensitivity-muted-symbolic": "local:mic-off-negative",
   "microphone-sensitivity-muted-symbolic-rtl": {
-    "icon": "mic-off",
+    "icon": "local:mic-off-negative",
     "mirror": true
   },
   "network-bluetooth-activated": "bluetooth-connected",
@@ -4298,13 +4306,13 @@
     ]
   },
   "notification-disabled": {
-    "icon": "bell-off",
+    "icon": "local:bell-off-negative",
     "categories": [
       "actions"
     ]
   },
   "notification-disabled-symbolic": {
-    "icon": "bell-off",
+    "icon": "local:bell-off-negative",
     "categories": [
       "actions"
     ]
@@ -4328,13 +4336,13 @@
     ]
   },
   "notifications-disabled": {
-    "icon": "bell-off",
+    "icon": "local:bell-off-negative",
     "categories": [
       "actions"
     ]
   },
   "notifications-disabled-symbolic": {
-    "icon": "bell-off",
+    "icon": "local:bell-off-negative",
     "categories": [
       "actions"
     ]
@@ -4404,6 +4412,18 @@
   "pidgin-tray-email": "mail",
   "pidgin-tray-email-symbolic": "mail",
   "plasmavault_error": "folder-lock",
+  "player-volume-muted": {
+    "icon": "local:volume-off-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "player-volume-muted-symbolic": {
+    "icon": "local:volume-off-negative",
+    "categories": [
+      "actions"
+    ]
+  },
   "playlist-sort": {
     "icon": "sort-asc",
     "categories": [
@@ -4501,25 +4521,25 @@
     ]
   },
   "preview-remove-all": {
-    "icon": "list-x",
+    "icon": "local:list-x-negative",
     "categories": [
       "actions"
     ]
   },
   "preview-remove-all-symbolic": {
-    "icon": "list-x",
+    "icon": "local:list-x-negative",
     "categories": [
       "actions"
     ]
   },
   "preview-remove-zone": {
-    "icon": "list-minus",
+    "icon": "local:list-minus-negative",
     "categories": [
       "actions"
     ]
   },
   "preview-remove-zone-symbolic": {
-    "icon": "list-minus",
+    "icon": "local:list-minus-negative",
     "categories": [
       "actions"
     ]
@@ -4558,13 +4578,13 @@
   "printer-printing-symbolic": "printer",
   "printer-warning-symbolic": "printer-x",
   "process-stop": {
-    "icon": "circle-stop",
+    "icon": "local:circle-stop-negative",
     "categories": [
       "actions"
     ]
   },
   "process-stop-symbolic": {
-    "icon": "circle-stop",
+    "icon": "local:circle-stop-negative",
     "categories": [
       "actions"
     ]
@@ -4608,8 +4628,8 @@
   },
   "redshift-status-day": "sun",
   "redshift-status-day-symbolic": "sun",
-  "redshift-status-off": "lightbulb-off",
-  "redshift-status-off-symbolic": "lightbulb-off",
+  "redshift-status-off": "local:lightbulb-off-negative",
+  "redshift-status-off-symbolic": "local:lightbulb-off-negative",
   "redshift-status-on": "moon-star",
   "redshift-status-on-symbolic": "moon-star",
   "repository": {
@@ -4638,8 +4658,8 @@
   },
   "security-high": "shield-half",
   "security-high-symbolic": "shield-half",
-  "security-low": "shield-x",
-  "security-low-symbolic": "shield-x",
+  "security-low": "local:shield-x-negative",
+  "security-low-symbolic": "local:shield-x-negative",
   "security-medium": "shield",
   "security-medium-symbolic": "shield",
   "server-database": {
@@ -5018,7 +5038,7 @@
       "actions"
     ]
   },
-  "touchpad_disabled": "touchpad-off",
+  "touchpad_disabled": "local:touchpad-off-negative",
   "touchpad_enabled": "touchpad",
   "transmission-tray-icon": "download",
   "transmission-tray-icon-symbolic": "download",
@@ -5071,6 +5091,16 @@
       "actions"
     ]
   },
+  "update-busy": "local:circle-fading-arrow-up-accent",
+  "update-busy-symbolic": "local:circle-fading-arrow-up-accent",
+  "update-high": "local:circle-fading-arrow-up-negative",
+  "update-high-symbolic": "local:circle-fading-arrow-up-negative",
+  "update-low": "local:circle-fading-arrow-up-positive",
+  "update-low-symbolic": "local:circle-fading-arrow-up-positive",
+  "update-medium": "local:circle-fading-arrow-up-neutral",
+  "update-medium-symbolic": "local:circle-fading-arrow-up-neutral",
+  "update-none": "circle-fading-arrow-up",
+  "update-none-symbolic": "circle-fading-arrow-up",
   "user-bookmarks-symbolic": {
     "icon": "star",
     "categories": [
@@ -5091,13 +5121,13 @@
     ]
   },
   "user-group-delete": {
-    "icon": "user-x",
+    "icon": "local:users-negative",
     "categories": [
       "actions"
     ]
   },
   "user-group-delete-symbolic": {
-    "icon": "user-x",
+    "icon": "local:users-negative",
     "categories": [
       "actions"
     ]
@@ -5155,13 +5185,13 @@
     ]
   },
   "usermenu-delete": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
   },
   "usermenu-delete-symbolic": {
-    "icon": "trash",
+    "icon": "local:trash-negative",
     "categories": [
       "actions"
     ]
@@ -5191,13 +5221,13 @@
     ]
   },
   "vcs-branch-delete": {
-    "icon": "git-branch-minus",
+    "icon": "local:git-branch-minus-negative",
     "categories": [
       "actions"
     ]
   },
   "vcs-branch-delete-symbolic": {
-    "icon": "git-branch-minus",
+    "icon": "local:git-branch-minus-negative",
     "categories": [
       "actions"
     ]
@@ -5521,13 +5551,13 @@
     ]
   },
   "view-close": {
-    "icon": "square-x",
+    "icon": "local:square-x-negative",
     "categories": [
       "actions"
     ]
   },
   "view-close-symbolic": {
-    "icon": "square-x",
+    "icon": "local:square-x-negative",
     "categories": [
       "actions"
     ]
@@ -6265,13 +6295,13 @@
     ]
   },
   "view-readermode-active": {
-    "icon": "book-open-text",
+    "icon": "local:book-open-text-positive",
     "categories": [
       "actions"
     ]
   },
   "view-readermode-active-symbolic": {
-    "icon": "book-open-text",
+    "icon": "local:book-open-text-positive",
     "categories": [
       "actions"
     ]
@@ -6595,13 +6625,13 @@
     ]
   },
   "view-time-schedule-baselined-remove": {
-    "icon": "calendar-minus",
+    "icon": "local:calendar-minus-negative",
     "categories": [
       "actions"
     ]
   },
   "view-time-schedule-baselined-remove-symbolic": {
-    "icon": "calendar-minus",
+    "icon": "local:calendar-minus-negative",
     "categories": [
       "actions"
     ]
@@ -6770,8 +6800,8 @@
       "actions"
     ]
   },
-  "waveform-off": "audio-lines",
-  "waveform-off-symbolic": "audio-lines-off",
+  "waveform-off": "local:audio-lines-off-negative",
+  "waveform-off-symbolic": "local:audio-lines-off-negative",
   "window-new": {
     "icon": "square-plus",
     "categories": [
