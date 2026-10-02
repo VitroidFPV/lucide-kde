@@ -1,0 +1,11 @@
+<svg class="lucide lucide-shopping-cart-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<style id="current-color-scheme" type="text/css">.ColorScheme-Text { color: #232629; } .ColorScheme-PositiveText { color: #27ae60; } .ColorScheme-NeutralText { color: #f67400; } .ColorScheme-NegativeText { color: #da4453; } .ColorScheme-Accent { color: #3daee9; } .ColorScheme-Highlight { color: #3daee9; }</style>
+<g class="ColorScheme-Text" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 5h6" stroke="currentColor" class="ColorScheme-NegativeText"/>
+  <path d="m2.05 2.05 1.099-.028a1 1 0 011.008.815l2.69 14.347A1 1 0 007.83 18H18"/>
+  <path d="M4.564 5H12"/>
+  <path d="M6.25 14h12.712a2 2 0 001.991-1.57l.514-3.113"/>
+  <circle cx="18" cy="20" r="2"/>
+  <circle cx="8" cy="20" r="2"/>
+</g>
+</svg>
