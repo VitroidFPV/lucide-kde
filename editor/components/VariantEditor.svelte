@@ -34,6 +34,8 @@ let selected = $state(-1);
 let highlightSelection = $state(true);
 let error = $state("");
 let loading = $state(false);
+let rolePicker = $state();
+let previewColors = $derived(previewPalette === "light" ? light : previewPalette === "dark" ? dark : palette || dark);
 let uses = $derived(
   Object.entries(mappings)
     .filter(([, mapping]) => mappingIcon(mapping) === sourceName)
@@ -68,20 +70,22 @@ let suggestedName = $derived.by(() => {
 let markup = $derived.by(() => {
   const doc = parse(source);
   if (!doc) return "";
-  const colors = previewPalette === "light" ? light : previewPalette === "dark" ? dark : palette || dark;
   doc.querySelector("#current-color-scheme")?.remove();
   const style = doc.createElementNS(namespace, "style");
   style.setAttribute("id", "current-color-scheme");
   style.textContent = Object.entries(roleNames)
-    .map(([role, suffix]) => `.ColorScheme-${suffix} { color: ${role === "text" ? colors.viewText : colors[role]}; }`)
+    .map(
+      ([role, suffix]) =>
+        `.ColorScheme-${suffix} { color: ${role === "text" ? previewColors.viewText : previewColors[role]}; }`,
+    )
     .join(" ");
   doc.documentElement.prepend(style);
   doc.documentElement.classList.add("ColorScheme-Text");
   if (!doc.documentElement.style.color && !doc.documentElement.hasAttribute("color"))
-    doc.documentElement.style.color = colors.viewText;
+    doc.documentElement.style.color = previewColors.viewText;
   for (const [role, suffix] of Object.entries(roleNames)) {
     for (const element of doc.querySelectorAll(`.ColorScheme-${suffix}`))
-      element.style.color = role === "text" ? colors.viewText : colors[role];
+      element.style.color = role === "text" ? previewColors.viewText : previewColors[role];
   }
   [...doc.querySelectorAll(shapes)].forEach((element, index) => {
     element.setAttribute("data-shape-index", index);
@@ -179,6 +183,15 @@ function convertToThemeColor(doc, role) {
 function useThemeColor() {
   change((doc) => convertToThemeColor(doc, "text"));
 }
+function closeRolePickerOnClick(event) {
+  if (rolePicker?.open && !rolePicker.contains(event.target)) rolePicker.open = false;
+}
+function closeRolePickerOnKeydown(event) {
+  if (event.key === "Escape" && rolePicker?.open) {
+    rolePicker.open = false;
+    event.preventDefault();
+  }
+}
 async function save(mode) {
   try {
     error = "";
@@ -223,6 +236,8 @@ $effect(() => {
 });
 </script>
 
+<svelte:window onclick={closeRolePickerOnClick} onkeydown={closeRolePickerOnKeydown} />
+
 <section class="variant-editor" aria-label="SVG variant editor">
   <div class="lucide-head">
     <h3>SVG variant</h3>
@@ -244,21 +259,31 @@ $effect(() => {
           <option value="dark">Dark</option>
         </select>
       </label>
-      <label class="field variant-role"
-        >{selected < 0 ? "Whole icon" : "Selected stroke"}
-        <select
-          disabled={busy}
-          onchange={(event) => {
-            setRole(event.currentTarget.value);
-            event.currentTarget.value = "";
-          }}
-        >
-          <option value="">Choose role…</option>
-          {#each Object.keys(roleNames) as role}
-            <option value={role}>{role[0].toUpperCase() + role.slice(1)}</option>
-          {/each}
-        </select>
-      </label>
+      <div class="field variant-role">
+        <span>{selected < 0 ? "Whole icon" : "Selected stroke"}</span>
+        <details class="role-picker" bind:this={rolePicker} inert={busy}>
+          <summary aria-disabled={busy}>Choose role…</summary>
+          <div class="role-options">
+            {#each Object.keys(roleNames) as role}
+              <button
+                type="button"
+                disabled={busy}
+                onclick={() => {
+                  setRole(role);
+                  rolePicker.open = false;
+                }}
+              >
+                <span
+                  class="role-swatch"
+                  style:background-color={role === "text" ? previewColors.viewText : previewColors[role]}
+                  aria-hidden="true"
+                ></span>
+                {role[0].toUpperCase() + role.slice(1)}
+              </button>
+            {/each}
+          </div>
+        </details>
+      </div>
       <button type="button" disabled={busy} onclick={useThemeColor}>Use theme color</button>
     </div>
     <div class="variant-workspace">

@@ -593,6 +593,67 @@ input::placeholder {
 .variant-controls button {
   min-height: 36px;
 }
+.role-picker {
+  position: relative;
+}
+.role-picker summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 36px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--button);
+  color: var(--button-text);
+  cursor: pointer;
+  list-style: none;
+}
+.role-picker summary::-webkit-details-marker {
+  display: none;
+}
+.role-picker summary::after {
+  content: "⌄";
+}
+.role-picker summary[aria-disabled="true"] {
+  opacity: 0.42;
+  cursor: default;
+}
+.role-options {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 100%;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--button);
+  box-shadow: 0 8px 20px #0005;
+}
+.role-options button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 30px;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+.role-options button:hover:not(:disabled),
+.role-options button:focus-visible {
+  background: color-mix(in srgb, var(--selection) 18%, transparent);
+}
+.role-swatch {
+  flex: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid color-mix(in srgb, var(--window-text) 35%, transparent);
+  border-radius: 50%;
+}
 .variant-workspace {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) minmax(150px, 0.7fr);
