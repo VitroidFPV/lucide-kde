@@ -3,7 +3,7 @@ Name=Lucide KDE
 Comment=Selected Lucide icons for KDE Plasma
 Inherits=breeze
 FollowsColorScheme=true
-Directories=scalable/actions,scalable/applets,scalable/apps,scalable/categories,scalable/devices,scalable/emblems,scalable/emotes,scalable/places,scalable/preferences,scalable/status
+Directories=scalable/actions,scalable/applets,scalable/apps,scalable/categories,scalable/devices,scalable/emblems,scalable/emotes,scalable/mimetypes,scalable/places,scalable/preferences,scalable/status
 
 [scalable/actions]
 Size=22
@@ -53,6 +53,13 @@ Type=Scalable
 MinSize=16
 MaxSize=64
 Context=Emotes
+
+[scalable/mimetypes]
+Size=22
+Type=Scalable
+MinSize=16
+MaxSize=64
+Context=MimeTypes
 
 [scalable/places]
 Size=22

@@ -5969,6 +5969,150 @@
       "actions"
     ]
   },
+  "games-achievements": {
+    "icon": "award",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-achievements-symbolic": {
+    "icon": "award",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-background": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-background-symbolic": {
+    "icon": "image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-board": {
+    "icon": "grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-board-symbolic": {
+    "icon": "grid",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-custom": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-custom-symbolic": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-options": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-options-symbolic": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-tiles": {
+    "icon": "rows-3",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-config-tiles-symbolic": {
+    "icon": "rows-3",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-difficult": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-difficult-symbolic": {
+    "icon": "chart-no-axes-column-increasing",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-endturn": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-endturn-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-highscores": {
+    "icon": "trophy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-highscores-symbolic": {
+    "icon": "trophy",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-hint": {
+    "icon": "lightbulb",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-hint-symbolic": {
+    "icon": "lightbulb",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-solve": {
+    "icon": "circle-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "games-solve-symbolic": {
+    "icon": "circle-check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "geany-close-all": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "geany-close-all-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
   "geany-save-all": {
     "icon": "save-all",
     "categories": [
@@ -5981,6 +6125,42 @@
       "actions"
     ]
   },
+  "gearhead-shape": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gearhead-shape-symbolic": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "generalisation": {
+    "icon": "move-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "generalisation-symbolic": {
+    "icon": "move-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "generalise": {
+    "icon": "move-up",
+    "categories": [
+      "actions"
+    ]
+  },
+  "generalise-symbolic": {
+    "icon": "move-up",
+    "categories": [
+      "actions"
+    ]
+  },
   "get-hot-new-stuff": {
     "icon": "download",
     "categories": [
@@ -5989,6 +6169,18 @@
   },
   "get-hot-new-stuff-symbolic": {
     "icon": "download",
+    "categories": [
+      "actions"
+    ]
+  },
+  "globe": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "globe-symbolic": {
+    "icon": "earth",
     "categories": [
       "actions"
     ]
@@ -6017,6 +6209,90 @@
       "actions"
     ]
   },
+  "gnumeric-autosum": {
+    "icon": "sigma",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-autosum-symbolic": {
+    "icon": "sigma",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-brush": {
+    "icon": "brush",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-brush-symbolic": {
+    "icon": "brush",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-bucket": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-bucket-symbolic": {
+    "icon": "paint-bucket",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-hide": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-hide-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-size": {
+    "icon": "grip-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-size-symbolic": {
+    "icon": "grip-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-unhide": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-column-unhide-symbolic": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-add": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-comment-add-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-comment-delete": {
     "icon": "local:message-square-x-negative",
     "categories": [
@@ -6041,6 +6317,150 @@
       "actions"
     ]
   },
+  "gnumeric-font": {
+    "icon": "type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-font-symbolic": {
+    "icon": "type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-accounting": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-accounting-symbolic": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-percentage": {
+    "icon": "percent",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-percentage-symbolic": {
+    "icon": "percent",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-precision-decrease": {
+    "icon": "decimals-arrow-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-precision-decrease-symbolic": {
+    "icon": "decimals-arrow-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-precision-increase": {
+    "icon": "decimals-arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-precision-increase-symbolic": {
+    "icon": "decimals-arrow-right",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-bottom": {
+    "icon": "arrow-down-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-bottom-symbolic": {
+    "icon": "arrow-down-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-center": {
+    "icon": "triangles-centerline-dashed-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-center-symbolic": {
+    "icon": "triangles-centerline-dashed-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-top": {
+    "icon": "arrow-up-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-format-valign-top-symbolic": {
+    "icon": "arrow-up-to-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-graphguru": {
+    "icon": "line-chart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-graphguru-symbolic": {
+    "icon": "line-chart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-group": {
+    "icon": "group",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-group-symbolic": {
+    "icon": "group",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-add": {
+    "icon": "link",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-add-symbolic": {
+    "icon": "link",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-delete": {
+    "icon": "unlink",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-delete-symbolic": {
+    "icon": "unlink",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-link-edit": {
     "icon": "pencil",
     "categories": [
@@ -6053,6 +6473,36 @@
       "actions"
     ]
   },
+  "gnumeric-link-email": {
+    "icon": "mail",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-email-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-external": {
+    "icon": "link",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-external-symbolic": {
+    "icon": "link",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-link-internal": {
+    "icon": "external-link",
+    "categories": [
+      "actions"
+    ]
+  },
   "gnumeric-object-arrow": {
     "icon": "move-up-left",
     "categories": [
@@ -6061,6 +6511,174 @@
   },
   "gnumeric-object-arrow-symbolic": {
     "icon": "move-up-left",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-ellipse": {
+    "icon": "ellipse",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-ellipse-symbolic": {
+    "icon": "ellipse",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-label": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-label-symbolic": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-line": {
+    "icon": "minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-line-symbolic": {
+    "icon": "minus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-rectangle": {
+    "icon": "rectangle-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-object-rectangle-symbolic": {
+    "icon": "rectangle-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-pagesetup-hf-time": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-pagesetup-hf-time-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-protection-no": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-protection-no-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-protection-yes": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-protection-yes-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-hide": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-hide-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-size": {
+    "icon": "grip-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-size-symbolic": {
+    "icon": "grip-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-unhide": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-row-unhide-symbolic": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-subscript": {
+    "icon": "subscript",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-subscript-symbolic": {
+    "icon": "subscript",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-superscript": {
+    "icon": "superscript",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-superscript-symbolic": {
+    "icon": "superscript",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-ungroup": {
+    "icon": "ungroup",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-ungroup-symbolic": {
+    "icon": "ungroup",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-visible": {
+    "icon": "eye",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gnumeric-visible-symbolic": {
+    "icon": "eye",
     "categories": [
       "actions"
     ]
@@ -6463,6 +7081,66 @@
       "actions"
     ]
   },
+  "gpg": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gpg-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gpgsm": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gpgsm-symbolic": {
+    "icon": "unlock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gps": {
+    "icon": "map-pin",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gps-symbolic": {
+    "icon": "map-pin",
+    "categories": [
+      "actions"
+    ]
+  },
+  "graphics": {
+    "icon": "file-image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "graphics-symbolic": {
+    "icon": "file-image",
+    "categories": [
+      "actions"
+    ]
+  },
+  "graphics-viewer-document-symbolic": {
+    "icon": "file-image",
+    "categories": [
+      "apps"
+    ]
+  },
+  "group": {
+    "icon": "users",
+    "categories": [
+      "actions"
+    ]
+  },
   "group-delete": {
     "icon": "local:trash-negative",
     "categories": [
@@ -6483,6 +7161,24 @@
   },
   "group-edit-symbolic": {
     "icon": "pencil",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-new": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-new-symbolic": {
+    "icon": "folder-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "group-symbolic": {
+    "icon": "users",
     "categories": [
       "actions"
     ]
@@ -6511,6 +7207,54 @@
       "actions"
     ]
   },
+  "gtk-authentication": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-authentication-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-bold": {
+    "icon": "bold",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-bold-symbolic": {
+    "icon": "bold",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-cancel": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-cancel-symbolic": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-cdrom": {
+    "icon": "disc",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-cdrom-symbolic": {
+    "icon": "disc",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-clear": {
     "icon": "delete",
     "categories": [
@@ -6519,6 +7263,66 @@
   },
   "gtk-clear-symbolic": {
     "icon": "delete",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-close": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-close-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-color-picker": {
+    "icon": "pipette",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-color-picker-symbolic": {
+    "icon": "pipette",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-connect": {
+    "icon": "unplug",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-connect-symbolic": {
+    "icon": "unplug",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-convert": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-convert-symbolic": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-disconnect": {
+    "icon": "unplug",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-disconnect-symbolic": {
+    "icon": "unplug",
     "categories": [
       "actions"
     ]
@@ -6535,6 +7339,78 @@
       "actions"
     ]
   },
+  "gtk-execute": {
+    "icon": "square-play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-execute-symbolic": {
+    "icon": "square-play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-floppy": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-floppy-symbolic": {
+    "icon": "save",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-index": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-index-symbolic": {
+    "icon": "table-of-contents",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-no": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-no-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-ok": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-ok-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-preferences": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-preferences-symbolic": {
+    "icon": "settings-2",
+    "categories": [
+      "actions"
+    ]
+  },
   "gtk-properties": {
     "icon": "table-properties",
     "categories": [
@@ -6543,6 +7419,66 @@
   },
   "gtk-properties-symbolic": {
     "icon": "table-properties",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-quit": {
+    "icon": "local:minus-square-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-quit-symbolic": {
+    "icon": "local:minus-square-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-select-color": {
+    "icon": "pipette",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-select-color-symbolic": {
+    "icon": "pipette",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-select-font": {
+    "icon": "type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-select-font-symbolic": {
+    "icon": "type",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-stop": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-stop-symbolic": {
+    "icon": "ban",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-tab-duplicate": {
+    "icon": "square-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-tab-duplicate-symbolic": {
+    "icon": "square-plus",
     "categories": [
       "actions"
     ]
@@ -6583,6 +7519,60 @@
     "icon": "redo-2",
     "categories": [
       "actions"
+    ]
+  },
+  "gtk-yes": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "gtk-yes-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hand": {
+    "icon": "hand",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hand-symbolic": {
+    "icon": "hand",
+    "categories": [
+      "actions"
+    ]
+  },
+  "handset": {
+    "icon": "smartphone",
+    "categories": [
+      "applets"
+    ]
+  },
+  "headphone": {
+    "icon": "headphones",
+    "categories": [
+      "applets"
+    ]
+  },
+  "headphones": {
+    "icon": "headphones",
+    "categories": [
+      "actions"
+    ]
+  },
+  "headphones-symbolic": {
+    "icon": "headphones",
+    "categories": [
+      "actions"
+    ]
+  },
+  "headset": {
+    "icon": "headset",
+    "categories": [
+      "applets"
     ]
   },
   "help-about": {
@@ -6627,8 +7617,152 @@
       "actions"
     ]
   },
+  "help-donate-ars": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-ars-symbolic": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-aud": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-aud-symbolic": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-cad": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-cad-symbolic": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-cny": {
+    "icon": "japanese-yen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-cny-symbolic": {
+    "icon": "japanese-yen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-eur": {
+    "icon": "euro",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-eur-symbolic": {
+    "icon": "euro",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-gbp": {
+    "icon": "pound-sterling",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-gbp-symbolic": {
+    "icon": "pound-sterling",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-inr": {
+    "icon": "indian-rupee",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-inr-symbolic": {
+    "icon": "indian-rupee",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-jpy": {
+    "icon": "japanese-yen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-jpy-symbolic": {
+    "icon": "japanese-yen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-mxn": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-mxn-symbolic": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-rub": {
+    "icon": "russian-ruble",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-rub-symbolic": {
+    "icon": "russian-ruble",
+    "categories": [
+      "actions"
+    ]
+  },
   "help-donate-symbolic": {
     "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-try": {
+    "icon": "turkish-lira",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-try-symbolic": {
+    "icon": "turkish-lira",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-usd": {
+    "icon": "dollar-sign",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-donate-usd-symbolic": {
+    "icon": "dollar-sign",
     "categories": [
       "actions"
     ]
@@ -6657,6 +7791,18 @@
       "actions"
     ]
   },
+  "help-keybord-shortcuts": {
+    "icon": "keyboard",
+    "categories": [
+      "actions"
+    ]
+  },
+  "help-keybord-shortcuts-symbolic": {
+    "icon": "keyboard",
+    "categories": [
+      "actions"
+    ]
+  },
   "help-latex": {
     "icon": "info",
     "categories": [
@@ -6681,8 +7827,225 @@
       "actions"
     ]
   },
+  "hexagon-shape": {
+    "icon": "hexagon",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hexagon-shape-symbolic": {
+    "icon": "hexagon",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hide_table_column": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hide_table_column-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hide_table_row": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hide_table_row-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hidemouse": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hidemouse-symbolic": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hifi": {
+    "icon": "speaker",
+    "categories": [
+      "applets"
+    ]
+  },
+  "high-brightness": {
+    "icon": "sun",
+    "categories": [
+      "actions"
+    ]
+  },
+  "high-brightness-symbolic": {
+    "icon": "sun",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hint": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "hint-symbolic": {
+    "icon": "eye-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "histogram-symbolic": {
+    "icon": "bar-chart-3",
+    "categories": [
+      "actions"
+    ]
+  },
+  "homerun": {
+    "icon": "layout-grid",
+    "categories": [
+      "apps"
+    ]
+  },
+  "identity": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "identity-symbolic": {
+    "icon": "notebook",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-ban-kick-user": {
+    "icon": "local:x-circle-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-ban-kick-user-symbolic": {
+    "icon": "local:x-circle-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-ban-user": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-ban-user-symbolic": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-irc": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-irc-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-jabber": {
+    "icon": "lightbulb",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-jabber-symbolic": {
+    "icon": "lightbulb",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-kick-user": {
+    "icon": "local:user-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "im-kick-user-symbolic": {
+    "icon": "local:user-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-crop-symbolic": {
+    "icon": "crop",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-flip-horizontal-symbolic": {
+    "icon": "flip-horizontal",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-flip-vertical-symbolic": {
+    "icon": "flip-vertical",
+    "categories": [
+      "actions"
+    ]
+  },
   "image-invert-symbolic": {
     "icon": "squares-exclude",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-loading-symbolic": "ellipsis",
+  "image-resize-symbolic": {
+    "icon": "image-upscale",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-rotate-left-symbolic": {
+    "icon": "rotate-ccw-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-rotate-right-symbolic": {
+    "icon": "rotate-cw-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "image-rotate-symbolic": {
+    "icon": "rotate-cw-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "imagecomment": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "imagecomment-symbolic": {
+    "icon": "message-square",
     "categories": [
       "actions"
     ]
@@ -6699,8 +8062,56 @@
       "actions"
     ]
   },
+  "initial_state": {
+    "icon": "rewind",
+    "categories": [
+      "actions"
+    ]
+  },
+  "initial_state-symbolic": {
+    "icon": "fast-forward",
+    "categories": [
+      "actions"
+    ]
+  },
+  "inode-directory": {
+    "icon": "folder",
+    "categories": [
+      "mimetypes"
+    ]
+  },
+  "inode-directory-symbolic": {
+    "icon": "folder",
+    "categories": [
+      "mimetypes"
+    ]
+  },
+  "inpainting": {
+    "icon": "square-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
+  "inpainting-symbolic": {
+    "icon": "square-dashed",
+    "categories": [
+      "actions"
+    ]
+  },
   "input-caps-on": "arrow-big-up-dash",
   "input-caps-on-symbolic": "arrow-big-up-dash",
+  "input-gamepad": {
+    "icon": "gamepad-2",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-gamepad-symbolic": {
+    "icon": "gamepad-2",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-keyboard": {
     "icon": "keyboard",
     "categories": [
@@ -6727,10 +8138,34 @@
       "devices"
     ]
   },
+  "input-tablet": {
+    "icon": "tablet",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-tablet-symbolic": {
+    "icon": "tablet",
+    "categories": [
+      "devices"
+    ]
+  },
+  "input-touchpad": {
+    "icon": "touchpad",
+    "categories": [
+      "devices"
+    ]
+  },
   "input-touchpad-off": "local:touchpad-off-negative",
   "input-touchpad-off-symbolic": "local:touchpad-off-negative",
   "input-touchpad-on": "touchpad",
   "input-touchpad-on-symbolic": "touchpad",
+  "input-touchpad-symbolic": {
+    "icon": "touchpad",
+    "categories": [
+      "devices"
+    ]
+  },
   "insert-image": {
     "icon": "image-plus",
     "categories": [
@@ -6745,6 +8180,12 @@
   },
   "install": "download",
   "install-symbolic": "download",
+  "internal": {
+    "icon": "gpu",
+    "categories": [
+      "applets"
+    ]
+  },
   "internet-amarok": {
     "icon": "earth",
     "categories": [
@@ -6755,6 +8196,12 @@
     "icon": "earth",
     "categories": [
       "actions"
+    ]
+  },
+  "internet-mail-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "apps"
     ]
   },
   "internet-services": {
@@ -6787,8 +8234,74 @@
       "actions"
     ]
   },
+  "irc-close-channel": {
+    "icon": "local:circle-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-close-channel-symbolic": {
+    "icon": "local:circle-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-join-channel": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-join-channel-symbolic": {
+    "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-unvoice": {
+    "icon": "local:megaphone-off-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-unvoice-symbolic": {
+    "icon": "local:megaphone-off-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-voice": {
+    "icon": "megaphone",
+    "categories": [
+      "actions"
+    ]
+  },
+  "irc-voice-symbolic": {
+    "icon": "megaphone",
+    "categories": [
+      "actions"
+    ]
+  },
+  "journal-new": {
+    "icon": "notebook-pen",
+    "categories": [
+      "actions"
+    ]
+  },
+  "journal-new-symbolic": {
+    "icon": "notebook-pen",
+    "categories": [
+      "actions"
+    ]
+  },
   "kalarm-disabled": "bell-off",
   "kalarm-partdisabled": "bell-minus",
+  "kalarm-symbolic": {
+    "icon": "bell",
+    "categories": [
+      "apps"
+    ]
+  },
   "kdeconnect-tray": "smartphone",
   "kdeconnect-tray-symbolic": "smartphone",
   "kdocumentinfo": {
@@ -6804,11 +8317,137 @@
     ]
   },
   "keyboard-layout": "keyboard",
+  "keyboard-spacebar": {
+    "icon": "space",
+    "categories": [
+      "devices"
+    ]
+  },
+  "keyboard-spacebar-symbolic": {
+    "icon": "space",
+    "categories": [
+      "devices"
+    ]
+  },
+  "kget-symbolic": {
+    "icon": "download",
+    "categories": [
+      "apps"
+    ]
+  },
+  "kgpg-symbolic": {
+    "icon": "lock",
+    "categories": [
+      "apps"
+    ]
+  },
   "klipper-symbolic": {
     "icon": "clipboard-list",
     "categories": [
       "apps",
       "status"
+    ]
+  },
+  "kmail-symbolic": {
+    "icon": "mail",
+    "categories": [
+      "apps"
+    ]
+  },
+  "kmousetool_off": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmousetool_off-symbolic": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmousetool_on": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmousetool_on-symbolic": {
+    "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrase": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrase-new": {
+    "icon": "message-square-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrase-new-symbolic": {
+    "icon": "message-square-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrase-symbolic": {
+    "icon": "message-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrasebook": {
+    "icon": "messages-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phrasebook-symbolic": {
+    "icon": "messages-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phresebook-new": {
+    "icon": "messages-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kmouth-phresebook-new-symbolic": {
+    "icon": "messages-square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_alarm": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_alarm-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_date": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
+    ]
+  },
+  "knotes_date-symbolic": {
+    "icon": "calendar",
+    "categories": [
+      "actions"
     ]
   },
   "knotes_delete": {
@@ -6823,7 +8462,127 @@
       "actions"
     ]
   },
+  "knotes-symbolic": {
+    "icon": "sticky-note",
+    "categories": [
+      "apps"
+    ]
+  },
+  "kontes_close": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kontes_close-symbolic": {
+    "icon": "x",
+    "categories": [
+      "actions"
+    ]
+  },
   "konv_message": "megaphone",
+  "konversation-symbolic": {
+    "icon": "megaphone",
+    "categories": [
+      "apps"
+    ]
+  },
+  "korg-todo-symbolic": {
+    "icon": "notebook-text",
+    "categories": [
+      "apps"
+    ]
+  },
+  "korgac-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "apps"
+    ]
+  },
+  "kr_unselect": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kr_unselect-symbolic": {
+    "icon": "mouse-pointer-2-off",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-east": {
+    "icon": "ruler-dimension-line",
+    "rotate": 270,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-east-symbolic": {
+    "icon": "ruler-dimension-line",
+    "rotate": 270,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-north": {
+    "icon": "ruler-dimension-line",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-north-symbolic": {
+    "icon": "ruler-dimension-line",
+    "rotate": 180,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-south": {
+    "icon": "ruler-dimension-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-south-symbolic": {
+    "icon": "ruler-dimension-line",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-symbolic": {
+    "icon": "ruler",
+    "categories": [
+      "apps"
+    ]
+  },
+  "kruler-west": {
+    "icon": "ruler-dimension-line",
+    "rotate": 90,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kruler-west-symbolic": {
+    "icon": "ruler-dimension-line",
+    "rotate": 90,
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-add-feeds": {
+    "icon": "rss",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-add-feeds-symbolic": {
+    "icon": "rss",
+    "categories": [
+      "actions"
+    ]
+  },
   "kt-add-filters": {
     "icon": "funnel-plus",
     "categories": [
@@ -6832,6 +8591,66 @@
   },
   "kt-add-filters-symbolic": {
     "icon": "funnel-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-bandwidth-scheduler": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-bandwidth-scheduler-symbolic": {
+    "icon": "clock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-change-tracker": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-change-tracker-symbolic": {
+    "icon": "refresh-cw",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-check-data": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-check-data-symbolic": {
+    "icon": "check",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-chunks": {
+    "icon": "columns-4",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-chunks-symbolic": {
+    "icon": "columns-4",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-encrypted": {
+    "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-encrypted-symbolic": {
+    "icon": "lock",
     "categories": [
       "actions"
     ]
@@ -6848,6 +8667,48 @@
       "actions"
     ]
   },
+  "kt-magnet": {
+    "icon": "magnet",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-magnet-symbolic": {
+    "icon": "magnet",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-pause": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-pause-symbolic": {
+    "icon": "pause",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-plugins": {
+    "icon": "blocks",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-plugins-symbolic": {
+    "icon": "blocks",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-remove": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
   "kt-remove-filters": {
     "icon": "funnel-x",
     "categories": [
@@ -6856,6 +8717,24 @@
   },
   "kt-remove-filters-symbolic": {
     "icon": "funnel-x",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-remove-symbolic": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-restore-defaults": {
+    "icon": "file-symlink",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-restore-defaults-symbolic": {
+    "icon": "file-symlink",
     "categories": [
       "actions"
     ]
@@ -6872,6 +8751,120 @@
       "actions"
     ]
   },
+  "kt-set-max-upload-speed": {
+    "icon": "upload",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-set-max-upload-speed-symbolic": {
+    "icon": "upload",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-speed-limits": {
+    "icon": "gauge",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-speed-limits-symbolic": {
+    "icon": "gauge",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-start": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-start-symbolic": {
+    "icon": "play",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-stop": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "kt-stop-symbolic": {
+    "icon": "square",
+    "categories": [
+      "actions"
+    ]
+  },
+  "ktnef_extract_all_to": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "ktnef_extract_all_to-symbolic": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "ktnef_extract_to": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "ktnef_extract_to-symbolic": {
+    "icon": "archive-restore",
+    "categories": [
+      "actions"
+    ]
+  },
+  "ktorrent-symbolic": {
+    "icon": "download",
+    "categories": [
+      "apps"
+    ]
+  },
+  "l2h": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "l2h-symbolic": {
+    "icon": "earth",
+    "categories": [
+      "actions"
+    ]
+  },
+  "label": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "label-amarok": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "label-amarok-symbolic": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "label-symbolic": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
   "labplot-cursor-arrow": {
     "icon": "mouse-pointer-2",
     "categories": [
@@ -6880,6 +8873,66 @@
   },
   "labplot-cursor-arrow-symbolic": {
     "icon": "mouse-pointer-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "language-chooser": {
+    "icon": "languages",
+    "categories": [
+      "actions"
+    ]
+  },
+  "language-chooser-symbolic": {
+    "icon": "languages",
+    "categories": [
+      "actions"
+    ]
+  },
+  "languages": {
+    "icon": "languages",
+    "categories": [
+      "actions"
+    ]
+  },
+  "languages-symbolic": {
+    "icon": "languages",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-personal": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-personal-symbolic": {
+    "icon": "user",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-recommended": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-recommended-symbolic": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-tag": {
+    "icon": "tag",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lastfm-tag-symbolic": {
+    "icon": "tag",
     "categories": [
       "actions"
     ]
@@ -6908,6 +8961,18 @@
       "actions"
     ]
   },
+  "libpeas-plugin": {
+    "icon": "blocks",
+    "categories": [
+      "actions"
+    ]
+  },
+  "libpeas-plugin-symbolic": {
+    "icon": "blocks",
+    "categories": [
+      "actions"
+    ]
+  },
   "library-music": {
     "icon": "music",
     "categories": [
@@ -6920,6 +8985,30 @@
       "places"
     ]
   },
+  "license": {
+    "icon": "copyright",
+    "categories": [
+      "actions"
+    ]
+  },
+  "license-symbolic": {
+    "icon": "copyright",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lighttable": {
+    "icon": "contrast",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lighttable-symbolic": {
+    "icon": "contrast",
+    "categories": [
+      "actions"
+    ]
+  },
   "lighttableadd": {
     "icon": "plus",
     "categories": [
@@ -6928,6 +9017,30 @@
   },
   "lighttableadd-symbolic": {
     "icon": "plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lilypond": {
+    "icon": "music-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "lilypond-symbolic": {
+    "icon": "music-2",
+    "categories": [
+      "actions"
+    ]
+  },
+  "link": {
+    "icon": "link",
+    "categories": [
+      "actions"
+    ]
+  },
+  "link-symbolic": {
+    "icon": "link",
     "categories": [
       "actions"
     ]
@@ -6944,6 +9057,60 @@
       "actions"
     ]
   },
+  "list-add-user": {
+    "icon": "user-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-add-user-symbolic": {
+    "icon": "user-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-remove": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-remove-all-symbolic": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-remove-symbolic": {
+    "icon": "local:x-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-remove-user": {
+    "icon": "local:user-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-remove-user-symbolic": {
+    "icon": "local:user-minus-negative",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-resource-add": {
+    "icon": "user-plus",
+    "categories": [
+      "actions"
+    ]
+  },
+  "list-resource-add-symbolic": {
+    "icon": "user-plus",
+    "categories": [
+      "actions"
+    ]
+  },
   "lock": {
     "icon": "lock",
     "categories": [
@@ -6952,6 +9119,42 @@
   },
   "lock-symbolic": {
     "icon": "lock",
+    "categories": [
+      "actions"
+    ]
+  },
+  "love": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "love-amarok": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "love-amarok-symbolic": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "love-symbolic": {
+    "icon": "heart",
+    "categories": [
+      "actions"
+    ]
+  },
+  "low-brightness": {
+    "icon": "sun-dim",
+    "categories": [
+      "actions"
+    ]
+  },
+  "low-brightness-symbolic": {
+    "icon": "sun-dim",
     "categories": [
       "actions"
     ]
