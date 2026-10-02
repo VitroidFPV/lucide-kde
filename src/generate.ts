@@ -1,6 +1,6 @@
 import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { lucideDir, readLucide, themedSvg } from "./lucide";
+import { lucideDir } from "./lucide";
 import {
   mappingCategories,
   mappingIcon,
@@ -10,6 +10,7 @@ import {
   projectDir,
   readMappings,
 } from "./mappings";
+import { renderSource } from "./sources";
 
 const themeDir = join(projectDir, "theme", "Lucide-KDE");
 const mappings = Object.entries(await readMappings()).sort(([a], [b]) => a.localeCompare(b));
@@ -28,8 +29,8 @@ const icons = await Promise.all(
       [
         kdeName,
         mappingCategories(mapping),
-        themedSvg(
-          await readLucide(mappingIcon(mapping)),
+        await renderSource(
+          mappingIcon(mapping),
           mappingMirrored(mapping),
           mappingScale(mapping),
           mappingRotation(mapping),

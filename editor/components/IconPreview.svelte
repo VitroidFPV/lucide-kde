@@ -9,10 +9,26 @@ import {
   sourceUrl,
 } from "../icons.js";
 
-let { theme, kdeName, entry, mapping, candidate = $bindable(), palette, busy, canAssign, onSave } = $props();
+let {
+  theme,
+  kdeName,
+  entry,
+  mapping,
+  candidate = $bindable(),
+  palette,
+  busy,
+  canAssign,
+  onSave,
+  revision,
+  previewPalette = $bindable(),
+  onEditVariant,
+} = $props();
 const isRtlName = (name) => /-rtl(?:-symbolic)?$/.test(name);
-let previewPalette = $state("current");
 let size = $state(22);
+let candidateImage = $derived(
+  candidateUrl(candidate.name, previewPalette, candidate.mirror, candidate.scale, revision),
+);
+let candidateTransform = $derived(`rotate(${candidate.rotate}deg)`);
 let assigned = $derived(mappingIcon(mapping));
 let preview = $derived.by(() => {
   if (previewPalette === "light") return { window: "#eff0f1", view: "#fcfcfc", text: "#232629" };
@@ -74,7 +90,7 @@ let preview = $derived.by(() => {
       <div class="icon-stage">
         {#if assigned}
           <img
-            src={candidateUrl(assigned, previewPalette, mappingMirrored(mapping), mappingScale(mapping))}
+            src={candidateUrl(assigned, previewPalette, mappingMirrored(mapping), mappingScale(mapping), revision)}
             width={size}
             height={size}
             style:transform={`rotate(${mappingRotation(mapping)}deg)`}
@@ -90,13 +106,7 @@ let preview = $derived.by(() => {
       <span class="eyebrow">Candidate</span>
       <div class="icon-stage">
         {#if candidate.name}
-          <img
-            src={candidateUrl(candidate.name, previewPalette, candidate.mirror, candidate.scale)}
-            width={size}
-            height={size}
-            style:transform={`rotate(${candidate.rotate}deg)`}
-            alt=""
-          >
+          <img src={candidateImage} width={size} height={size} style:transform={candidateTransform} alt="">
         {:else}
           <span class="muted">—</span>
         {/if}
@@ -111,10 +121,10 @@ let preview = $derived.by(() => {
         {#if candidate.name}
           <img
             class="context-icon"
-            src={candidateUrl(candidate.name, previewPalette, candidate.mirror, candidate.scale)}
+            src={candidateImage}
             width={size}
             height={size}
-            style:transform={`rotate(${candidate.rotate}deg)`}
+            style:transform={candidateTransform}
             alt=""
           >
         {/if}
@@ -127,10 +137,10 @@ let preview = $derived.by(() => {
         {#if candidate.name}
           <img
             class="context-icon"
-            src={candidateUrl(candidate.name, previewPalette, candidate.mirror, candidate.scale)}
+            src={candidateImage}
             width={size}
             height={size}
-            style:transform={`rotate(${candidate.rotate}deg)`}
+            style:transform={candidateTransform}
             alt=""
           >
         {/if}
@@ -142,6 +152,7 @@ let preview = $derived.by(() => {
   <div class="assignment">
     <div><span class="eyebrow">Assignment</span><strong>{assigned || "—"}</strong></div>
     <div class="assignment-actions">
+      <button type="button" disabled={busy || !candidate.name} onclick={onEditVariant}>Edit SVG variant</button>
       <fieldset class="rotate-stepper" aria-label="Rotate icon">
         <button
           type="button"

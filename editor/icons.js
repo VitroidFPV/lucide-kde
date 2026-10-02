@@ -9,6 +9,6 @@ export function sourceUrl(theme, name, size = 22, palette = "current") {
   return `/api/source?theme=${encodeURIComponent(theme)}&name=${encodeURIComponent(name)}&size=${size}&palette=${palette}`;
 }
 
-export function candidateUrl(name, palette = "current", mirror = false, scale = 1) {
-  return `/api/candidate?name=${encodeURIComponent(name)}&palette=${palette}${mirror ? "&mirror=1" : ""}${scale !== 1 ? `&scale=${scale}` : ""}`;
+export function candidateUrl(name, palette = "current", mirror = false, scale = 1, revision = 0) {
+  return `/api/candidate?name=${encodeURIComponent(name)}&palette=${palette}${mirror ? "&mirror=1" : ""}${scale !== 1 ? `&scale=${scale}` : ""}&revision=${revision}`;
 }

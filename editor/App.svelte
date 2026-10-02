@@ -4,12 +4,14 @@ import EditorHeader from "./components/EditorHeader.svelte";
 import IconPreview from "./components/IconPreview.svelte";
 import KdePane from "./components/KdePane.svelte";
 import LucideList from "./components/LucideList.svelte";
+import VariantEditor from "./components/VariantEditor.svelte";
 import { mappingIcon, mappingMirrored, mappingRotation, mappingScale } from "./icons.js";
 
 let state = $state({
   themes: [],
   icons: [],
   lucide: [],
+  local: [],
   mappings: {},
   palette: null,
   theme: "",
@@ -24,6 +26,10 @@ let message = $state("");
 let messageError = $state(false);
 let noticeTimeout;
 let kdePane;
+let variantDialog;
+let variantEditorOpen = $state(false);
+let revision = $state(0);
+let previewPalette = $state("current");
 
 async function api(path, options) {
   const response = await fetch(path, options);
@@ -130,6 +136,31 @@ async function saveMapping(lucideName) {
     state.busy = false;
   }
 }
+async function saveVariant({ name, source, mode }) {
+  state.busy = true;
+  notice("");
+  try {
+    const result = await api("/api/variant", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, source, mode }),
+    });
+    state.local = result.local;
+    state.needsBuild = true;
+    revision++;
+    if (mode === "create") variantDialog?.close();
+    notice(
+      mode === "create" ? "Variant saved. Select it from Local variants to use it." : "Variant saved for all its uses",
+      false,
+      4000,
+    );
+  } catch (error) {
+    notice(error.message, true);
+    throw error;
+  } finally {
+    state.busy = false;
+  }
+}
 async function execute(action) {
   state.busy = true;
   notice(action === "build" ? "Building archive…" : "Applying theme…");
@@ -159,9 +190,10 @@ async function execute(action) {
 onMount(() => {
   (async () => {
     try {
-      const [initial, lucide] = await Promise.all([api("/api/state"), api("/api/lucide")]);
+      const [initial, lucide, local] = await Promise.all([api("/api/state"), api("/api/lucide"), api("/api/local")]);
       Object.assign(state, initial);
       state.lucide = lucide;
+      state.local = local;
       applyColors(state.palette);
       await loadTheme(initial.defaultTheme);
       const first =
@@ -212,9 +244,16 @@ onMount(() => {
         busy={state.busy}
         canAssign={canAssign(candidate.name)}
         onSave={saveMapping}
+        {revision}
+        bind:previewPalette
+        onEditVariant={() => {
+          variantEditorOpen = true;
+          variantDialog?.showModal();
+        }}
       />
       <LucideList
         icons={state.lucide}
+        local={state.local}
         kdeName={state.kde}
         candidateName={candidate.name}
         busy={state.busy}
@@ -227,5 +266,26 @@ onMount(() => {
       />
     </section>
   </main>
+  <dialog
+    bind:this={variantDialog}
+    class="variant-dialog"
+    aria-labelledby="variant-dialog-heading"
+    onclose={() => (variantEditorOpen = false)}
+  >
+    <div class="variant-dialog-head">
+      <h2 id="variant-dialog-heading">Edit SVG variant</h2>
+      <button type="button" onclick={() => variantDialog.close()}>Close</button>
+    </div>
+    {#if variantEditorOpen}
+      <VariantEditor
+        sourceName={candidate.name}
+        mappings={state.mappings}
+        palette={state.palette}
+        busy={state.busy}
+        {saveVariant}
+        bind:previewPalette
+      />
+    {/if}
+  </dialog>
   <footer><span>{state.needsBuild ? "" : state.archivePath}</span></footer>
 </div>

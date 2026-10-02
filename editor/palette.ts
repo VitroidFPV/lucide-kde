@@ -13,6 +13,11 @@ export type Colors = {
   selectionText: string;
   tooltip: string;
   tooltipText: string;
+  positive: string;
+  neutral: string;
+  negative: string;
+  accent: string;
+  highlight: string;
 };
 export const samples: Record<string, Colors> = {
   light: {
@@ -26,6 +31,11 @@ export const samples: Record<string, Colors> = {
     selectionText: "#ffffff",
     tooltip: "#fcfcfc",
     tooltipText: "#232629",
+    positive: "#27ae60",
+    neutral: "#f67400",
+    negative: "#da4453",
+    accent: "#3daee9",
+    highlight: "#3daee9",
   },
   dark: {
     window: "#31363b",
@@ -38,6 +48,11 @@ export const samples: Record<string, Colors> = {
     selectionText: "#eff0f1",
     tooltip: "#31363b",
     tooltipText: "#eff0f1",
+    positive: "#1cdc9a",
+    neutral: "#fdbc4b",
+    negative: "#ff6c70",
+    accent: "#3daee9",
+    highlight: "#3daee9",
   },
 };
 
@@ -81,5 +96,10 @@ export async function activePalette(): Promise<Colors> {
     selectionText: get("Selection", "ForegroundNormal", fallback.selectionText),
     tooltip: get("Tooltip", "BackgroundNormal", fallback.tooltip),
     tooltipText: get("Tooltip", "ForegroundNormal", fallback.tooltipText),
+    positive: get("Window", "ForegroundPositive", fallback.positive),
+    neutral: get("Window", "ForegroundNeutral", fallback.neutral),
+    negative: get("Window", "ForegroundNegative", fallback.negative),
+    accent: get("View", "DecorationFocus", fallback.accent),
+    highlight: get("Selection", "BackgroundNormal", fallback.highlight),
   };
 }

@@ -172,6 +172,9 @@ input::placeholder {
   display: flex;
   flex-direction: column;
 }
+.detail-pane {
+  overflow-y: auto;
+}
 .names-pane {
   border-right: 1px solid var(--border);
 }
@@ -515,9 +518,133 @@ input::placeholder {
   margin: 0;
   list-style: none;
 }
+.local-list {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 0 22px;
+  padding: 0 0 12px;
+  list-style: none;
+}
+.local-empty {
+  margin: 0 22px 12px;
+}
+.variant-dialog {
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100dvh - 48px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--window);
+  color: var(--window-text);
+  box-shadow: 0 18px 50px #0007;
+  overflow: auto;
+}
+.variant-dialog::backdrop {
+  background: #0009;
+}
+.variant-dialog-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--window);
+}
+.variant-dialog-head h2 {
+  margin: 0;
+  font-size: 15px;
+}
+.variant-editor {
+  padding-bottom: 12px;
+}
+.variant-editor .lucide-head {
+  padding: 12px 14px 8px;
+}
+.variant-uses,
+.variant-error {
+  margin: 0 14px 10px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.variant-error {
+  color: #ff6c70;
+}
+.variant-controls {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+}
+.variant-controls .field {
+  font-size: 11px;
+  color: var(--muted);
+}
+.variant-toolbar .variant-role {
+  border-left: 1px solid var(--border);
+  padding-left: 16px;
+  margin-left: 8px;
+}
+.variant-controls button {
+  min-height: 36px;
+}
+.variant-workspace {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(150px, 0.7fr);
+  gap: 12px;
+  padding: 0 14px;
+}
+.variant-canvas {
+  min-height: 280px;
+  border-radius: 7px;
+  background: var(--view);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.variant-canvas svg {
+  width: 240px;
+  height: 240px;
+  max-width: 100%;
+}
+.variant-canvas [data-shape-index]:hover,
+.variant-canvas [data-selected="true"] {
+  /* biome-ignore lint/complexity/noImportantStyles: Selection must override authored inline stroke paint in the preview. */
+  stroke: color-mix(in srgb, var(--variant-base-stroke) 75%, black) !important;
+}
+.variant-elements {
+  max-height: 280px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.variant-elements .eyebrow {
+  padding: 3px;
+}
+.variant-elements button {
+  text-align: left;
+  font-size: 11px;
+  padding: 3px 6px;
+}
+.variant-elements button.selected {
+  border-color: var(--selection);
+}
+.variant-save {
+  border-top: 1px solid var(--border);
+}
 .lucide-cell {
   position: relative;
   min-width: 0;
+}
+.local-list .lucide-cell {
+  width: 130px;
+  flex: none;
 }
 .lucide-item {
   width: 100%;
@@ -607,13 +734,27 @@ footer span:first-child {
     border-bottom: 1px solid var(--border);
   }
   .detail-pane {
-    height: 760px;
+    height: auto;
+    min-height: 760px;
   }
   .context-previews {
     grid-template-columns: 1fr 2fr;
   }
 }
 @media (max-width: 550px) {
+  .variant-workspace {
+    grid-template-columns: 1fr;
+  }
+  .variant-canvas {
+    min-height: 200px;
+  }
+  .variant-canvas svg {
+    width: 180px;
+    height: 180px;
+  }
+  .variant-elements {
+    max-height: 130px;
+  }
   .topbar {
     padding: 12px 16px;
   }
@@ -653,7 +794,7 @@ footer span:first-child {
     grid-template-columns: 1fr;
   }
   .detail-pane {
-    height: 900px;
+    min-height: 900px;
   }
 }
 .preview-surface .preview-block .eyebrow,
