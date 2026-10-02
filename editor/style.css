@@ -115,6 +115,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
 }
 .brand h1 {
   font-size: 17px;
@@ -138,6 +139,21 @@ input::placeholder {
   color: var(--muted);
   border-left: 1px solid var(--border);
   padding-left: 10px;
+}
+.header-count {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+  border-left: 1px solid var(--border);
+  padding-left: 10px;
+}
+.archive-path {
+  max-width: min(26vw, 360px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 11px;
 }
 .build-state {
   font-size: 12px;
@@ -177,6 +193,7 @@ input::placeholder {
 }
 .names-pane {
   border-right: 1px solid var(--border);
+  padding-top: 16px;
 }
 .pane-head {
   min-height: 70px;
@@ -374,68 +391,6 @@ input::placeholder {
   font-size: 19px;
   margin-top: 12px;
 }
-.context-previews {
-  border-top: 1px solid color-mix(in srgb, var(--preview-text) 18%, transparent);
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: minmax(125px, 1fr) minmax(230px, 2fr);
-  gap: 20px;
-}
-.context-block .eyebrow {
-  display: block;
-  margin-bottom: 10px;
-  color: color-mix(in srgb, var(--preview-text) 60%, transparent);
-}
-.tray {
-  height: 44px;
-  border-radius: 7px;
-  background: var(--preview-view, var(--view));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-  padding: 0 10px;
-}
-.tray-dots {
-  font-size: 19px;
-  line-height: 1;
-}
-.tray-clock {
-  font-size: 12px;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-.context-icon {
-  object-fit: contain;
-  flex: none;
-}
-.notification {
-  height: 60px;
-  background: var(--preview-view, var(--view));
-  border-radius: 7px;
-  padding: 10px 12px;
-  display: flex;
-  gap: 11px;
-  align-items: center;
-}
-.notification div {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-.notification strong {
-  font-size: 12px;
-}
-.notification div span,
-.notification-time {
-  font-size: 11px;
-  color: color-mix(in srgb, var(--preview-text) 63%, transparent);
-}
-.notification-time {
-  margin-left: auto;
-  align-self: flex-start;
-}
 .assignment {
   margin-top: 18px;
   padding-top: 16px;
@@ -501,7 +456,8 @@ input::placeholder {
   padding: 18px 22px 10px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  gap: 12px;
 }
 .lucide-search {
   margin: 0 22px 10px;
@@ -518,16 +474,8 @@ input::placeholder {
   margin: 0;
   list-style: none;
 }
-.local-list {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  margin: 0 22px;
-  padding: 0 0 12px;
-  list-style: none;
-}
 .local-empty {
-  margin: 0 22px 12px;
+  margin: 0 22px;
 }
 .variant-dialog {
   width: min(760px, calc(100vw - 32px));
@@ -703,10 +651,6 @@ input::placeholder {
   position: relative;
   min-width: 0;
 }
-.local-list .lucide-cell {
-  width: 130px;
-  flex: none;
-}
 .lucide-item {
   width: 100%;
   border: 1px solid transparent;
@@ -729,7 +673,6 @@ input::placeholder {
   background: color-mix(in srgb, var(--selection) 18%, transparent);
   border-color: var(--selection);
 }
-/* biome-ignore lint/style/noDescendingSpecificity: The notification and icon-list selectors style unrelated components. */
 .lucide-item span {
   font-size: 11px;
   overflow: hidden;
@@ -762,22 +705,6 @@ input::placeholder {
     pointer-events: auto;
   }
 }
-footer {
-  height: 30px;
-  flex: none;
-  border-top: 1px solid var(--border);
-  padding: 5px 22px;
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 11px;
-  color: var(--muted);
-}
-footer span:first-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 @media (max-width: 850px) {
   .app {
     height: auto;
@@ -798,11 +725,19 @@ footer span:first-child {
     height: auto;
     min-height: 760px;
   }
-  .context-previews {
-    grid-template-columns: 1fr 2fr;
+  .archive-path {
+    max-width: 40vw;
   }
 }
 @media (max-width: 550px) {
+  .brand {
+    flex-wrap: wrap;
+  }
+  .header-count {
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+  }
   .variant-workspace {
     grid-template-columns: 1fr;
   }
@@ -851,8 +786,8 @@ footer span:first-child {
   .lucide-list {
     padding-left: 16px;
   }
-  .context-previews {
-    grid-template-columns: 1fr;
+  .archive-path {
+    max-width: 100%;
   }
   .detail-pane {
     min-height: 900px;

@@ -31,9 +31,9 @@ let candidateImage = $derived(
 let candidateTransform = $derived(`rotate(${candidate.rotate}deg)`);
 let assigned = $derived(mappingIcon(mapping));
 let preview = $derived.by(() => {
-  if (previewPalette === "light") return { window: "#eff0f1", view: "#fcfcfc", text: "#232629" };
-  if (previewPalette === "dark" || !palette) return { window: "#31363b", view: "#232629", text: "#eff0f1" };
-  return { window: palette.window, view: palette.view, text: palette.viewText };
+  if (previewPalette === "light") return { window: "#eff0f1", text: "#232629" };
+  if (previewPalette === "dark" || !palette) return { window: "#31363b", text: "#eff0f1" };
+  return { window: palette.window, text: palette.viewText };
 });
 </script>
 
@@ -67,12 +67,7 @@ let preview = $derived.by(() => {
     </select>
   </label>
 </div>
-<div
-  class="preview-surface"
-  style:--preview-window={preview.window}
-  style:--preview-view={preview.view}
-  style:--preview-text={preview.text}
->
+<div class="preview-surface" style:--preview-window={preview.window} style:--preview-text={preview.text}>
   <div class="comparison">
     <div class="preview-block">
       <span class="eyebrow">Original</span>
@@ -110,42 +105,6 @@ let preview = $derived.by(() => {
         {:else}
           <span class="muted">—</span>
         {/if}
-      </div>
-    </div>
-  </div>
-  <div class="context-previews">
-    <div class="context-block">
-      <span class="eyebrow">Tray</span>
-      <div class="tray">
-        <span class="tray-dots" aria-hidden="true">⌃</span>
-        {#if candidate.name}
-          <img
-            class="context-icon"
-            src={candidateImage}
-            width={size}
-            height={size}
-            style:transform={candidateTransform}
-            alt=""
-          >
-        {/if}
-        <span class="tray-clock">12:34</span>
-      </div>
-    </div>
-    <div class="context-block">
-      <span class="eyebrow">Notification</span>
-      <div class="notification">
-        {#if candidate.name}
-          <img
-            class="context-icon"
-            src={candidateImage}
-            width={size}
-            height={size}
-            style:transform={candidateTransform}
-            alt=""
-          >
-        {/if}
-        <div><strong>Notification</strong><span>Preview</span></div>
-        <span class="notification-time">now</span>
       </div>
     </div>
   </div>
