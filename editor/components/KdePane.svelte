@@ -91,10 +91,7 @@ function handleKeydown(event) {
 <svelte:window onkeydown={handleKeydown} />
 
 <section class="pane names-pane" aria-labelledby="names-heading">
-  <div class="pane-head">
-    <h2 id="names-heading">KDE icons</h2>
-    <span class="muted">{filteredKde.length} names</span>
-  </div>
+  <h2 id="names-heading" class="sr-only">KDE icons</h2>
   <div class="toolbar">
     <label class="field grow">
       <span>Source theme</span>

@@ -30,6 +30,7 @@ let variantDialog;
 let variantEditorOpen = $state(false);
 let revision = $state(0);
 let previewPalette = $state("current");
+let iconSource = $state("lucide");
 
 async function api(path, options) {
   const response = await fetch(path, options);
@@ -146,6 +147,7 @@ async function saveVariant({ name, source, mode }) {
       body: JSON.stringify({ name, source, mode }),
     });
     state.local = result.local;
+    if (mode === "create") iconSource = "local";
     state.needsBuild = true;
     revision++;
     if (mode === "create") variantDialog?.close();
@@ -213,6 +215,8 @@ onMount(() => {
   <EditorHeader
     needsBuild={state.needsBuild}
     busy={state.busy}
+    archivePath={state.archivePath}
+    iconCount={state.icons.length}
     onBuild={() => execute("build")}
     onApply={() => execute("apply")}
   />
@@ -254,6 +258,7 @@ onMount(() => {
       <LucideList
         icons={state.lucide}
         local={state.local}
+        bind:activeSource={iconSource}
         kdeName={state.kde}
         candidateName={candidate.name}
         {revision}
@@ -288,5 +293,4 @@ onMount(() => {
       />
     {/if}
   </dialog>
-  <footer><span>{state.needsBuild ? "" : state.archivePath}</span></footer>
 </div>
